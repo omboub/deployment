@@ -213,8 +213,8 @@ __webpack_require__.r(__webpack_exports__);
 // The list of file replacements can be found in `angular.json`.
 const environment = {
     production: false,
-    apiUrl: 'https://isve.leria-etud.univ-angers.fr:10000/',
-    apiURLSolveur: 'https://isve.leria-etud.univ-angers.fr:10001/',
+    apiUrl: 'http://localhost:10000/',
+    apiURLSolveur: 'http://localhost:10001/',
     //Couleur affecté sur l'emploi du temps en fonction du type de Séance
     colors: {
         CM: '#FFFF33',
@@ -989,22 +989,23 @@ class TableUploadComponent {
         this.newName = '';
         this.modalShow = false;
         this.spinner = false; //Spinner de la generation du DZN
-        this.nbSallePref = []; //Listes des salle preferes choisis 
-        this.nbCoresspondance = []; //Nombre de coresspondances 
+        this.nbSallePref = []; //Listes des salle preferes choisis
+        this.nbCoresspondance = []; //Nombre de coresspondances
         this.lesSallesChoisis = new Array();
         this.lesCorresChoisis = new Array();
         this.filliere = ""; //nom de la filliere
-        this.isDznGenerate = false; // Variable pour savoir si le dzn a été généré 
+        this.isDznGenerate = false; // Variable pour savoir si le dzn a été généré
         this.isDZNCliqued = false; //Varibale pour savoir si le bouton dzn a été cliqué pour généré le spinner
-        this.spinnerSolveur = false; //Spinner du solveur 
+        this.spinnerSolveur = false; //Spinner du solveur
         this.classeMatieres = [];
     }
     ngOnInit() {
         return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(this, void 0, void 0, function* () {
             this.nbSallePref.push(0);
             this.nbCoresspondance.push(0);
-            this.filliere = this.route.snapshot.paramMap
-                .get('filliere');
+            // this.filliere= this.route.snapshot.paramMap
+            //   .get('filliere')
+            this.filliere = "3";
             this.api.getEtapeByCode(this.filliere).subscribe((res) => {
                 this.etape = res.body;
                 console.log(this.etape);
@@ -1046,7 +1047,7 @@ class TableUploadComponent {
             });
         });
     }
-    //Event quand on choisi une valeur de la selection des salle 
+    //Event quand on choisi une valeur de la selection des salle
     changeSalle(nb, value) {
         if (this.lesSallesChoisis.length == 1 && value == "") {
             this.lesSallesChoisis.pop();
@@ -1076,7 +1077,7 @@ class TableUploadComponent {
     incrementeNumber() {
         this.nbSallePref.push(this.nbSallePref.length);
     }
-    // Se délcenche à l'appui du bouton download, et permet de télécharger le fichier DZN 
+    // Se délcenche à l'appui du bouton download, et permet de télécharger le fichier DZN
     donwloadFile() {
         Object(file_saver__WEBPACK_IMPORTED_MODULE_3__["saveAs"])(this.blob, this.etape.libelleEtape + '.dzn');
     }
@@ -1089,7 +1090,7 @@ class TableUploadComponent {
         }
         return verif;
     }
-    // Methode appeler quand on clique sur le bouton "croix" des salles préféré, elle va décrémenté le nombre de salles et 
+    // Methode appeler quand on clique sur le bouton "croix" des salles préféré, elle va décrémenté le nombre de salles et
     // supprimer la salle de la liste des salles préféré
     decrementeNumber() {
         this.nbSallePref.pop();
@@ -1167,7 +1168,7 @@ class TableUploadComponent {
             this.blob;
         });
     }
-    //méthode de lancemennt du solveur 
+    //méthode de lancemennt du solveur
     launchSolveur() {
         this.spinnerSolveur = true,
             console.log(this.filliere);
@@ -1184,7 +1185,7 @@ class TableUploadComponent {
             });
         });
     }
-    //vérification que tous les champs sont bien remplis 
+    //vérification que tous les champs sont bien remplis
     canGenerateDZN() {
         var valide = true;
         for (var i = 0; i < this.lesCorresChoisis.length; i++) {
@@ -2432,7 +2433,7 @@ __webpack_require__.r(__webpack_exports__);
 const routes = [
     { path: '', component: _views_accueil_accueil_component__WEBPACK_IMPORTED_MODULE_3__["AccueilComponent"] },
     { path: 'faculte/:faculte', component: _views_faculte_faculte_component__WEBPACK_IMPORTED_MODULE_2__["FaculteComponent"] },
-    { path: ':filliere/admin', component: _views_tableUpload_tableUpload_component__WEBPACK_IMPORTED_MODULE_5__["TableUploadComponent"] },
+    { path: 'admin', component: _views_tableUpload_tableUpload_component__WEBPACK_IMPORTED_MODULE_5__["TableUploadComponent"] },
     { path: 'faculte/:faculte/:filiere/edt', component: _views_emploi_du_temps_emploi_du_temps_component__WEBPACK_IMPORTED_MODULE_4__["EmploiDuTempsComponent"] },
     { path: 'faculte/:faculte/:filiere/configure', component: _configure_configure_component__WEBPACK_IMPORTED_MODULE_6__["ConfigureComponent"] },
 ];
