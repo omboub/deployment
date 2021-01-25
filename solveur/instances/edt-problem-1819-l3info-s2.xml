@@ -1,0 +1,2393 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE problem PUBLIC "-//UA 2020//DTD Problem Format/EN" "http://www.itc2019.org/competition-format.dtd">
+<problem name="1819-l3info-s2" nrDays="5" nrWeeks="10" slotsPerDay="5">
+  <optimization distribution="0" room="0" student="0" time="1"/>
+  <rooms>
+    <room id="AMPHI-A" capacity="100"/>
+    <room id="AMPHI-B" capacity="100"/>
+    <room id="H001" capacity="20"/>
+    <room id="H002" capacity="30"/>
+    <room id="H003" capacity="30"/>
+  </rooms>
+  <courses>
+    <course id="Anglais">
+      <config id="10">
+        <!-- TP : semaines 1-10 -->
+        <subpart id="101">
+          <class id="Anglais_TP-A" limit="6">
+            <room id="H001" penalty="2"/>
+            <room id="H002" penalty="0"/>
+            <room id="H003" penalty="1"/>
+            <!-- Lu-08:00 --><time start="1" length="1" days="10000" weeks="1111111111" penalty="42"/>
+            <!-- Lu-09:30 --><time start="2" length="1" days="10000" weeks="1111111111" penalty="41"/>
+            <!-- Lu-11:00 --><time start="3" length="1" days="10000" weeks="1111111111" penalty="40"/>
+            <!-- Lu-14:00 --><time start="4" length="1" days="10000" weeks="1111111111" penalty="41"/>
+            <!-- Lu-15:30 --><time start="5" length="1" days="10000" weeks="1111111111" penalty="42"/>
+            <!-- Ma-08:00 --><time start="1" length="1" days="01000" weeks="1111111111" penalty="32"/>
+            <!-- Ma-09:30 --><time start="2" length="1" days="01000" weeks="1111111111" penalty="31"/>
+            <!-- Ma-11:00 --><time start="3" length="1" days="01000" weeks="1111111111" penalty="30"/>
+            <!-- Ma-14:00 --><time start="4" length="1" days="01000" weeks="1111111111" penalty="31"/>
+            <!-- Ma-15:30 --><time start="5" length="1" days="01000" weeks="1111111111" penalty="32"/>
+            <!-- Me-08:00 --><time start="1" length="1" days="00100" weeks="1111111111" penalty="22"/>
+            <!-- Me-09:30 --><time start="2" length="1" days="00100" weeks="1111111111" penalty="21"/>
+            <!-- Me-11:00 --><time start="3" length="1" days="00100" weeks="1111111111" penalty="20"/>
+            <!-- Me-14:00 --><time start="4" length="1" days="00100" weeks="1111111111" penalty="21"/>
+            <!-- Me-15:30 --><time start="5" length="1" days="00100" weeks="1111111111" penalty="22"/>
+            <!-- Je-08:00 --><time start="1" length="1" days="00010" weeks="1111111111" penalty="12"/>
+            <!-- Je-09:30 --><time start="2" length="1" days="00010" weeks="1111111111" penalty="11"/>
+            <!-- Je-11:00 --><time start="3" length="1" days="00010" weeks="1111111111" penalty="10"/>
+            <!-- Je-14:00 --><time start="4" length="1" days="00010" weeks="1111111111" penalty="11"/>
+            <!-- Je-15:30 --><time start="5" length="1" days="00010" weeks="1111111111" penalty="12"/>
+            <!-- Ve-08:00 --><time start="1" length="1" days="00001" weeks="1111111111" penalty="2"/>
+            <!-- Ve-09:30 --><time start="2" length="1" days="00001" weeks="1111111111" penalty="1"/>
+            <!-- Ve-11:00 --><time start="3" length="1" days="00001" weeks="1111111111" penalty="0"/>
+            <!-- Ve-14:00 --><time start="4" length="1" days="00001" weeks="1111111111" penalty="1"/>
+            <!-- Ve-15:30 --><time start="5" length="1" days="00001" weeks="1111111111" penalty="2"/>
+          </class>
+          <class id="Anglais_TP-B" limit="6">
+            <room id="H001" penalty="2"/>
+            <room id="H002" penalty="0"/>
+            <room id="H003" penalty="1"/>
+            <!-- Lu-08:00 --><time start="1" length="1" days="10000" weeks="1111111111" penalty="43"/>
+            <!-- Lu-09:30 --><time start="2" length="1" days="10000" weeks="1111111111" penalty="42"/>
+            <!-- Lu-11:00 --><time start="3" length="1" days="10000" weeks="1111111111" penalty="41"/>
+            <!-- Lu-14:00 --><time start="4" length="1" days="10000" weeks="1111111111" penalty="40"/>
+            <!-- Lu-15:30 --><time start="5" length="1" days="10000" weeks="1111111111" penalty="41"/>
+            <!-- Ma-08:00 --><time start="1" length="1" days="01000" weeks="1111111111" penalty="33"/>
+            <!-- Ma-09:30 --><time start="2" length="1" days="01000" weeks="1111111111" penalty="32"/>
+            <!-- Ma-11:00 --><time start="3" length="1" days="01000" weeks="1111111111" penalty="31"/>
+            <!-- Ma-14:00 --><time start="4" length="1" days="01000" weeks="1111111111" penalty="30"/>
+            <!-- Ma-15:30 --><time start="5" length="1" days="01000" weeks="1111111111" penalty="31"/>
+            <!-- Me-08:00 --><time start="1" length="1" days="00100" weeks="1111111111" penalty="23"/>
+            <!-- Me-09:30 --><time start="2" length="1" days="00100" weeks="1111111111" penalty="22"/>
+            <!-- Me-11:00 --><time start="3" length="1" days="00100" weeks="1111111111" penalty="21"/>
+            <!-- Me-14:00 --><time start="4" length="1" days="00100" weeks="1111111111" penalty="20"/>
+            <!-- Me-15:30 --><time start="5" length="1" days="00100" weeks="1111111111" penalty="21"/>
+            <!-- Je-08:00 --><time start="1" length="1" days="00010" weeks="1111111111" penalty="13"/>
+            <!-- Je-09:30 --><time start="2" length="1" days="00010" weeks="1111111111" penalty="12"/>
+            <!-- Je-11:00 --><time start="3" length="1" days="00010" weeks="1111111111" penalty="11"/>
+            <!-- Je-14:00 --><time start="4" length="1" days="00010" weeks="1111111111" penalty="10"/>
+            <!-- Je-15:30 --><time start="5" length="1" days="00010" weeks="1111111111" penalty="11"/>
+            <!-- Ve-08:00 --><time start="1" length="1" days="00001" weeks="1111111111" penalty="3"/>
+            <!-- Ve-09:30 --><time start="2" length="1" days="00001" weeks="1111111111" penalty="2"/>
+            <!-- Ve-11:00 --><time start="3" length="1" days="00001" weeks="1111111111" penalty="1"/>
+            <!-- Ve-14:00 --><time start="4" length="1" days="00001" weeks="1111111111" penalty="0"/>
+            <!-- Ve-15:30 --><time start="5" length="1" days="00001" weeks="1111111111" penalty="1"/>
+          </class>
+          <class id="Anglais_TP-C" limit="6">
+            <room id="H001" penalty="2"/>
+            <room id="H002" penalty="0"/>
+            <room id="H003" penalty="1"/>
+            <!-- Lu-08:00 --><time start="1" length="1" days="10000" weeks="1111111111" penalty="33"/>
+            <!-- Lu-09:30 --><time start="2" length="1" days="10000" weeks="1111111111" penalty="32"/>
+            <!-- Lu-11:00 --><time start="3" length="1" days="10000" weeks="1111111111" penalty="31"/>
+            <!-- Lu-14:00 --><time start="4" length="1" days="10000" weeks="1111111111" penalty="30"/>
+            <!-- Lu-15:30 --><time start="5" length="1" days="10000" weeks="1111111111" penalty="31"/>
+            <!-- Ma-08:00 --><time start="1" length="1" days="01000" weeks="1111111111" penalty="23"/>
+            <!-- Ma-09:30 --><time start="2" length="1" days="01000" weeks="1111111111" penalty="22"/>
+            <!-- Ma-11:00 --><time start="3" length="1" days="01000" weeks="1111111111" penalty="21"/>
+            <!-- Ma-14:00 --><time start="4" length="1" days="01000" weeks="1111111111" penalty="20"/>
+            <!-- Ma-15:30 --><time start="5" length="1" days="01000" weeks="1111111111" penalty="21"/>
+            <!-- Me-08:00 --><time start="1" length="1" days="00100" weeks="1111111111" penalty="13"/>
+            <!-- Me-09:30 --><time start="2" length="1" days="00100" weeks="1111111111" penalty="12"/>
+            <!-- Me-11:00 --><time start="3" length="1" days="00100" weeks="1111111111" penalty="11"/>
+            <!-- Me-14:00 --><time start="4" length="1" days="00100" weeks="1111111111" penalty="10"/>
+            <!-- Me-15:30 --><time start="5" length="1" days="00100" weeks="1111111111" penalty="11"/>
+            <!-- Je-08:00 --><time start="1" length="1" days="00010" weeks="1111111111" penalty="3"/>
+            <!-- Je-09:30 --><time start="2" length="1" days="00010" weeks="1111111111" penalty="2"/>
+            <!-- Je-11:00 --><time start="3" length="1" days="00010" weeks="1111111111" penalty="1"/>
+            <!-- Je-14:00 --><time start="4" length="1" days="00010" weeks="1111111111" penalty="0"/>
+            <!-- Je-15:30 --><time start="5" length="1" days="00010" weeks="1111111111" penalty="1"/>
+            <!-- Ve-08:00 --><time start="1" length="1" days="00001" weeks="1111111111" penalty="13"/>
+            <!-- Ve-09:30 --><time start="2" length="1" days="00001" weeks="1111111111" penalty="12"/>
+            <!-- Ve-11:00 --><time start="3" length="1" days="00001" weeks="1111111111" penalty="11"/>
+            <!-- Ve-14:00 --><time start="4" length="1" days="00001" weeks="1111111111" penalty="10"/>
+            <!-- Ve-15:30 --><time start="5" length="1" days="00001" weeks="1111111111" penalty="11"/>
+          </class>
+        </subpart>
+      </config>
+    </course>
+    <course id="Bases de Données">
+      <config id="20">
+        <!-- CM 1 : semaines 1-8 -->
+        <subpart id="200">
+          <class id="Bases de Données_CM-1" limit="18">
+            <room id="AMPHI-A" penalty="0"/>
+            <room id="AMPHI-B" penalty="1"/>
+            <!-- Lu-08:00 --><time start="1" length="1" days="10000" weeks="1111111100" penalty="3"/>
+            <!-- Lu-09:30 --><time start="2" length="1" days="10000" weeks="1111111100" penalty="2"/>
+            <!-- Lu-11:00 --><time start="3" length="1" days="10000" weeks="1111111100" penalty="1"/>
+            <!-- Lu-14:00 --><time start="4" length="1" days="10000" weeks="1111111100" penalty="0"/>
+            <!-- Lu-15:30 --><time start="5" length="1" days="10000" weeks="1111111100" penalty="1"/>
+            <!-- Ma-08:00 --><time start="1" length="1" days="01000" weeks="1111111100" penalty="13"/>
+            <!-- Ma-09:30 --><time start="2" length="1" days="01000" weeks="1111111100" penalty="12"/>
+            <!-- Ma-11:00 --><time start="3" length="1" days="01000" weeks="1111111100" penalty="11"/>
+            <!-- Ma-14:00 --><time start="4" length="1" days="01000" weeks="1111111100" penalty="10"/>
+            <!-- Ma-15:30 --><time start="5" length="1" days="01000" weeks="1111111100" penalty="11"/>
+            <!-- Me-08:00 --><time start="1" length="1" days="00100" weeks="1111111100" penalty="23"/>
+            <!-- Me-09:30 --><time start="2" length="1" days="00100" weeks="1111111100" penalty="22"/>
+            <!-- Me-11:00 --><time start="3" length="1" days="00100" weeks="1111111100" penalty="21"/>
+            <!-- Me-14:00 --><time start="4" length="1" days="00100" weeks="1111111100" penalty="20"/>
+            <!-- Me-15:30 --><time start="5" length="1" days="00100" weeks="1111111100" penalty="20"/>
+            <!-- Je-08:00 --><time start="1" length="1" days="00010" weeks="1111111100" penalty="33"/>
+            <!-- Je-09:30 --><time start="2" length="1" days="00010" weeks="1111111100" penalty="32"/>
+            <!-- Je-11:00 --><time start="3" length="1" days="00010" weeks="1111111100" penalty="31"/>
+            <!-- Je-14:00 --><time start="4" length="1" days="00010" weeks="1111111100" penalty="30"/>
+            <!-- Je-15:30 --><time start="5" length="1" days="00010" weeks="1111111100" penalty="31"/>
+            <!-- Ve-08:00 --><time start="1" length="1" days="00001" weeks="1111111100" penalty="43"/>
+            <!-- Ve-09:30 --><time start="2" length="1" days="00001" weeks="1111111100" penalty="42"/>
+            <!-- Ve-11:00 --><time start="3" length="1" days="00001" weeks="1111111100" penalty="41"/>
+            <!-- Ve-14:00 --><time start="4" length="1" days="00001" weeks="1111111100" penalty="40"/>
+            <!-- Ve-15:30 --><time start="5" length="1" days="00001" weeks="1111111100" penalty="41"/>
+          </class>
+        </subpart>
+        <!-- CM 2 : semaines 1 -->
+        <subpart id="201">
+          <class id="Bases de Données_CM-2" limit="18">
+            <room id="AMPHI-A" penalty="0"/>
+            <room id="AMPHI-B" penalty="1"/>
+            <!-- Lu-08:00 --><time start="1" length="1" days="10000" weeks="1000000000" penalty="4"/>
+            <!-- Lu-09:30 --><time start="2" length="1" days="10000" weeks="1000000000" penalty="3"/>
+            <!-- Lu-11:00 --><time start="3" length="1" days="10000" weeks="1000000000" penalty="2"/>
+            <!-- Lu-14:00 --><time start="4" length="1" days="10000" weeks="1000000000" penalty="1"/>
+            <!-- Lu-15:30 --><time start="5" length="1" days="10000" weeks="1000000000" penalty="0"/>
+            <!-- Ma-08:00 --><time start="1" length="1" days="01000" weeks="1000000000" penalty="14"/>
+            <!-- Ma-09:30 --><time start="2" length="1" days="01000" weeks="1000000000" penalty="13"/>
+            <!-- Ma-11:00 --><time start="3" length="1" days="01000" weeks="1000000000" penalty="12"/>
+            <!-- Ma-14:00 --><time start="4" length="1" days="01000" weeks="1000000000" penalty="11"/>
+            <!-- Ma-15:30 --><time start="5" length="1" days="01000" weeks="1000000000" penalty="10"/>
+            <!-- Me-08:00 --><time start="1" length="1" days="00100" weeks="1000000000" penalty="24"/>
+            <!-- Me-09:30 --><time start="2" length="1" days="00100" weeks="1000000000" penalty="23"/>
+            <!-- Me-11:00 --><time start="3" length="1" days="00100" weeks="1000000000" penalty="22"/>
+            <!-- Me-14:00 --><time start="4" length="1" days="00100" weeks="1000000000" penalty="21"/>
+            <!-- Me-15:30 --><time start="5" length="1" days="00100" weeks="1000000000" penalty="20"/>
+            <!-- Je-08:00 --><time start="1" length="1" days="00010" weeks="1000000000" penalty="34"/>
+            <!-- Je-09:30 --><time start="2" length="1" days="00010" weeks="1000000000" penalty="33"/>
+            <!-- Je-11:00 --><time start="3" length="1" days="00010" weeks="1000000000" penalty="32"/>
+            <!-- Je-14:00 --><time start="4" length="1" days="00010" weeks="1000000000" penalty="31"/>
+            <!-- Je-15:30 --><time start="5" length="1" days="00010" weeks="1000000000" penalty="30"/>
+            <!-- Ve-08:00 --><time start="1" length="1" days="00001" weeks="1000000000" penalty="44"/>
+            <!-- Ve-09:30 --><time start="2" length="1" days="00001" weeks="1000000000" penalty="43"/>
+            <!-- Ve-11:00 --><time start="3" length="1" days="00001" weeks="1000000000" penalty="42"/>
+            <!-- Ve-14:00 --><time start="4" length="1" days="00001" weeks="1000000000" penalty="41"/>
+            <!-- Ve-15:30 --><time start="5" length="1" days="00001" weeks="1000000000" penalty="40"/>
+          </class>
+        </subpart>
+        <!-- TD : semaines 1-9 -->
+        <subpart id="202">
+          <class id="Bases de Données_TD-A" limit="9">
+            <room id="AMPHI-A" penalty="0"/>
+            <room id="AMPHI-B" penalty="1"/>
+            <!-- Lu-08:00 --><time start="1" length="1" days="10000" weeks="1111111110" penalty="13"/>
+            <!-- Lu-09:30 --><time start="2" length="1" days="10000" weeks="1111111110" penalty="12"/>
+            <!-- Lu-11:00 --><time start="3" length="1" days="10000" weeks="1111111110" penalty="11"/>
+            <!-- Lu-14:00 --><time start="4" length="1" days="10000" weeks="1111111110" penalty="10"/>
+            <!-- Lu-15:30 --><time start="5" length="1" days="10000" weeks="1111111110" penalty="11"/>
+            <!-- Ma-08:00 --><time start="1" length="1" days="01000" weeks="1111111110" penalty="3"/>
+            <!-- Ma-09:30 --><time start="2" length="1" days="01000" weeks="1111111110" penalty="2"/>
+            <!-- Ma-11:00 --><time start="3" length="1" days="01000" weeks="1111111110" penalty="1"/>
+            <!-- Ma-14:00 --><time start="4" length="1" days="01000" weeks="1111111110" penalty="0"/>
+            <!-- Ma-15:30 --><time start="5" length="1" days="01000" weeks="1111111110" penalty="1"/>
+            <!-- Me-08:00 --><time start="1" length="1" days="00100" weeks="1111111110" penalty="13"/>
+            <!-- Me-09:30 --><time start="2" length="1" days="00100" weeks="1111111110" penalty="12"/>
+            <!-- Me-11:00 --><time start="3" length="1" days="00100" weeks="1111111110" penalty="11"/>
+            <!-- Me-14:00 --><time start="4" length="1" days="00100" weeks="1111111110" penalty="10"/>
+            <!-- Me-15:30 --><time start="5" length="1" days="00100" weeks="1111111110" penalty="11"/>
+            <!-- Je-08:00 --><time start="1" length="1" days="00010" weeks="1111111110" penalty="23"/>
+            <!-- Je-09:30 --><time start="2" length="1" days="00010" weeks="1111111110" penalty="22"/>
+            <!-- Je-11:00 --><time start="3" length="1" days="00010" weeks="1111111110" penalty="21"/>
+            <!-- Je-14:00 --><time start="4" length="1" days="00010" weeks="1111111110" penalty="20"/>
+            <!-- Je-15:30 --><time start="5" length="1" days="00010" weeks="1111111110" penalty="21"/>
+            <!-- Ve-08:00 --><time start="1" length="1" days="00001" weeks="1111111110" penalty="33"/>
+            <!-- Ve-09:30 --><time start="2" length="1" days="00001" weeks="1111111110" penalty="32"/>
+            <!-- Ve-11:00 --><time start="3" length="1" days="00001" weeks="1111111110" penalty="31"/>
+            <!-- Ve-14:00 --><time start="4" length="1" days="00001" weeks="1111111110" penalty="30"/>
+            <!-- Ve-15:30 --><time start="5" length="1" days="00001" weeks="1111111110" penalty="31"/>
+          </class>
+          <class id="Bases de Données_TD-B" limit="9">
+            <room id="AMPHI-A" penalty="0"/>
+            <room id="AMPHI-B" penalty="1"/>
+            <!-- Lu-08:00 --><time start="1" length="1" days="10000" weeks="1111111110" penalty="14"/>
+            <!-- Lu-09:30 --><time start="2" length="1" days="10000" weeks="1111111110" penalty="13"/>
+            <!-- Lu-11:00 --><time start="3" length="1" days="10000" weeks="1111111110" penalty="12"/>
+            <!-- Lu-14:00 --><time start="4" length="1" days="10000" weeks="1111111110" penalty="11"/>
+            <!-- Lu-15:30 --><time start="5" length="1" days="10000" weeks="1111111110" penalty="10"/>
+            <!-- Ma-08:00 --><time start="1" length="1" days="01000" weeks="1111111110" penalty="4"/>
+            <!-- Ma-09:30 --><time start="2" length="1" days="01000" weeks="1111111110" penalty="3"/>
+            <!-- Ma-11:00 --><time start="3" length="1" days="01000" weeks="1111111110" penalty="2"/>
+            <!-- Ma-14:00 --><time start="4" length="1" days="01000" weeks="1111111110" penalty="1"/>
+            <!-- Ma-15:30 --><time start="5" length="1" days="01000" weeks="1111111110" penalty="0"/>
+            <!-- Me-08:00 --><time start="1" length="1" days="00100" weeks="1111111110" penalty="14"/>
+            <!-- Me-09:30 --><time start="2" length="1" days="00100" weeks="1111111110" penalty="13"/>
+            <!-- Me-11:00 --><time start="3" length="1" days="00100" weeks="1111111110" penalty="12"/>
+            <!-- Me-14:00 --><time start="4" length="1" days="00100" weeks="1111111110" penalty="11"/>
+            <!-- Me-15:30 --><time start="5" length="1" days="00100" weeks="1111111110" penalty="10"/>
+            <!-- Je-08:00 --><time start="1" length="1" days="00010" weeks="1111111110" penalty="24"/>
+            <!-- Je-09:30 --><time start="2" length="1" days="00010" weeks="1111111110" penalty="23"/>
+            <!-- Je-11:00 --><time start="3" length="1" days="00010" weeks="1111111110" penalty="22"/>
+            <!-- Je-14:00 --><time start="4" length="1" days="00010" weeks="1111111110" penalty="21"/>
+            <!-- Je-15:30 --><time start="5" length="1" days="00010" weeks="1111111110" penalty="20"/>
+            <!-- Ve-08:00 --><time start="1" length="1" days="00001" weeks="1111111110" penalty="34"/>
+            <!-- Ve-09:30 --><time start="2" length="1" days="00001" weeks="1111111110" penalty="33"/>
+            <!-- Ve-11:00 --><time start="3" length="1" days="00001" weeks="1111111110" penalty="32"/>
+            <!-- Ve-14:00 --><time start="4" length="1" days="00001" weeks="1111111110" penalty="31"/>
+            <!-- Ve-15:30 --><time start="5" length="1" days="00001" weeks="1111111110" penalty="30"/>
+          </class>
+        </subpart>
+        <!-- TP : semaines 2-10 -->
+        <subpart id="203">
+          <class id="Bases de Données_TP-A" limit="6">
+            <room id="H001" penalty="2"/>
+            <room id="H002" penalty="0"/>
+            <room id="H003" penalty="1"/>
+            <!-- Lu-08:00 --><time start="1" length="1" days="10000" weeks="0111111111" penalty="33"/>
+            <!-- Lu-09:30 --><time start="2" length="1" days="10000" weeks="0111111111" penalty="32"/>
+            <!-- Lu-11:00 --><time start="3" length="1" days="10000" weeks="0111111111" penalty="31"/>
+            <!-- Lu-14:00 --><time start="4" length="1" days="10000" weeks="0111111111" penalty="30"/>
+            <!-- Lu-15:30 --><time start="5" length="1" days="10000" weeks="0111111111" penalty="31"/>
+            <!-- Ma-08:00 --><time start="1" length="1" days="01000" weeks="0111111111" penalty="23"/>
+            <!-- Ma-09:30 --><time start="2" length="1" days="01000" weeks="0111111111" penalty="22"/>
+            <!-- Ma-11:00 --><time start="3" length="1" days="01000" weeks="0111111111" penalty="21"/>
+            <!-- Ma-14:00 --><time start="4" length="1" days="01000" weeks="0111111111" penalty="20"/>
+            <!-- Ma-15:30 --><time start="5" length="1" days="01000" weeks="0111111111" penalty="21"/>
+            <!-- Me-08:00 --><time start="1" length="1" days="00100" weeks="0111111111" penalty="13"/>
+            <!-- Me-09:30 --><time start="2" length="1" days="00100" weeks="0111111111" penalty="12"/>
+            <!-- Me-11:00 --><time start="3" length="1" days="00100" weeks="0111111111" penalty="11"/>
+            <!-- Me-14:00 --><time start="4" length="1" days="00100" weeks="0111111111" penalty="10"/>
+            <!-- Me-15:30 --><time start="5" length="1" days="00100" weeks="0111111111" penalty="11"/>
+            <!-- Je-08:00 --><time start="1" length="1" days="00010" weeks="0111111111" penalty="3"/>
+            <!-- Je-09:30 --><time start="2" length="1" days="00010" weeks="0111111111" penalty="2"/>
+            <!-- Je-11:00 --><time start="3" length="1" days="00010" weeks="0111111111" penalty="1"/>
+            <!-- Je-14:00 --><time start="4" length="1" days="00010" weeks="0111111111" penalty="0"/>
+            <!-- Je-15:30 --><time start="5" length="1" days="00010" weeks="0111111111" penalty="1"/>
+            <!-- Ve-08:00 --><time start="1" length="1" days="00001" weeks="0111111111" penalty="13"/>
+            <!-- Ve-09:30 --><time start="2" length="1" days="00001" weeks="0111111111" penalty="12"/>
+            <!-- Ve-11:00 --><time start="3" length="1" days="00001" weeks="0111111111" penalty="11"/>
+            <!-- Ve-14:00 --><time start="4" length="1" days="00001" weeks="0111111111" penalty="10"/>
+            <!-- Ve-15:30 --><time start="5" length="1" days="00001" weeks="0111111111" penalty="11"/>
+          </class>
+          <class id="Bases de Données_TP-B" limit="6">
+            <room id="H001" penalty="2"/>
+            <room id="H002" penalty="0"/>
+            <room id="H003" penalty="1"/>
+            <!-- Lu-08:00 --><time start="1" length="1" days="10000" weeks="0111111111" penalty="42"/>
+            <!-- Lu-09:30 --><time start="2" length="1" days="10000" weeks="0111111111" penalty="41"/>
+            <!-- Lu-11:00 --><time start="3" length="1" days="10000" weeks="0111111111" penalty="40"/>
+            <!-- Lu-14:00 --><time start="4" length="1" days="10000" weeks="0111111111" penalty="41"/>
+            <!-- Lu-15:30 --><time start="5" length="1" days="10000" weeks="0111111111" penalty="42"/>
+            <!-- Ma-08:00 --><time start="1" length="1" days="01000" weeks="0111111111" penalty="32"/>
+            <!-- Ma-09:30 --><time start="2" length="1" days="01000" weeks="0111111111" penalty="31"/>
+            <!-- Ma-11:00 --><time start="3" length="1" days="01000" weeks="0111111111" penalty="30"/>
+            <!-- Ma-14:00 --><time start="4" length="1" days="01000" weeks="0111111111" penalty="31"/>
+            <!-- Ma-15:30 --><time start="5" length="1" days="01000" weeks="0111111111" penalty="32"/>
+            <!-- Me-08:00 --><time start="1" length="1" days="00100" weeks="0111111111" penalty="22"/>
+            <!-- Me-09:30 --><time start="2" length="1" days="00100" weeks="0111111111" penalty="21"/>
+            <!-- Me-11:00 --><time start="3" length="1" days="00100" weeks="0111111111" penalty="20"/>
+            <!-- Me-14:00 --><time start="4" length="1" days="00100" weeks="0111111111" penalty="21"/>
+            <!-- Me-15:30 --><time start="5" length="1" days="00100" weeks="0111111111" penalty="22"/>
+            <!-- Je-08:00 --><time start="1" length="1" days="00010" weeks="0111111111" penalty="12"/>
+            <!-- Je-09:30 --><time start="2" length="1" days="00010" weeks="0111111111" penalty="11"/>
+            <!-- Je-11:00 --><time start="3" length="1" days="00010" weeks="0111111111" penalty="10"/>
+            <!-- Je-14:00 --><time start="4" length="1" days="00010" weeks="0111111111" penalty="11"/>
+            <!-- Je-15:30 --><time start="5" length="1" days="00010" weeks="0111111111" penalty="12"/>
+            <!-- Ve-08:00 --><time start="1" length="1" days="00001" weeks="0111111111" penalty="2"/>
+            <!-- Ve-09:30 --><time start="2" length="1" days="00001" weeks="0111111111" penalty="1"/>
+            <!-- Ve-11:00 --><time start="3" length="1" days="00001" weeks="0111111111" penalty="0"/>
+            <!-- Ve-14:00 --><time start="4" length="1" days="00001" weeks="0111111111" penalty="1"/>
+            <!-- Ve-15:30 --><time start="5" length="1" days="00001" weeks="0111111111" penalty="2"/>
+          </class>
+          <class id="Bases de Données_TP-C" limit="6">
+            <room id="H001" penalty="2"/>
+            <room id="H002" penalty="0"/>
+            <room id="H003" penalty="1"/>
+            <!-- Lu-08:00 --><time start="1" length="1" days="10000" weeks="0111111111" penalty="43"/>
+            <!-- Lu-09:30 --><time start="2" length="1" days="10000" weeks="0111111111" penalty="42"/>
+            <!-- Lu-11:00 --><time start="3" length="1" days="10000" weeks="0111111111" penalty="41"/>
+            <!-- Lu-14:00 --><time start="4" length="1" days="10000" weeks="0111111111" penalty="40"/>
+            <!-- Lu-15:30 --><time start="5" length="1" days="10000" weeks="0111111111" penalty="41"/>
+            <!-- Ma-08:00 --><time start="1" length="1" days="01000" weeks="0111111111" penalty="33"/>
+            <!-- Ma-09:30 --><time start="2" length="1" days="01000" weeks="0111111111" penalty="32"/>
+            <!-- Ma-11:00 --><time start="3" length="1" days="01000" weeks="0111111111" penalty="31"/>
+            <!-- Ma-14:00 --><time start="4" length="1" days="01000" weeks="0111111111" penalty="30"/>
+            <!-- Ma-15:30 --><time start="5" length="1" days="01000" weeks="0111111111" penalty="31"/>
+            <!-- Me-08:00 --><time start="1" length="1" days="00100" weeks="0111111111" penalty="23"/>
+            <!-- Me-09:30 --><time start="2" length="1" days="00100" weeks="0111111111" penalty="22"/>
+            <!-- Me-11:00 --><time start="3" length="1" days="00100" weeks="0111111111" penalty="21"/>
+            <!-- Me-14:00 --><time start="4" length="1" days="00100" weeks="0111111111" penalty="20"/>
+            <!-- Me-15:30 --><time start="5" length="1" days="00100" weeks="0111111111" penalty="21"/>
+            <!-- Je-08:00 --><time start="1" length="1" days="00010" weeks="0111111111" penalty="13"/>
+            <!-- Je-09:30 --><time start="2" length="1" days="00010" weeks="0111111111" penalty="12"/>
+            <!-- Je-11:00 --><time start="3" length="1" days="00010" weeks="0111111111" penalty="11"/>
+            <!-- Je-14:00 --><time start="4" length="1" days="00010" weeks="0111111111" penalty="10"/>
+            <!-- Je-15:30 --><time start="5" length="1" days="00010" weeks="0111111111" penalty="11"/>
+            <!-- Ve-08:00 --><time start="1" length="1" days="00001" weeks="0111111111" penalty="3"/>
+            <!-- Ve-09:30 --><time start="2" length="1" days="00001" weeks="0111111111" penalty="2"/>
+            <!-- Ve-11:00 --><time start="3" length="1" days="00001" weeks="0111111111" penalty="1"/>
+            <!-- Ve-14:00 --><time start="4" length="1" days="00001" weeks="0111111111" penalty="0"/>
+            <!-- Ve-15:30 --><time start="5" length="1" days="00001" weeks="0111111111" penalty="1"/>
+          </class>
+        </subpart>
+      </config>
+    </course>
+    <course id="Développement Web">
+      <config id="30">
+        <!-- CM 1 : semaines 1-6 -->
+        <subpart id="300">
+          <class id="Développement Web_CM-1" limit="18">
+            <room id="AMPHI-A" penalty="0"/>
+            <room id="AMPHI-B" penalty="1"/>
+            <!-- Lu-08:00 --><time start="1" length="1" days="10000" weeks="1111110000" penalty="2"/>
+            <!-- Lu-09:30 --><time start="2" length="1" days="10000" weeks="1111110000" penalty="1"/>
+            <!-- Lu-11:00 --><time start="3" length="1" days="10000" weeks="1111110000" penalty="0"/>
+            <!-- Lu-14:00 --><time start="4" length="1" days="10000" weeks="1111110000" penalty="1"/>
+            <!-- Lu-15:30 --><time start="5" length="1" days="10000" weeks="1111110000" penalty="2"/>
+            <!-- Ma-08:00 --><time start="1" length="1" days="01000" weeks="1111110000" penalty="12"/>
+            <!-- Ma-09:30 --><time start="2" length="1" days="01000" weeks="1111110000" penalty="11"/>
+            <!-- Ma-11:00 --><time start="3" length="1" days="01000" weeks="1111110000" penalty="10"/>
+            <!-- Ma-14:00 --><time start="4" length="1" days="01000" weeks="1111110000" penalty="11"/>
+            <!-- Ma-15:30 --><time start="5" length="1" days="01000" weeks="1111110000" penalty="12"/>
+            <!-- Me-08:00 --><time start="1" length="1" days="00100" weeks="1111110000" penalty="22"/>
+            <!-- Me-09:30 --><time start="2" length="1" days="00100" weeks="1111110000" penalty="21"/>
+            <!-- Me-11:00 --><time start="3" length="1" days="00100" weeks="1111110000" penalty="20"/>
+            <!-- Me-14:00 --><time start="4" length="1" days="00100" weeks="1111110000" penalty="21"/>
+            <!-- Me-15:30 --><time start="5" length="1" days="00100" weeks="1111110000" penalty="22"/>
+            <!-- Je-08:00 --><time start="1" length="1" days="00010" weeks="1111110000" penalty="32"/>
+            <!-- Je-09:30 --><time start="2" length="1" days="00010" weeks="1111110000" penalty="31"/>
+            <!-- Je-11:00 --><time start="3" length="1" days="00010" weeks="1111110000" penalty="30"/>
+            <!-- Je-14:00 --><time start="4" length="1" days="00010" weeks="1111110000" penalty="31"/>
+            <!-- Je-15:30 --><time start="5" length="1" days="00010" weeks="1111110000" penalty="32"/>
+            <!-- Ve-08:00 --><time start="1" length="1" days="00001" weeks="1111110000" penalty="42"/>
+            <!-- Ve-09:30 --><time start="2" length="1" days="00001" weeks="1111110000" penalty="41"/>
+            <!-- Ve-11:00 --><time start="3" length="1" days="00001" weeks="1111110000" penalty="40"/>
+            <!-- Ve-14:00 --><time start="4" length="1" days="00001" weeks="1111110000" penalty="41"/>
+            <!-- Ve-15:30 --><time start="5" length="1" days="00001" weeks="1111110000" penalty="42"/>
+          </class>
+        </subpart>
+        <!-- CM 2 : semaines 1-7 -->
+        <subpart id="301">
+          <class id="Développement Web_CM-2" limit="18">
+            <room id="AMPHI-A" penalty="0"/>
+            <room id="AMPHI-B" penalty="1"/>
+            <!-- Lu-08:00 --><time start="1" length="1" days="10000" weeks="1111111000" penalty="23"/>
+            <!-- Lu-09:30 --><time start="2" length="1" days="10000" weeks="1111111000" penalty="22"/>
+            <!-- Lu-11:00 --><time start="3" length="1" days="10000" weeks="1111111000" penalty="21"/>
+            <!-- Lu-14:00 --><time start="4" length="1" days="10000" weeks="1111111000" penalty="20"/>
+            <!-- Lu-15:30 --><time start="5" length="1" days="10000" weeks="1111111000" penalty="21"/>
+            <!-- Ma-08:00 --><time start="1" length="1" days="01000" weeks="1111111000" penalty="13"/>
+            <!-- Ma-09:30 --><time start="2" length="1" days="01000" weeks="1111111000" penalty="12"/>
+            <!-- Ma-11:00 --><time start="3" length="1" days="01000" weeks="1111111000" penalty="11"/>
+            <!-- Ma-14:00 --><time start="4" length="1" days="01000" weeks="1111111000" penalty="10"/>
+            <!-- Ma-15:30 --><time start="5" length="1" days="01000" weeks="1111111000" penalty="11"/>
+            <!-- Me-08:00 --><time start="1" length="1" days="00100" weeks="1111111000" penalty="3"/>
+            <!-- Me-09:30 --><time start="2" length="1" days="00100" weeks="1111111000" penalty="2"/>
+            <!-- Me-11:00 --><time start="3" length="1" days="00100" weeks="1111111000" penalty="1"/>
+            <!-- Me-14:00 --><time start="4" length="1" days="00100" weeks="1111111000" penalty="0"/>
+            <!-- Me-15:30 --><time start="5" length="1" days="00100" weeks="1111111000" penalty="1"/>
+            <!-- Je-08:00 --><time start="1" length="1" days="00010" weeks="1111111000" penalty="13"/>
+            <!-- Je-09:30 --><time start="2" length="1" days="00010" weeks="1111111000" penalty="12"/>
+            <!-- Je-11:00 --><time start="3" length="1" days="00010" weeks="1111111000" penalty="11"/>
+            <!-- Je-14:00 --><time start="4" length="1" days="00010" weeks="1111111000" penalty="10"/>
+            <!-- Je-15:30 --><time start="5" length="1" days="00010" weeks="1111111000" penalty="11"/>
+            <!-- Ve-08:00 --><time start="1" length="1" days="00001" weeks="1111111000" penalty="23"/>
+            <!-- Ve-09:30 --><time start="2" length="1" days="00001" weeks="1111111000" penalty="22"/>
+            <!-- Ve-11:00 --><time start="3" length="1" days="00001" weeks="1111111000" penalty="21"/>
+            <!-- Ve-14:00 --><time start="4" length="1" days="00001" weeks="1111111000" penalty="20"/>
+            <!-- Ve-15:30 --><time start="5" length="1" days="00001" weeks="1111111000" penalty="21"/>
+          </class>
+        </subpart>
+        <!-- TP 1 : semaines 1-10 -->
+        <subpart id="302">
+          <class id="Développement Web_TP-1-A" limit="6">
+            <room id="H001" penalty="2"/>
+            <room id="H002" penalty="0"/>
+            <room id="H003" penalty="1"/>
+            <!-- Lu-08:00 --><time start="1" length="1" days="10000" weeks="1111111111" penalty="43"/>
+            <!-- Lu-09:30 --><time start="2" length="1" days="10000" weeks="1111111111" penalty="42"/>
+            <!-- Lu-11:00 --><time start="3" length="1" days="10000" weeks="1111111111" penalty="41"/>
+            <!-- Lu-14:00 --><time start="4" length="1" days="10000" weeks="1111111111" penalty="40"/>
+            <!-- Lu-15:30 --><time start="5" length="1" days="10000" weeks="1111111111" penalty="41"/>
+            <!-- Ma-08:00 --><time start="1" length="1" days="01000" weeks="1111111111" penalty="33"/>
+            <!-- Ma-09:30 --><time start="2" length="1" days="01000" weeks="1111111111" penalty="32"/>
+            <!-- Ma-11:00 --><time start="3" length="1" days="01000" weeks="1111111111" penalty="31"/>
+            <!-- Ma-14:00 --><time start="4" length="1" days="01000" weeks="1111111111" penalty="30"/>
+            <!-- Ma-15:30 --><time start="5" length="1" days="01000" weeks="1111111111" penalty="31"/>
+            <!-- Me-08:00 --><time start="1" length="1" days="00100" weeks="1111111111" penalty="23"/>
+            <!-- Me-09:30 --><time start="2" length="1" days="00100" weeks="1111111111" penalty="22"/>
+            <!-- Me-11:00 --><time start="3" length="1" days="00100" weeks="1111111111" penalty="21"/>
+            <!-- Me-14:00 --><time start="4" length="1" days="00100" weeks="1111111111" penalty="20"/>
+            <!-- Me-15:30 --><time start="5" length="1" days="00100" weeks="1111111111" penalty="21"/>
+            <!-- Je-08:00 --><time start="1" length="1" days="00010" weeks="1111111111" penalty="13"/>
+            <!-- Je-09:30 --><time start="2" length="1" days="00010" weeks="1111111111" penalty="12"/>
+            <!-- Je-11:00 --><time start="3" length="1" days="00010" weeks="1111111111" penalty="11"/>
+            <!-- Je-14:00 --><time start="4" length="1" days="00010" weeks="1111111111" penalty="10"/>
+            <!-- Je-15:30 --><time start="5" length="1" days="00010" weeks="1111111111" penalty="11"/>
+            <!-- Ve-08:00 --><time start="1" length="1" days="00001" weeks="1111111111" penalty="3"/>
+            <!-- Ve-09:30 --><time start="2" length="1" days="00001" weeks="1111111111" penalty="2"/>
+            <!-- Ve-11:00 --><time start="3" length="1" days="00001" weeks="1111111111" penalty="1"/>
+            <!-- Ve-14:00 --><time start="4" length="1" days="00001" weeks="1111111111" penalty="0"/>
+            <!-- Ve-15:30 --><time start="5" length="1" days="00001" weeks="1111111111" penalty="1"/>
+          </class>
+          <class id="Développement Web_TP-1-B" limit="6">
+            <room id="H001" penalty="2"/>
+            <room id="H002" penalty="0"/>
+            <room id="H003" penalty="1"/>
+            <!-- Lu-08:00 --><time start="1" length="1" days="10000" weeks="1111111111" penalty="30"/>
+            <!-- Lu-09:30 --><time start="2" length="1" days="10000" weeks="1111111111" penalty="31"/>
+            <!-- Lu-11:00 --><time start="3" length="1" days="10000" weeks="1111111111" penalty="32"/>
+            <!-- Lu-14:00 --><time start="4" length="1" days="10000" weeks="1111111111" penalty="33"/>
+            <!-- Lu-15:30 --><time start="5" length="1" days="10000" weeks="1111111111" penalty="34"/>
+            <!-- Ma-08:00 --><time start="1" length="1" days="01000" weeks="1111111111" penalty="20"/>
+            <!-- Ma-09:30 --><time start="2" length="1" days="01000" weeks="1111111111" penalty="21"/>
+            <!-- Ma-11:00 --><time start="3" length="1" days="01000" weeks="1111111111" penalty="22"/>
+            <!-- Ma-14:00 --><time start="4" length="1" days="01000" weeks="1111111111" penalty="23"/>
+            <!-- Ma-15:30 --><time start="5" length="1" days="01000" weeks="1111111111" penalty="24"/>
+            <!-- Me-08:00 --><time start="1" length="1" days="00100" weeks="1111111111" penalty="10"/>
+            <!-- Me-09:30 --><time start="2" length="1" days="00100" weeks="1111111111" penalty="11"/>
+            <!-- Me-11:00 --><time start="3" length="1" days="00100" weeks="1111111111" penalty="12"/>
+            <!-- Me-14:00 --><time start="4" length="1" days="00100" weeks="1111111111" penalty="13"/>
+            <!-- Me-15:30 --><time start="5" length="1" days="00100" weeks="1111111111" penalty="14"/>
+            <!-- Je-08:00 --><time start="1" length="1" days="00010" weeks="1111111111" penalty="0"/>
+            <!-- Je-09:30 --><time start="2" length="1" days="00010" weeks="1111111111" penalty="1"/>
+            <!-- Je-11:00 --><time start="3" length="1" days="00010" weeks="1111111111" penalty="2"/>
+            <!-- Je-14:00 --><time start="4" length="1" days="00010" weeks="1111111111" penalty="3"/>
+            <!-- Je-15:30 --><time start="5" length="1" days="00010" weeks="1111111111" penalty="4"/>
+            <!-- Ve-08:00 --><time start="1" length="1" days="00001" weeks="1111111111" penalty="10"/>
+            <!-- Ve-09:30 --><time start="2" length="1" days="00001" weeks="1111111111" penalty="11"/>
+            <!-- Ve-11:00 --><time start="3" length="1" days="00001" weeks="1111111111" penalty="12"/>
+            <!-- Ve-14:00 --><time start="4" length="1" days="00001" weeks="1111111111" penalty="13"/>
+            <!-- Ve-15:30 --><time start="5" length="1" days="00001" weeks="1111111111" penalty="14"/>
+          </class>
+          <class id="Développement Web_TP-1-C" limit="6">
+            <room id="H001" penalty="2"/>
+            <room id="H002" penalty="0"/>
+            <room id="H003" penalty="1"/>
+            <!-- Lu-08:00 --><time start="1" length="1" days="10000" weeks="1111111111" penalty="30"/>
+            <!-- Lu-09:30 --><time start="2" length="1" days="10000" weeks="1111111111" penalty="31"/>
+            <!-- Lu-11:00 --><time start="3" length="1" days="10000" weeks="1111111111" penalty="32"/>
+            <!-- Lu-14:00 --><time start="4" length="1" days="10000" weeks="1111111111" penalty="33"/>
+            <!-- Lu-15:30 --><time start="5" length="1" days="10000" weeks="1111111111" penalty="34"/>
+            <!-- Ma-08:00 --><time start="1" length="1" days="01000" weeks="1111111111" penalty="20"/>
+            <!-- Ma-09:30 --><time start="2" length="1" days="01000" weeks="1111111111" penalty="21"/>
+            <!-- Ma-11:00 --><time start="3" length="1" days="01000" weeks="1111111111" penalty="22"/>
+            <!-- Ma-14:00 --><time start="4" length="1" days="01000" weeks="1111111111" penalty="23"/>
+            <!-- Ma-15:30 --><time start="5" length="1" days="01000" weeks="1111111111" penalty="24"/>
+            <!-- Me-08:00 --><time start="1" length="1" days="00100" weeks="1111111111" penalty="10"/>
+            <!-- Me-09:30 --><time start="2" length="1" days="00100" weeks="1111111111" penalty="11"/>
+            <!-- Me-11:00 --><time start="3" length="1" days="00100" weeks="1111111111" penalty="12"/>
+            <!-- Me-14:00 --><time start="4" length="1" days="00100" weeks="1111111111" penalty="13"/>
+            <!-- Me-15:30 --><time start="5" length="1" days="00100" weeks="1111111111" penalty="14"/>
+            <!-- Je-08:00 --><time start="1" length="1" days="00010" weeks="1111111111" penalty="0"/>
+            <!-- Je-09:30 --><time start="2" length="1" days="00010" weeks="1111111111" penalty="1"/>
+            <!-- Je-11:00 --><time start="3" length="1" days="00010" weeks="1111111111" penalty="2"/>
+            <!-- Je-14:00 --><time start="4" length="1" days="00010" weeks="1111111111" penalty="3"/>
+            <!-- Je-15:30 --><time start="5" length="1" days="00010" weeks="1111111111" penalty="4"/>
+            <!-- Ve-08:00 --><time start="1" length="1" days="00001" weeks="1111111111" penalty="10"/>
+            <!-- Ve-09:30 --><time start="2" length="1" days="00001" weeks="1111111111" penalty="11"/>
+            <!-- Ve-11:00 --><time start="3" length="1" days="00001" weeks="1111111111" penalty="12"/>
+            <!-- Ve-14:00 --><time start="4" length="1" days="00001" weeks="1111111111" penalty="13"/>
+            <!-- Ve-15:30 --><time start="5" length="1" days="00001" weeks="1111111111" penalty="14"/>
+          </class>
+        </subpart>
+        <!-- TP 2 : semaines 1-10 -->
+        <subpart id="303">
+          <class id="Développement Web_TP-2-A" limit="6" parent="Développement Web_TP-1-A">
+            <room id="H001" penalty="2"/>
+            <room id="H002" penalty="0"/>
+            <room id="H003" penalty="1"/>
+            <!-- Lu-08:00 --><time start="1" length="1" days="10000" weeks="1111111111" penalty="44"/>
+            <!-- Lu-09:30 --><time start="2" length="1" days="10000" weeks="1111111111" penalty="43"/>
+            <!-- Lu-11:00 --><time start="3" length="1" days="10000" weeks="1111111111" penalty="42"/>
+            <!-- Lu-14:00 --><time start="4" length="1" days="10000" weeks="1111111111" penalty="41"/>
+            <!-- Lu-15:30 --><time start="5" length="1" days="10000" weeks="1111111111" penalty="40"/>
+            <!-- Ma-08:00 --><time start="1" length="1" days="01000" weeks="1111111111" penalty="34"/>
+            <!-- Ma-09:30 --><time start="2" length="1" days="01000" weeks="1111111111" penalty="33"/>
+            <!-- Ma-11:00 --><time start="3" length="1" days="01000" weeks="1111111111" penalty="32"/>
+            <!-- Ma-14:00 --><time start="4" length="1" days="01000" weeks="1111111111" penalty="31"/>
+            <!-- Ma-15:30 --><time start="5" length="1" days="01000" weeks="1111111111" penalty="30"/>
+            <!-- Me-08:00 --><time start="1" length="1" days="00100" weeks="1111111111" penalty="24"/>
+            <!-- Me-09:30 --><time start="2" length="1" days="00100" weeks="1111111111" penalty="23"/>
+            <!-- Me-11:00 --><time start="3" length="1" days="00100" weeks="1111111111" penalty="22"/>
+            <!-- Me-14:00 --><time start="4" length="1" days="00100" weeks="1111111111" penalty="21"/>
+            <!-- Me-15:30 --><time start="5" length="1" days="00100" weeks="1111111111" penalty="20"/>
+            <!-- Je-08:00 --><time start="1" length="1" days="00010" weeks="1111111111" penalty="14"/>
+            <!-- Je-09:30 --><time start="2" length="1" days="00010" weeks="1111111111" penalty="13"/>
+            <!-- Je-11:00 --><time start="3" length="1" days="00010" weeks="1111111111" penalty="12"/>
+            <!-- Je-14:00 --><time start="4" length="1" days="00010" weeks="1111111111" penalty="11"/>
+            <!-- Je-15:30 --><time start="5" length="1" days="00010" weeks="1111111111" penalty="10"/>
+            <!-- Ve-08:00 --><time start="1" length="1" days="00001" weeks="1111111111" penalty="4"/>
+            <!-- Ve-09:30 --><time start="2" length="1" days="00001" weeks="1111111111" penalty="3"/>
+            <!-- Ve-11:00 --><time start="3" length="1" days="00001" weeks="1111111111" penalty="2"/>
+            <!-- Ve-14:00 --><time start="4" length="1" days="00001" weeks="1111111111" penalty="1"/>
+            <!-- Ve-15:30 --><time start="5" length="1" days="00001" weeks="1111111111" penalty="0"/>
+          </class>
+          <class id="Développement Web_TP-2-B" limit="6" parent="Développement Web_TP-1-B">
+            <room id="H001" penalty="2"/>
+            <room id="H002" penalty="0"/>
+            <room id="H003" penalty="1"/>
+            <!-- Lu-08:00 --><time start="1" length="1" days="10000" weeks="1111111111" penalty="31"/>
+            <!-- Lu-09:30 --><time start="2" length="1" days="10000" weeks="1111111111" penalty="30"/>
+            <!-- Lu-11:00 --><time start="3" length="1" days="10000" weeks="1111111111" penalty="31"/>
+            <!-- Lu-14:00 --><time start="4" length="1" days="10000" weeks="1111111111" penalty="32"/>
+            <!-- Lu-15:30 --><time start="5" length="1" days="10000" weeks="1111111111" penalty="33"/>
+            <!-- Ma-08:00 --><time start="1" length="1" days="01000" weeks="1111111111" penalty="21"/>
+            <!-- Ma-09:30 --><time start="2" length="1" days="01000" weeks="1111111111" penalty="20"/>
+            <!-- Ma-11:00 --><time start="3" length="1" days="01000" weeks="1111111111" penalty="21"/>
+            <!-- Ma-14:00 --><time start="4" length="1" days="01000" weeks="1111111111" penalty="22"/>
+            <!-- Ma-15:30 --><time start="5" length="1" days="01000" weeks="1111111111" penalty="23"/>
+            <!-- Me-08:00 --><time start="1" length="1" days="00100" weeks="1111111111" penalty="11"/>
+            <!-- Me-09:30 --><time start="2" length="1" days="00100" weeks="1111111111" penalty="10"/>
+            <!-- Me-11:00 --><time start="3" length="1" days="00100" weeks="1111111111" penalty="11"/>
+            <!-- Me-14:00 --><time start="4" length="1" days="00100" weeks="1111111111" penalty="12"/>
+            <!-- Me-15:30 --><time start="5" length="1" days="00100" weeks="1111111111" penalty="13"/>
+            <!-- Je-08:00 --><time start="1" length="1" days="00010" weeks="1111111111" penalty="1"/>
+            <!-- Je-09:30 --><time start="2" length="1" days="00010" weeks="1111111111" penalty="0"/>
+            <!-- Je-11:00 --><time start="3" length="1" days="00010" weeks="1111111111" penalty="1"/>
+            <!-- Je-14:00 --><time start="4" length="1" days="00010" weeks="1111111111" penalty="2"/>
+            <!-- Je-15:30 --><time start="5" length="1" days="00010" weeks="1111111111" penalty="3"/>
+            <!-- Ve-08:00 --><time start="1" length="1" days="00001" weeks="1111111111" penalty="11"/>
+            <!-- Ve-09:30 --><time start="2" length="1" days="00001" weeks="1111111111" penalty="10"/>
+            <!-- Ve-11:00 --><time start="3" length="1" days="00001" weeks="1111111111" penalty="11"/>
+            <!-- Ve-14:00 --><time start="4" length="1" days="00001" weeks="1111111111" penalty="12"/>
+            <!-- Ve-15:30 --><time start="5" length="1" days="00001" weeks="1111111111" penalty="13"/>
+          </class>
+          <class id="Développement Web_TP-2-C" limit="6" parent="Développement Web_TP-1-C">
+            <room id="H001" penalty="2"/>
+            <room id="H002" penalty="0"/>
+            <room id="H003" penalty="1"/>
+            <!-- Lu-08:00 --><time start="1" length="1" days="10000" weeks="1111111111" penalty="31"/>
+            <!-- Lu-09:30 --><time start="2" length="1" days="10000" weeks="1111111111" penalty="30"/>
+            <!-- Lu-11:00 --><time start="3" length="1" days="10000" weeks="1111111111" penalty="31"/>
+            <!-- Lu-14:00 --><time start="4" length="1" days="10000" weeks="1111111111" penalty="32"/>
+            <!-- Lu-15:30 --><time start="5" length="1" days="10000" weeks="1111111111" penalty="33"/>
+            <!-- Ma-08:00 --><time start="1" length="1" days="01000" weeks="1111111111" penalty="21"/>
+            <!-- Ma-09:30 --><time start="2" length="1" days="01000" weeks="1111111111" penalty="20"/>
+            <!-- Ma-11:00 --><time start="3" length="1" days="01000" weeks="1111111111" penalty="21"/>
+            <!-- Ma-14:00 --><time start="4" length="1" days="01000" weeks="1111111111" penalty="22"/>
+            <!-- Ma-15:30 --><time start="5" length="1" days="01000" weeks="1111111111" penalty="23"/>
+            <!-- Me-08:00 --><time start="1" length="1" days="00100" weeks="1111111111" penalty="11"/>
+            <!-- Me-09:30 --><time start="2" length="1" days="00100" weeks="1111111111" penalty="10"/>
+            <!-- Me-11:00 --><time start="3" length="1" days="00100" weeks="1111111111" penalty="11"/>
+            <!-- Me-14:00 --><time start="4" length="1" days="00100" weeks="1111111111" penalty="12"/>
+            <!-- Me-15:30 --><time start="5" length="1" days="00100" weeks="1111111111" penalty="13"/>
+            <!-- Je-08:00 --><time start="1" length="1" days="00010" weeks="1111111111" penalty="1"/>
+            <!-- Je-09:30 --><time start="2" length="1" days="00010" weeks="1111111111" penalty="0"/>
+            <!-- Je-11:00 --><time start="3" length="1" days="00010" weeks="1111111111" penalty="1"/>
+            <!-- Je-14:00 --><time start="4" length="1" days="00010" weeks="1111111111" penalty="2"/>
+            <!-- Je-15:30 --><time start="5" length="1" days="00010" weeks="1111111111" penalty="3"/>
+            <!-- Ve-08:00 --><time start="1" length="1" days="00001" weeks="1111111111" penalty="11"/>
+            <!-- Ve-09:30 --><time start="2" length="1" days="00001" weeks="1111111111" penalty="10"/>
+            <!-- Ve-11:00 --><time start="3" length="1" days="00001" weeks="1111111111" penalty="11"/>
+            <!-- Ve-14:00 --><time start="4" length="1" days="00001" weeks="1111111111" penalty="12"/>
+            <!-- Ve-15:30 --><time start="5" length="1" days="00001" weeks="1111111111" penalty="13"/>
+          </class>
+        </subpart>
+      </config>
+    </course>
+    <course id="Images de Synthèse">
+      <config id="60">
+        <!-- CM 1 : semaines 1-2,5 -->
+        <subpart id="600">
+          <class id="Images de Synthèse_CM-1" limit="18">
+            <room id="AMPHI-A" penalty="0"/>
+            <room id="AMPHI-B" penalty="1"/>
+            <!-- Lu-08:00 --><time start="1" length="1" days="10000" weeks="1100100000" penalty="21"/>
+            <!-- Lu-09:30 --><time start="2" length="1" days="10000" weeks="1100100000" penalty="20"/>
+            <!-- Lu-11:00 --><time start="3" length="1" days="10000" weeks="1100100000" penalty="21"/>
+            <!-- Lu-14:00 --><time start="4" length="1" days="10000" weeks="1100100000" penalty="22"/>
+            <!-- Lu-15:30 --><time start="5" length="1" days="10000" weeks="1100100000" penalty="23"/>
+            <!-- Ma-08:00 --><time start="1" length="1" days="01000" weeks="1100100000" penalty="11"/>
+            <!-- Ma-09:30 --><time start="2" length="1" days="01000" weeks="1100100000" penalty="10"/>
+            <!-- Ma-11:00 --><time start="3" length="1" days="01000" weeks="1100100000" penalty="11"/>
+            <!-- Ma-14:00 --><time start="4" length="1" days="01000" weeks="1100100000" penalty="12"/>
+            <!-- Ma-15:30 --><time start="5" length="1" days="01000" weeks="1100100000" penalty="13"/>
+            <!-- Me-08:00 --><time start="1" length="1" days="00100" weeks="1100100000" penalty="1"/>
+            <!-- Me-09:30 --><time start="2" length="1" days="00100" weeks="1100100000" penalty="0"/>
+            <!-- Me-11:00 --><time start="3" length="1" days="00100" weeks="1100100000" penalty="1"/>
+            <!-- Me-14:00 --><time start="4" length="1" days="00100" weeks="1100100000" penalty="2"/>
+            <!-- Me-15:30 --><time start="5" length="1" days="00100" weeks="1100100000" penalty="3"/>
+            <!-- Je-08:00 --><time start="1" length="1" days="00010" weeks="1100100000" penalty="11"/>
+            <!-- Je-09:30 --><time start="2" length="1" days="00010" weeks="1100100000" penalty="10"/>
+            <!-- Je-11:00 --><time start="3" length="1" days="00010" weeks="1100100000" penalty="11"/>
+            <!-- Je-14:00 --><time start="4" length="1" days="00010" weeks="1100100000" penalty="12"/>
+            <!-- Je-15:30 --><time start="5" length="1" days="00010" weeks="1100100000" penalty="13"/>
+            <!-- Ve-08:00 --><time start="1" length="1" days="00001" weeks="1100100000" penalty="21"/>
+            <!-- Ve-09:30 --><time start="2" length="1" days="00001" weeks="1100100000" penalty="20"/>
+            <!-- Ve-11:00 --><time start="3" length="1" days="00001" weeks="1100100000" penalty="21"/>
+            <!-- Ve-14:00 --><time start="4" length="1" days="00001" weeks="1100100000" penalty="22"/>
+            <!-- Ve-15:30 --><time start="5" length="1" days="00001" weeks="1100100000" penalty="23"/>
+          </class>
+        </subpart>
+        <!-- CM 2 : semaines 1-2 -->
+        <subpart id="601">
+          <class id="Images de Synthèse_CM-2" limit="18">
+            <room id="AMPHI-A" penalty="0"/>
+            <room id="AMPHI-B" penalty="1"/>
+            <!-- Lu-08:00 --><time start="1" length="1" days="10000" weeks="1100000000" penalty="22"/>
+            <!-- Lu-09:30 --><time start="2" length="1" days="10000" weeks="1100000000" penalty="21"/>
+            <!-- Lu-11:00 --><time start="3" length="1" days="10000" weeks="1100000000" penalty="20"/>
+            <!-- Lu-14:00 --><time start="4" length="1" days="10000" weeks="1100000000" penalty="21"/>
+            <!-- Lu-15:30 --><time start="5" length="1" days="10000" weeks="1100000000" penalty="22"/>
+            <!-- Ma-08:00 --><time start="1" length="1" days="01000" weeks="1100000000" penalty="12"/>
+            <!-- Ma-09:30 --><time start="2" length="1" days="01000" weeks="1100000000" penalty="11"/>
+            <!-- Ma-11:00 --><time start="3" length="1" days="01000" weeks="1100000000" penalty="10"/>
+            <!-- Ma-14:00 --><time start="4" length="1" days="01000" weeks="1100000000" penalty="11"/>
+            <!-- Ma-15:30 --><time start="5" length="1" days="01000" weeks="1100000000" penalty="12"/>
+            <!-- Me-08:00 --><time start="1" length="1" days="00100" weeks="1100000000" penalty="2"/>
+            <!-- Me-09:30 --><time start="2" length="1" days="00100" weeks="1100000000" penalty="1"/>
+            <!-- Me-11:00 --><time start="3" length="1" days="00100" weeks="1100000000" penalty="0"/>
+            <!-- Me-14:00 --><time start="4" length="1" days="00100" weeks="1100000000" penalty="1"/>
+            <!-- Me-15:30 --><time start="5" length="1" days="00100" weeks="1100000000" penalty="2"/>
+            <!-- Je-08:00 --><time start="1" length="1" days="00010" weeks="1100000000" penalty="12"/>
+            <!-- Je-09:30 --><time start="2" length="1" days="00010" weeks="1100000000" penalty="11"/>
+            <!-- Je-11:00 --><time start="3" length="1" days="00010" weeks="1100000000" penalty="10"/>
+            <!-- Je-14:00 --><time start="4" length="1" days="00010" weeks="1100000000" penalty="11"/>
+            <!-- Je-15:30 --><time start="5" length="1" days="00010" weeks="1100000000" penalty="12"/>
+            <!-- Ve-08:00 --><time start="1" length="1" days="00001" weeks="1100000000" penalty="22"/>
+            <!-- Ve-09:30 --><time start="2" length="1" days="00001" weeks="1100000000" penalty="21"/>
+            <!-- Ve-11:00 --><time start="3" length="1" days="00001" weeks="1100000000" penalty="20"/>
+            <!-- Ve-14:00 --><time start="4" length="1" days="00001" weeks="1100000000" penalty="21"/>
+            <!-- Ve-15:30 --><time start="5" length="1" days="00001" weeks="1100000000" penalty="22"/>
+          </class>
+        </subpart>
+        <!-- TP 1 : semaines 3-4,6-10 -->
+        <subpart id="602">
+          <class id="Images de Synthèse_TP-1" limit="18">
+            <room id="H001" penalty="2"/>
+            <room id="H002" penalty="0"/>
+            <room id="H003" penalty="1"/>
+            <!-- Lu-08:00 --><time start="1" length="1" days="10000" weeks="0011011111" penalty="21"/>
+            <!-- Lu-09:30 --><time start="2" length="1" days="10000" weeks="0011011111" penalty="20"/>
+            <!-- Lu-11:00 --><time start="3" length="1" days="10000" weeks="0011011111" penalty="21"/>
+            <!-- Lu-14:00 --><time start="4" length="1" days="10000" weeks="0011011111" penalty="22"/>
+            <!-- Lu-15:30 --><time start="5" length="1" days="10000" weeks="0011011111" penalty="23"/>
+            <!-- Ma-08:00 --><time start="1" length="1" days="01000" weeks="0011011111" penalty="11"/>
+            <!-- Ma-09:30 --><time start="2" length="1" days="01000" weeks="0011011111" penalty="10"/>
+            <!-- Ma-11:00 --><time start="3" length="1" days="01000" weeks="0011011111" penalty="11"/>
+            <!-- Ma-14:00 --><time start="4" length="1" days="01000" weeks="0011011111" penalty="12"/>
+            <!-- Ma-15:30 --><time start="5" length="1" days="01000" weeks="0011011111" penalty="13"/>
+            <!-- Me-08:00 --><time start="1" length="1" days="00100" weeks="0011011111" penalty="1"/>
+            <!-- Me-09:30 --><time start="2" length="1" days="00100" weeks="0011011111" penalty="0"/>
+            <!-- Me-11:00 --><time start="3" length="1" days="00100" weeks="0011011111" penalty="1"/>
+            <!-- Me-14:00 --><time start="4" length="1" days="00100" weeks="0011011111" penalty="2"/>
+            <!-- Je-15:30 --><time start="5" length="1" days="00010" weeks="0011011111" penalty="3"/>
+            <!-- Je-08:00 --><time start="1" length="1" days="00010" weeks="0011011111" penalty="11"/>
+            <!-- Je-09:30 --><time start="2" length="1" days="00010" weeks="0011011111" penalty="10"/>
+            <!-- Je-11:00 --><time start="3" length="1" days="00010" weeks="0011011111" penalty="11"/>
+            <!-- Je-14:00 --><time start="4" length="1" days="00010" weeks="0011011111" penalty="12"/>
+            <!-- Me-15:30 --><time start="5" length="1" days="00100" weeks="0011011111" penalty="13"/>
+            <!-- Ve-08:00 --><time start="1" length="1" days="00001" weeks="0011011111" penalty="21"/>
+            <!-- Ve-09:30 --><time start="2" length="1" days="00001" weeks="0011011111" penalty="20"/>
+            <!-- Ve-11:00 --><time start="3" length="1" days="00001" weeks="0011011111" penalty="21"/>
+            <!-- Ve-14:00 --><time start="4" length="1" days="00001" weeks="0011011111" penalty="22"/>
+            <!-- Ve-15:30 --><time start="5" length="1" days="00001" weeks="0011011111" penalty="23"/>
+          </class>
+        </subpart>
+        <!-- TP 2 : semaines 3-4,6-10 -->
+        <subpart id="603">
+          <class id="Images de Synthèse_TP-2" limit="18">
+            <room id="H001" penalty="2"/>
+            <room id="H002" penalty="0"/>
+            <room id="H003" penalty="1"/>
+            <!-- Lu-08:00 --><time start="1" length="1" days="10000" weeks="0011011111" penalty="22"/>
+            <!-- Lu-09:30 --><time start="2" length="1" days="10000" weeks="0011011111" penalty="21"/>
+            <!-- Lu-11:00 --><time start="3" length="1" days="10000" weeks="0011011111" penalty="20"/>
+            <!-- Lu-14:00 --><time start="4" length="1" days="10000" weeks="0011011111" penalty="21"/>
+            <!-- Lu-15:30 --><time start="5" length="1" days="10000" weeks="0011011111" penalty="22"/>
+            <!-- Ma-08:00 --><time start="1" length="1" days="01000" weeks="0011011111" penalty="12"/>
+            <!-- Ma-09:30 --><time start="2" length="1" days="01000" weeks="0011011111" penalty="11"/>
+            <!-- Ma-11:00 --><time start="3" length="1" days="01000" weeks="0011011111" penalty="10"/>
+            <!-- Ma-14:00 --><time start="4" length="1" days="01000" weeks="0011011111" penalty="11"/>
+            <!-- Ma-15:30 --><time start="5" length="1" days="01000" weeks="0011011111" penalty="12"/>
+            <!-- Me-08:00 --><time start="1" length="1" days="00100" weeks="0011011111" penalty="2"/>
+            <!-- Me-09:30 --><time start="2" length="1" days="00100" weeks="0011011111" penalty="1"/>
+            <!-- Me-11:00 --><time start="3" length="1" days="00100" weeks="0011011111" penalty="0"/>
+            <!-- Me-14:00 --><time start="4" length="1" days="00100" weeks="0011011111" penalty="1"/>
+            <!-- Me-15:30 --><time start="5" length="1" days="00100" weeks="0011011111" penalty="2"/>
+            <!-- Je-08:00 --><time start="1" length="1" days="00010" weeks="0011011111" penalty="12"/>
+            <!-- Je-09:30 --><time start="2" length="1" days="00010" weeks="0011011111" penalty="11"/>
+            <!-- Je-11:00 --><time start="3" length="1" days="00010" weeks="0011011111" penalty="10"/>
+            <!-- Je-14:00 --><time start="4" length="1" days="00010" weeks="0011011111" penalty="11"/>
+            <!-- Je-15:30 --><time start="5" length="1" days="00010" weeks="0011011111" penalty="12"/>
+            <!-- Ve-08:00 --><time start="1" length="1" days="00001" weeks="0011011111" penalty="22"/>
+            <!-- Ve-09:30 --><time start="2" length="1" days="00001" weeks="0011011111" penalty="21"/>
+            <!-- Ve-11:00 --><time start="3" length="1" days="00001" weeks="0011011111" penalty="20"/>
+            <!-- Ve-14:00 --><time start="4" length="1" days="00001" weeks="0011011111" penalty="21"/>
+            <!-- Ve-15:30 --><time start="5" length="1" days="00001" weeks="0011011111" penalty="22"/>
+          </class>
+        </subpart>
+      </config>
+    </course>
+    <course id="Production Automatisée de Documents">
+      <config id="70">
+        <!-- CM 1 : semaines 1-3 -->
+        <subpart id="700">
+          <class id="Production Automatisée de Documents_CM-1" limit="6">
+            <room id="H001" penalty="2"/>
+            <room id="H002" penalty="0"/>
+            <room id="H003" penalty="1"/>
+            <!-- Lu-08:00 --><time start="1" length="1" days="10000" weeks="1110000000" penalty="11"/>
+            <!-- Lu-09:30 --><time start="2" length="1" days="10000" weeks="1110000000" penalty="10"/>
+            <!-- Lu-11:00 --><time start="3" length="1" days="10000" weeks="1110000000" penalty="11"/>
+            <!-- Lu-14:00 --><time start="4" length="1" days="10000" weeks="1110000000" penalty="12"/>
+            <!-- Lu-15:30 --><time start="5" length="1" days="10000" weeks="1110000000" penalty="13"/>
+            <!-- Ma-08:00 --><time start="1" length="1" days="01000" weeks="1110000000" penalty="1"/>
+            <!-- Ma-09:30 --><time start="2" length="1" days="01000" weeks="1110000000" penalty="0"/>
+            <!-- Ma-11:00 --><time start="3" length="1" days="01000" weeks="1110000000" penalty="1"/>
+            <!-- Ma-14:00 --><time start="4" length="1" days="01000" weeks="1110000000" penalty="2"/>
+            <!-- Ma-15:30 --><time start="5" length="1" days="01000" weeks="1110000000" penalty="3"/>
+            <!-- Me-08:00 --><time start="1" length="1" days="00100" weeks="1110000000" penalty="11"/>
+            <!-- Me-09:30 --><time start="2" length="1" days="00100" weeks="1110000000" penalty="10"/>
+            <!-- Me-11:00 --><time start="3" length="1" days="00100" weeks="1110000000" penalty="11"/>
+            <!-- Me-14:00 --><time start="4" length="1" days="00100" weeks="1110000000" penalty="12"/>
+            <!-- Je-15:30 --><time start="5" length="1" days="00010" weeks="1110000000" penalty="13"/>
+            <!-- Je-08:00 --><time start="1" length="1" days="00010" weeks="1110000000" penalty="21"/>
+            <!-- Je-09:30 --><time start="2" length="1" days="00010" weeks="1110000000" penalty="20"/>
+            <!-- Je-11:00 --><time start="3" length="1" days="00010" weeks="1110000000" penalty="21"/>
+            <!-- Je-14:00 --><time start="4" length="1" days="00010" weeks="1110000000" penalty="22"/>
+            <!-- Je-15:30 --><time start="5" length="1" days="00010" weeks="1110000000" penalty="23"/>
+            <!-- Ve-08:00 --><time start="1" length="1" days="00001" weeks="1110000000" penalty="31"/>
+            <!-- Ve-09:30 --><time start="2" length="1" days="00001" weeks="1110000000" penalty="30"/>
+            <!-- Ve-11:00 --><time start="3" length="1" days="00001" weeks="1110000000" penalty="31"/>
+            <!-- Ve-14:00 --><time start="4" length="1" days="00001" weeks="1110000000" penalty="32"/>
+            <!-- Ve-15:30 --><time start="5" length="1" days="00001" weeks="1110000000" penalty="33"/>
+          </class>
+        </subpart>
+        <!-- CM 2 : semaines 1-3 -->
+        <subpart id="701">
+          <class id="Production Automatisée de Documents_CM-2" limit="6">
+            <room id="H001" penalty="2"/>
+            <room id="H002" penalty="0"/>
+            <room id="H003" penalty="1"/>
+            <!-- Lu-08:00 --><time start="1" length="1" days="10000" weeks="1110000000" penalty="12"/>
+            <!-- Lu-09:30 --><time start="2" length="1" days="10000" weeks="1110000000" penalty="11"/>
+            <!-- Lu-11:00 --><time start="3" length="1" days="10000" weeks="1110000000" penalty="10"/>
+            <!-- Lu-14:00 --><time start="4" length="1" days="10000" weeks="1110000000" penalty="11"/>
+            <!-- Lu-15:30 --><time start="5" length="1" days="10000" weeks="1110000000" penalty="12"/>
+            <!-- Ma-08:00 --><time start="1" length="1" days="01000" weeks="1110000000" penalty="2"/>
+            <!-- Ma-09:30 --><time start="2" length="1" days="01000" weeks="1110000000" penalty="1"/>
+            <!-- Ma-11:00 --><time start="3" length="1" days="01000" weeks="1110000000" penalty="0"/>
+            <!-- Ma-14:00 --><time start="4" length="1" days="01000" weeks="1110000000" penalty="1"/>
+            <!-- Ma-15:30 --><time start="5" length="1" days="01000" weeks="1110000000" penalty="2"/>
+            <!-- Me-08:00 --><time start="1" length="1" days="00100" weeks="1110000000" penalty="12"/>
+            <!-- Me-09:30 --><time start="2" length="1" days="00100" weeks="1110000000" penalty="11"/>
+            <!-- Me-11:00 --><time start="3" length="1" days="00100" weeks="1110000000" penalty="10"/>
+            <!-- Me-14:00 --><time start="4" length="1" days="00100" weeks="1110000000" penalty="11"/>
+            <!-- Je-15:30 --><time start="5" length="1" days="00010" weeks="1110000000" penalty="12"/>
+            <!-- Je-08:00 --><time start="1" length="1" days="00010" weeks="1110000000" penalty="22"/>
+            <!-- Je-09:30 --><time start="2" length="1" days="00010" weeks="1110000000" penalty="21"/>
+            <!-- Je-11:00 --><time start="3" length="1" days="00010" weeks="1110000000" penalty="20"/>
+            <!-- Je-14:00 --><time start="4" length="1" days="00010" weeks="1110000000" penalty="21"/>
+            <!-- Je-15:30 --><time start="5" length="1" days="00010" weeks="1110000000" penalty="22"/>
+            <!-- Ve-08:00 --><time start="1" length="1" days="00001" weeks="1110000000" penalty="32"/>
+            <!-- Ve-09:30 --><time start="2" length="1" days="00001" weeks="1110000000" penalty="31"/>
+            <!-- Ve-11:00 --><time start="3" length="1" days="00001" weeks="1110000000" penalty="30"/>
+            <!-- Ve-14:00 --><time start="4" length="1" days="00001" weeks="1110000000" penalty="31"/>
+            <!-- Ve-15:30 --><time start="5" length="1" days="00001" weeks="1110000000" penalty="32"/>
+          </class>
+        </subpart>
+        <!-- TD 1 : semaines 4-5 -->
+        <subpart id="702">
+          <class id="Production Automatisée de Documents_TD-1" limit="6">
+            <room id="H001" penalty="2"/>
+            <room id="H002" penalty="0"/>
+            <room id="H003" penalty="1"/>
+            <!-- Lu-08:00 --><time start="1" length="1" days="10000" weeks="0001100000" penalty="11"/>
+            <!-- Lu-09:30 --><time start="2" length="1" days="10000" weeks="0001100000" penalty="10"/>
+            <!-- Lu-11:00 --><time start="3" length="1" days="10000" weeks="0001100000" penalty="11"/>
+            <!-- Lu-14:00 --><time start="4" length="1" days="10000" weeks="0001100000" penalty="12"/>
+            <!-- Lu-15:30 --><time start="5" length="1" days="10000" weeks="0001100000" penalty="13"/>
+            <!-- Ma-08:00 --><time start="1" length="1" days="01000" weeks="0001100000" penalty="1"/>
+            <!-- Ma-09:30 --><time start="2" length="1" days="01000" weeks="0001100000" penalty="0"/>
+            <!-- Ma-11:00 --><time start="3" length="1" days="01000" weeks="0001100000" penalty="1"/>
+            <!-- Ma-14:00 --><time start="4" length="1" days="01000" weeks="0001100000" penalty="2"/>
+            <!-- Ma-15:30 --><time start="5" length="1" days="01000" weeks="0001100000" penalty="3"/>
+            <!-- Me-08:00 --><time start="1" length="1" days="00100" weeks="0001100000" penalty="11"/>
+            <!-- Me-09:30 --><time start="2" length="1" days="00100" weeks="0001100000" penalty="10"/>
+            <!-- Me-11:00 --><time start="3" length="1" days="00100" weeks="0001100000" penalty="11"/>
+            <!-- Me-14:00 --><time start="4" length="1" days="00100" weeks="0001100000" penalty="12"/>
+            <!-- Me-15:30 --><time start="5" length="1" days="00100" weeks="0001100000" penalty="13"/>
+            <!-- Je-08:00 --><time start="1" length="1" days="00010" weeks="0001100000" penalty="21"/>
+            <!-- Je-09:30 --><time start="2" length="1" days="00010" weeks="0001100000" penalty="20"/>
+            <!-- Je-11:00 --><time start="3" length="1" days="00010" weeks="0001100000" penalty="21"/>
+            <!-- Je-14:00 --><time start="4" length="1" days="00010" weeks="0001100000" penalty="22"/>
+            <!-- Je-15:30 --><time start="5" length="1" days="00010" weeks="0001100000" penalty="23"/>
+            <!-- Ve-08:00 --><time start="1" length="1" days="00001" weeks="0001100000" penalty="31"/>
+            <!-- Ve-09:30 --><time start="2" length="1" days="00001" weeks="0001100000" penalty="30"/>
+            <!-- Ve-11:00 --><time start="3" length="1" days="00001" weeks="0001100000" penalty="31"/>
+            <!-- Ve-14:00 --><time start="4" length="1" days="00001" weeks="0001100000" penalty="32"/>
+            <!-- Ve-15:30 --><time start="5" length="1" days="00001" weeks="0001100000" penalty="33"/>
+          </class>
+        </subpart>
+        <!-- TD 2 : semaines 4-5 -->
+        <subpart id="703">
+          <class id="Production Automatisée de Documents_TD-2" limit="6">
+            <room id="H001" penalty="2"/>
+            <room id="H002" penalty="0"/>
+            <room id="H003" penalty="1"/>
+            <!-- Lu-08:00 --><time start="1" length="1" days="10000" weeks="0001100000" penalty="12"/>
+            <!-- Lu-09:30 --><time start="2" length="1" days="10000" weeks="0001100000" penalty="11"/>
+            <!-- Lu-11:00 --><time start="3" length="1" days="10000" weeks="0001100000" penalty="10"/>
+            <!-- Lu-14:00 --><time start="4" length="1" days="10000" weeks="0001100000" penalty="11"/>
+            <!-- Lu-15:30 --><time start="5" length="1" days="10000" weeks="0001100000" penalty="12"/>
+            <!-- Ma-08:00 --><time start="1" length="1" days="01000" weeks="0001100000" penalty="2"/>
+            <!-- Ma-09:30 --><time start="2" length="1" days="01000" weeks="0001100000" penalty="1"/>
+            <!-- Ma-11:00 --><time start="3" length="1" days="01000" weeks="0001100000" penalty="0"/>
+            <!-- Ma-14:00 --><time start="4" length="1" days="01000" weeks="0001100000" penalty="1"/>
+            <!-- Ma-15:30 --><time start="5" length="1" days="01000" weeks="0001100000" penalty="2"/>
+            <!-- Me-08:00 --><time start="1" length="1" days="00100" weeks="0001100000" penalty="12"/>
+            <!-- Me-09:30 --><time start="2" length="1" days="00100" weeks="0001100000" penalty="11"/>
+            <!-- Me-11:00 --><time start="3" length="1" days="00100" weeks="0001100000" penalty="10"/>
+            <!-- Me-14:00 --><time start="4" length="1" days="00100" weeks="0001100000" penalty="11"/>
+            <!-- Me-15:30 --><time start="5" length="1" days="00100" weeks="0001100000" penalty="12"/>
+            <!-- Je-08:00 --><time start="1" length="1" days="00010" weeks="0001100000" penalty="22"/>
+            <!-- Je-09:30 --><time start="2" length="1" days="00010" weeks="0001100000" penalty="21"/>
+            <!-- Je-11:00 --><time start="3" length="1" days="00010" weeks="0001100000" penalty="20"/>
+            <!-- Je-14:00 --><time start="4" length="1" days="00010" weeks="0001100000" penalty="21"/>
+            <!-- Je-15:30 --><time start="5" length="1" days="00010" weeks="0001100000" penalty="22"/>
+            <!-- Ve-08:00 --><time start="1" length="1" days="00001" weeks="0001100000" penalty="32"/>
+            <!-- Ve-09:30 --><time start="2" length="1" days="00001" weeks="0001100000" penalty="31"/>
+            <!-- Ve-11:00 --><time start="3" length="1" days="00001" weeks="0001100000" penalty="30"/>
+            <!-- Ve-14:00 --><time start="4" length="1" days="00001" weeks="0001100000" penalty="31"/>
+            <!-- Ve-15:30 --><time start="5" length="1" days="00001" weeks="0001100000" penalty="32"/>
+          </class>
+        </subpart>
+        <!-- TP 1 : semaines 6-10 -->
+        <subpart id="704">
+          <class id="Production Automatisée de Documents_TP-1" limit="6">
+            <room id="H001" penalty="2"/>
+            <room id="H002" penalty="0"/>
+            <room id="H003" penalty="1"/>
+            <!-- Lu-08:00 --><time start="1" length="1" days="10000" weeks="0000011111" penalty="11"/>
+            <!-- Lu-09:30 --><time start="2" length="1" days="10000" weeks="0000011111" penalty="10"/>
+            <!-- Lu-11:00 --><time start="3" length="1" days="10000" weeks="0000011111" penalty="11"/>
+            <!-- Lu-14:00 --><time start="4" length="1" days="10000" weeks="0000011111" penalty="12"/>
+            <!-- Lu-15:30 --><time start="5" length="1" days="10000" weeks="0000011111" penalty="13"/>
+            <!-- Ma-08:00 --><time start="1" length="1" days="01000" weeks="0000011111" penalty="1"/>
+            <!-- Ma-09:30 --><time start="2" length="1" days="01000" weeks="0000011111" penalty="0"/>
+            <!-- Ma-11:00 --><time start="3" length="1" days="01000" weeks="0000011111" penalty="1"/>
+            <!-- Ma-14:00 --><time start="4" length="1" days="01000" weeks="0000011111" penalty="2"/>
+            <!-- Ma-15:30 --><time start="5" length="1" days="01000" weeks="0000011111" penalty="3"/>
+            <!-- Me-08:00 --><time start="1" length="1" days="00100" weeks="0000011111" penalty="11"/>
+            <!-- Me-09:30 --><time start="2" length="1" days="00100" weeks="0000011111" penalty="10"/>
+            <!-- Me-11:00 --><time start="3" length="1" days="00100" weeks="0000011111" penalty="11"/>
+            <!-- Me-14:00 --><time start="4" length="1" days="00100" weeks="0000011111" penalty="12"/>
+            <!-- Me-15:30 --><time start="5" length="1" days="00100" weeks="0000011111" penalty="13"/>
+            <!-- Je-08:00 --><time start="1" length="1" days="00010" weeks="0000011111" penalty="21"/>
+            <!-- Je-09:30 --><time start="2" length="1" days="00010" weeks="0000011111" penalty="20"/>
+            <!-- Je-11:00 --><time start="3" length="1" days="00010" weeks="0000011111" penalty="21"/>
+            <!-- Je-14:00 --><time start="4" length="1" days="00010" weeks="0000011111" penalty="22"/>
+            <!-- Je-15:30 --><time start="5" length="1" days="00010" weeks="0000011111" penalty="23"/>
+            <!-- Ve-08:00 --><time start="1" length="1" days="00001" weeks="0000011111" penalty="31"/>
+            <!-- Ve-09:30 --><time start="2" length="1" days="00001" weeks="0000011111" penalty="30"/>
+            <!-- Ve-11:00 --><time start="3" length="1" days="00001" weeks="0000011111" penalty="31"/>
+            <!-- Ve-14:00 --><time start="4" length="1" days="00001" weeks="0000011111" penalty="32"/>
+            <!-- Ve-15:30 --><time start="5" length="1" days="00001" weeks="0000011111" penalty="33"/>
+          </class>
+        </subpart>
+        <!-- TP 2 : semaines 6-10 -->
+        <subpart id="705">
+          <class id="Production Automatisée de Documents_TP-2" limit="6">
+            <room id="H001" penalty="2"/>
+            <room id="H002" penalty="0"/>
+            <room id="H003" penalty="1"/>
+            <!-- Lu-08:00 --><time start="1" length="1" days="10000" weeks="0000011111" penalty="12"/>
+            <!-- Lu-09:30 --><time start="2" length="1" days="10000" weeks="0000011111" penalty="11"/>
+            <!-- Lu-11:00 --><time start="3" length="1" days="10000" weeks="0000011111" penalty="10"/>
+            <!-- Lu-14:00 --><time start="4" length="1" days="10000" weeks="0000011111" penalty="11"/>
+            <!-- Lu-15:30 --><time start="5" length="1" days="10000" weeks="0000011111" penalty="12"/>
+            <!-- Ma-08:00 --><time start="1" length="1" days="01000" weeks="0000011111" penalty="2"/>
+            <!-- Ma-09:30 --><time start="2" length="1" days="01000" weeks="0000011111" penalty="1"/>
+            <!-- Ma-11:00 --><time start="3" length="1" days="01000" weeks="0000011111" penalty="0"/>
+            <!-- Ma-14:00 --><time start="4" length="1" days="01000" weeks="0000011111" penalty="1"/>
+            <!-- Ma-15:30 --><time start="5" length="1" days="01000" weeks="0000011111" penalty="2"/>
+            <!-- Me-08:00 --><time start="1" length="1" days="00100" weeks="0000011111" penalty="12"/>
+            <!-- Me-09:30 --><time start="2" length="1" days="00100" weeks="0000011111" penalty="11"/>
+            <!-- Me-11:00 --><time start="3" length="1" days="00100" weeks="0000011111" penalty="10"/>
+            <!-- Me-14:00 --><time start="4" length="1" days="00100" weeks="0000011111" penalty="11"/>
+            <!-- Je-15:30 --><time start="5" length="1" days="00010" weeks="0000011111" penalty="12"/>
+            <!-- Je-08:00 --><time start="1" length="1" days="00010" weeks="0000011111" penalty="22"/>
+            <!-- Je-09:30 --><time start="2" length="1" days="00010" weeks="0000011111" penalty="21"/>
+            <!-- Je-11:00 --><time start="3" length="1" days="00010" weeks="0000011111" penalty="20"/>
+            <!-- Je-14:00 --><time start="4" length="1" days="00010" weeks="0000011111" penalty="21"/>
+            <!-- Je-15:30 --><time start="5" length="1" days="00010" weeks="0000011111" penalty="22"/>
+            <!-- Ve-08:00 --><time start="1" length="1" days="00001" weeks="0000011111" penalty="32"/>
+            <!-- Ve-09:30 --><time start="2" length="1" days="00001" weeks="0000011111" penalty="31"/>
+            <!-- Ve-11:00 --><time start="3" length="1" days="00001" weeks="0000011111" penalty="30"/>
+            <!-- Ve-14:00 --><time start="4" length="1" days="00001" weeks="0000011111" penalty="31"/>
+            <!-- Ve-15:30 --><time start="5" length="1" days="00001" weeks="0000011111" penalty="32"/>
+          </class>
+        </subpart>
+      </config>
+    </course>
+    <course id="Programmation Fonctionnelle">
+      <config id="40">
+        <!-- CM 1 : semaines 1-4 -->
+        <subpart id="400">
+          <class id="Programmation Fonctionnelle_CM-1" limit="18">
+            <room id="AMPHI-A" penalty="0"/>
+            <room id="AMPHI-B" penalty="1"/>
+            <!-- Lu-08:00 --><time start="1" length="1" days="10000" weeks="1111000000" penalty="1"/>
+            <!-- Lu-09:30 --><time start="2" length="1" days="10000" weeks="1111000000" penalty="0"/>
+            <!-- Lu-11:00 --><time start="3" length="1" days="10000" weeks="1111000000" penalty="1"/>
+            <!-- Lu-14:00 --><time start="4" length="1" days="10000" weeks="1111000000" penalty="2"/>
+            <!-- Lu-15:30 --><time start="5" length="1" days="10000" weeks="1111000000" penalty="3"/>
+            <!-- Ma-08:00 --><time start="1" length="1" days="01000" weeks="1111000000" penalty="11"/>
+            <!-- Ma-09:30 --><time start="2" length="1" days="01000" weeks="1111000000" penalty="10"/>
+            <!-- Ma-11:00 --><time start="3" length="1" days="01000" weeks="1111000000" penalty="11"/>
+            <!-- Ma-14:00 --><time start="4" length="1" days="01000" weeks="1111000000" penalty="12"/>
+            <!-- Ma-15:30 --><time start="5" length="1" days="01000" weeks="1111000000" penalty="13"/>
+            <!-- Me-08:00 --><time start="1" length="1" days="00100" weeks="1111000000" penalty="21"/>
+            <!-- Me-09:30 --><time start="2" length="1" days="00100" weeks="1111000000" penalty="20"/>
+            <!-- Me-11:00 --><time start="3" length="1" days="00100" weeks="1111000000" penalty="21"/>
+            <!-- Me-14:00 --><time start="4" length="1" days="00100" weeks="1111000000" penalty="22"/>
+            <!-- Me-15:30 --><time start="5" length="1" days="00100" weeks="1111000000" penalty="23"/>
+            <!-- Je-08:00 --><time start="1" length="1" days="00010" weeks="1111000000" penalty="31"/>
+            <!-- Je-09:30 --><time start="2" length="1" days="00010" weeks="1111000000" penalty="30"/>
+            <!-- Je-11:00 --><time start="3" length="1" days="00010" weeks="1111000000" penalty="31"/>
+            <!-- Je-14:00 --><time start="4" length="1" days="00010" weeks="1111000000" penalty="32"/>
+            <!-- Je-15:30 --><time start="5" length="1" days="00010" weeks="1111000000" penalty="33"/>
+            <!-- Ve-08:00 --><time start="1" length="1" days="00001" weeks="1111000000" penalty="41"/>
+            <!-- Ve-09:30 --><time start="2" length="1" days="00001" weeks="1111000000" penalty="40"/>
+            <!-- Ve-11:00 --><time start="3" length="1" days="00001" weeks="1111000000" penalty="41"/>
+            <!-- Ve-14:00 --><time start="4" length="1" days="00001" weeks="1111000000" penalty="42"/>
+            <!-- Ve-15:30 --><time start="5" length="1" days="00001" weeks="1111000000" penalty="43"/>
+          </class>
+        </subpart>
+        <!-- CM 2 : semaines 2-4 -->
+        <subpart id="401">
+          <class id="Programmation Fonctionnelle_CM-2" limit="18">
+            <room id="AMPHI-A" penalty="0"/>
+            <room id="AMPHI-B" penalty="1"/>
+            <!-- Lu-08:00 --><time start="1" length="1" days="10000" weeks="0111000000" penalty="24"/>
+            <!-- Lu-09:30 --><time start="2" length="1" days="10000" weeks="0111000000" penalty="23"/>
+            <!-- Lu-11:00 --><time start="3" length="1" days="10000" weeks="0111000000" penalty="22"/>
+            <!-- Lu-14:00 --><time start="4" length="1" days="10000" weeks="0111000000" penalty="21"/>
+            <!-- Lu-15:30 --><time start="5" length="1" days="10000" weeks="0111000000" penalty="20"/>
+            <!-- Ma-08:00 --><time start="1" length="1" days="01000" weeks="0111000000" penalty="14"/>
+            <!-- Ma-09:30 --><time start="2" length="1" days="01000" weeks="0111000000" penalty="13"/>
+            <!-- Ma-11:00 --><time start="3" length="1" days="01000" weeks="0111000000" penalty="12"/>
+            <!-- Ma-14:00 --><time start="4" length="1" days="01000" weeks="0111000000" penalty="11"/>
+            <!-- Ma-15:30 --><time start="5" length="1" days="01000" weeks="0111000000" penalty="10"/>
+            <!-- Me-08:00 --><time start="1" length="1" days="00100" weeks="0111000000" penalty="4"/>
+            <!-- Me-09:30 --><time start="2" length="1" days="00100" weeks="0111000000" penalty="3"/>
+            <!-- Me-11:00 --><time start="3" length="1" days="00100" weeks="0111000000" penalty="2"/>
+            <!-- Me-14:00 --><time start="4" length="1" days="00100" weeks="0111000000" penalty="1"/>
+            <!-- Me-15:30 --><time start="5" length="1" days="00100" weeks="0111000000" penalty="0"/>
+            <!-- Je-08:00 --><time start="1" length="1" days="00010" weeks="0111000000" penalty="14"/>
+            <!-- Je-09:30 --><time start="2" length="1" days="00010" weeks="0111000000" penalty="13"/>
+            <!-- Je-11:00 --><time start="3" length="1" days="00010" weeks="0111000000" penalty="12"/>
+            <!-- Je-14:00 --><time start="4" length="1" days="00010" weeks="0111000000" penalty="11"/>
+            <!-- Je-15:30 --><time start="5" length="1" days="00010" weeks="0111000000" penalty="10"/>
+            <!-- Ve-08:00 --><time start="1" length="1" days="00001" weeks="0111000000" penalty="24"/>
+            <!-- Ve-09:30 --><time start="2" length="1" days="00001" weeks="0111000000" penalty="23"/>
+            <!-- Ve-11:00 --><time start="3" length="1" days="00001" weeks="0111000000" penalty="22"/>
+            <!-- Ve-14:00 --><time start="4" length="1" days="00001" weeks="0111000000" penalty="21"/>
+            <!-- Ve-15:30 --><time start="5" length="1" days="00001" weeks="0111000000" penalty="20"/>
+          </class>
+        </subpart>
+        <!-- TD : semaines 2-6 -->
+        <subpart id="402">
+          <class id="Programmation Fonctionnelle_TD-A" limit="9">
+            <room id="AMPHI-A" penalty="0"/>
+            <room id="AMPHI-B" penalty="1"/>
+            <!-- Lu-08:00 --><time start="1" length="1" days="10000" weeks="0111110000" penalty="14"/>
+            <!-- Lu-09:30 --><time start="2" length="1" days="10000" weeks="0111110000" penalty="13"/>
+            <!-- Lu-11:00 --><time start="3" length="1" days="10000" weeks="0111110000" penalty="12"/>
+            <!-- Lu-14:00 --><time start="4" length="1" days="10000" weeks="0111110000" penalty="11"/>
+            <!-- Lu-15:30 --><time start="5" length="1" days="10000" weeks="0111110000" penalty="10"/>
+            <!-- Ma-08:00 --><time start="1" length="1" days="01000" weeks="0111110000" penalty="4"/>
+            <!-- Ma-09:30 --><time start="2" length="1" days="01000" weeks="0111110000" penalty="3"/>
+            <!-- Ma-11:00 --><time start="3" length="1" days="01000" weeks="0111110000" penalty="2"/>
+            <!-- Ma-14:00 --><time start="4" length="1" days="01000" weeks="0111110000" penalty="1"/>
+            <!-- Ma-15:30 --><time start="5" length="1" days="01000" weeks="0111110000" penalty="0"/>
+            <!-- Me-08:00 --><time start="1" length="1" days="00100" weeks="0111110000" penalty="14"/>
+            <!-- Me-09:30 --><time start="2" length="1" days="00100" weeks="0111110000" penalty="13"/>
+            <!-- Me-11:00 --><time start="3" length="1" days="00100" weeks="0111110000" penalty="12"/>
+            <!-- Me-14:00 --><time start="4" length="1" days="00100" weeks="0111110000" penalty="11"/>
+            <!-- Me-15:30 --><time start="5" length="1" days="00100" weeks="0111110000" penalty="10"/>
+            <!-- Je-08:00 --><time start="1" length="1" days="00010" weeks="0111110000" penalty="24"/>
+            <!-- Je-09:30 --><time start="2" length="1" days="00010" weeks="0111110000" penalty="23"/>
+            <!-- Je-11:00 --><time start="3" length="1" days="00010" weeks="0111110000" penalty="22"/>
+            <!-- Je-14:00 --><time start="4" length="1" days="00010" weeks="0111110000" penalty="21"/>
+            <!-- Je-15:30 --><time start="5" length="1" days="00010" weeks="0111110000" penalty="20"/>
+            <!-- Ve-08:00 --><time start="1" length="1" days="00001" weeks="0111110000" penalty="34"/>
+            <!-- Ve-09:30 --><time start="2" length="1" days="00001" weeks="0111110000" penalty="33"/>
+            <!-- Ve-11:00 --><time start="3" length="1" days="00001" weeks="0111110000" penalty="32"/>
+            <!-- Ve-14:00 --><time start="4" length="1" days="00001" weeks="0111110000" penalty="31"/>
+            <!-- Ve-15:30 --><time start="5" length="1" days="00001" weeks="0111110000" penalty="30"/>
+          </class>
+          <class id="Programmation Fonctionnelle_TD-B" limit="9">
+            <room id="AMPHI-A" penalty="0"/>
+            <room id="AMPHI-B" penalty="1"/>
+            <!-- Lu-08:00 --><time start="1" length="1" days="10000" weeks="0111110000" penalty="13"/>
+            <!-- Lu-09:30 --><time start="2" length="1" days="10000" weeks="0111110000" penalty="12"/>
+            <!-- Lu-11:00 --><time start="3" length="1" days="10000" weeks="0111110000" penalty="11"/>
+            <!-- Lu-14:00 --><time start="4" length="1" days="10000" weeks="0111110000" penalty="10"/>
+            <!-- Lu-15:30 --><time start="5" length="1" days="10000" weeks="0111110000" penalty="11"/>
+            <!-- Ma-08:00 --><time start="1" length="1" days="01000" weeks="0111110000" penalty="3"/>
+            <!-- Ma-09:30 --><time start="2" length="1" days="01000" weeks="0111110000" penalty="2"/>
+            <!-- Ma-11:00 --><time start="3" length="1" days="01000" weeks="0111110000" penalty="1"/>
+            <!-- Ma-14:00 --><time start="4" length="1" days="01000" weeks="0111110000" penalty="0"/>
+            <!-- Ma-15:30 --><time start="5" length="1" days="01000" weeks="0111110000" penalty="1"/>
+            <!-- Me-08:00 --><time start="1" length="1" days="00100" weeks="0111110000" penalty="13"/>
+            <!-- Me-09:30 --><time start="2" length="1" days="00100" weeks="0111110000" penalty="12"/>
+            <!-- Me-11:00 --><time start="3" length="1" days="00100" weeks="0111110000" penalty="11"/>
+            <!-- Me-14:00 --><time start="4" length="1" days="00100" weeks="0111110000" penalty="10"/>
+            <!-- Me-15:30 --><time start="5" length="1" days="00100" weeks="0111110000" penalty="11"/>
+            <!-- Je-08:00 --><time start="1" length="1" days="00010" weeks="0111110000" penalty="23"/>
+            <!-- Je-09:30 --><time start="2" length="1" days="00010" weeks="0111110000" penalty="22"/>
+            <!-- Je-11:00 --><time start="3" length="1" days="00010" weeks="0111110000" penalty="21"/>
+            <!-- Je-14:00 --><time start="4" length="1" days="00010" weeks="0111110000" penalty="20"/>
+            <!-- Je-15:30 --><time start="5" length="1" days="00010" weeks="0111110000" penalty="21"/>
+            <!-- Ve-08:00 --><time start="1" length="1" days="00001" weeks="0111110000" penalty="33"/>
+            <!-- Ve-09:30 --><time start="2" length="1" days="00001" weeks="0111110000" penalty="32"/>
+            <!-- Ve-11:00 --><time start="3" length="1" days="00001" weeks="0111110000" penalty="31"/>
+            <!-- Ve-14:00 --><time start="4" length="1" days="00001" weeks="0111110000" penalty="30"/>
+            <!-- Ve-15:30 --><time start="5" length="1" days="00001" weeks="0111110000" penalty="31"/>
+          </class>
+        </subpart>
+        <!-- TP : semaines 2-4,6 -->
+        <subpart id="403">
+          <class id="Programmation Fonctionnelle_TP-A" limit="6">
+            <room id="H001" penalty="2"/>
+            <room id="H002" penalty="0"/>
+            <room id="H003" penalty="1"/>
+            <!-- Lu-08:00 --><time start="1" length="1" days="10000" weeks="0011101000" penalty="31"/>
+            <!-- Lu-09:30 --><time start="2" length="1" days="10000" weeks="0011101000" penalty="30"/>
+            <!-- Lu-11:00 --><time start="3" length="1" days="10000" weeks="0011101000" penalty="31"/>
+            <!-- Lu-14:00 --><time start="4" length="1" days="10000" weeks="0011101000" penalty="32"/>
+            <!-- Lu-15:30 --><time start="5" length="1" days="10000" weeks="0011101000" penalty="33"/>
+            <!-- Ma-08:00 --><time start="1" length="1" days="01000" weeks="0011101000" penalty="21"/>
+            <!-- Ma-09:30 --><time start="2" length="1" days="01000" weeks="0011101000" penalty="20"/>
+            <!-- Ma-11:00 --><time start="3" length="1" days="01000" weeks="0011101000" penalty="21"/>
+            <!-- Ma-14:00 --><time start="4" length="1" days="01000" weeks="0011101000" penalty="22"/>
+            <!-- Ma-15:30 --><time start="5" length="1" days="01000" weeks="0011101000" penalty="23"/>
+            <!-- Me-08:00 --><time start="1" length="1" days="00100" weeks="0011101000" penalty="11"/>
+            <!-- Me-09:30 --><time start="2" length="1" days="00100" weeks="0011101000" penalty="10"/>
+            <!-- Me-11:00 --><time start="3" length="1" days="00100" weeks="0011101000" penalty="11"/>
+            <!-- Me-14:00 --><time start="4" length="1" days="00100" weeks="0011101000" penalty="12"/>
+            <!-- Me-15:30 --><time start="5" length="1" days="00100" weeks="0011101000" penalty="13"/>
+            <!-- Je-08:00 --><time start="1" length="1" days="00010" weeks="0011101000" penalty="1"/>
+            <!-- Je-09:30 --><time start="2" length="1" days="00010" weeks="0011101000" penalty="0"/>
+            <!-- Je-11:00 --><time start="3" length="1" days="00010" weeks="0011101000" penalty="1"/>
+            <!-- Je-14:00 --><time start="4" length="1" days="00010" weeks="0011101000" penalty="2"/>
+            <!-- Je-15:30 --><time start="5" length="1" days="00010" weeks="0011101000" penalty="3"/>
+            <!-- Ve-08:00 --><time start="1" length="1" days="00001" weeks="0011101000" penalty="11"/>
+            <!-- Ve-09:30 --><time start="2" length="1" days="00001" weeks="0011101000" penalty="10"/>
+            <!-- Ve-11:00 --><time start="3" length="1" days="00001" weeks="0011101000" penalty="11"/>
+            <!-- Ve-14:00 --><time start="4" length="1" days="00001" weeks="0011101000" penalty="12"/>
+            <!-- Ve-15:30 --><time start="5" length="1" days="00001" weeks="0011101000" penalty="13"/>
+          </class>
+          <class id="Programmation Fonctionnelle_TP-B" limit="6">
+            <room id="H001" penalty="2"/>
+            <room id="H002" penalty="0"/>
+            <room id="H003" penalty="1"/>
+            <!-- Lu-08:00 --><time start="1" length="1" days="10000" weeks="0011101000" penalty="33"/>
+            <!-- Lu-09:30 --><time start="2" length="1" days="10000" weeks="0011101000" penalty="32"/>
+            <!-- Lu-11:00 --><time start="3" length="1" days="10000" weeks="0011101000" penalty="31"/>
+            <!-- Lu-14:00 --><time start="4" length="1" days="10000" weeks="0011101000" penalty="30"/>
+            <!-- Lu-15:30 --><time start="5" length="1" days="10000" weeks="0011101000" penalty="31"/>
+            <!-- Ma-08:00 --><time start="1" length="1" days="01000" weeks="0011101000" penalty="23"/>
+            <!-- Ma-09:30 --><time start="2" length="1" days="01000" weeks="0011101000" penalty="22"/>
+            <!-- Ma-11:00 --><time start="3" length="1" days="01000" weeks="0011101000" penalty="21"/>
+            <!-- Ma-14:00 --><time start="4" length="1" days="01000" weeks="0011101000" penalty="20"/>
+            <!-- Ma-15:30 --><time start="5" length="1" days="01000" weeks="0011101000" penalty="21"/>
+            <!-- Me-08:00 --><time start="1" length="1" days="00100" weeks="0011101000" penalty="13"/>
+            <!-- Me-09:30 --><time start="2" length="1" days="00100" weeks="0011101000" penalty="12"/>
+            <!-- Me-11:00 --><time start="3" length="1" days="00100" weeks="0011101000" penalty="11"/>
+            <!-- Me-14:00 --><time start="4" length="1" days="00100" weeks="0011101000" penalty="10"/>
+            <!-- Me-15:30 --><time start="5" length="1" days="00100" weeks="0011101000" penalty="11"/>
+            <!-- Je-08:00 --><time start="1" length="1" days="00010" weeks="0011101000" penalty="3"/>
+            <!-- Je-09:30 --><time start="2" length="1" days="00010" weeks="0011101000" penalty="2"/>
+            <!-- Je-11:00 --><time start="3" length="1" days="00010" weeks="0011101000" penalty="1"/>
+            <!-- Je-14:00 --><time start="4" length="1" days="00010" weeks="0011101000" penalty="0"/>
+            <!-- Je-15:30 --><time start="5" length="1" days="00010" weeks="0011101000" penalty="1"/>
+            <!-- Ve-08:00 --><time start="1" length="1" days="00001" weeks="0011101000" penalty="13"/>
+            <!-- Ve-09:30 --><time start="2" length="1" days="00001" weeks="0011101000" penalty="12"/>
+            <!-- Ve-11:00 --><time start="3" length="1" days="00001" weeks="0011101000" penalty="11"/>
+            <!-- Ve-14:00 --><time start="4" length="1" days="00001" weeks="0011101000" penalty="10"/>
+            <!-- Ve-15:30 --><time start="5" length="1" days="00001" weeks="0011101000" penalty="11"/>
+          </class>
+          <class id="Programmation Fonctionnelle_TP-C" limit="6">
+            <room id="H001" penalty="2"/>
+            <room id="H002" penalty="0"/>
+            <room id="H003" penalty="1"/>
+            <!-- Lu-08:00 --><time start="1" length="1" days="10000" weeks="0011101000" penalty="42"/>
+            <!-- Lu-09:30 --><time start="2" length="1" days="10000" weeks="0011101000" penalty="41"/>
+            <!-- Lu-11:00 --><time start="3" length="1" days="10000" weeks="0011101000" penalty="40"/>
+            <!-- Lu-14:00 --><time start="4" length="1" days="10000" weeks="0011101000" penalty="41"/>
+            <!-- Lu-15:30 --><time start="5" length="1" days="10000" weeks="0011101000" penalty="42"/>
+            <!-- Ma-08:00 --><time start="1" length="1" days="01000" weeks="0011101000" penalty="32"/>
+            <!-- Ma-09:30 --><time start="2" length="1" days="01000" weeks="0011101000" penalty="31"/>
+            <!-- Ma-11:00 --><time start="3" length="1" days="01000" weeks="0011101000" penalty="30"/>
+            <!-- Ma-14:00 --><time start="4" length="1" days="01000" weeks="0011101000" penalty="31"/>
+            <!-- Ma-15:30 --><time start="5" length="1" days="01000" weeks="0011101000" penalty="32"/>
+            <!-- Me-08:00 --><time start="1" length="1" days="00100" weeks="0011101000" penalty="22"/>
+            <!-- Me-09:30 --><time start="2" length="1" days="00100" weeks="0011101000" penalty="21"/>
+            <!-- Me-11:00 --><time start="3" length="1" days="00100" weeks="0011101000" penalty="20"/>
+            <!-- Me-14:00 --><time start="4" length="1" days="00100" weeks="0011101000" penalty="21"/>
+            <!-- Me-15:30 --><time start="5" length="1" days="00100" weeks="0011101000" penalty="22"/>
+            <!-- Je-08:00 --><time start="1" length="1" days="00010" weeks="0011101000" penalty="12"/>
+            <!-- Je-09:30 --><time start="2" length="1" days="00010" weeks="0011101000" penalty="11"/>
+            <!-- Je-11:00 --><time start="3" length="1" days="00010" weeks="0011101000" penalty="10"/>
+            <!-- Je-14:00 --><time start="4" length="1" days="00010" weeks="0011101000" penalty="11"/>
+            <!-- Je-15:30 --><time start="5" length="1" days="00010" weeks="0011101000" penalty="12"/>
+            <!-- Ve-08:00 --><time start="1" length="1" days="00001" weeks="0011101000" penalty="2"/>
+            <!-- Ve-09:30 --><time start="2" length="1" days="00001" weeks="0011101000" penalty="1"/>
+            <!-- Ve-11:00 --><time start="3" length="1" days="00001" weeks="0011101000" penalty="0"/>
+            <!-- Ve-14:00 --><time start="4" length="1" days="00001" weeks="0011101000" penalty="1"/>
+            <!-- Ve-15:30 --><time start="5" length="1" days="00001" weeks="0011101000" penalty="2"/>
+          </class>
+        </subpart>
+      </config>
+    </course>
+    <course id="Programmation Logique">
+      <config id="50">
+        <!-- CM 1 : semaines 7-10 -->
+        <subpart id="500">
+          <class id="Programmation Logique_CM-1" limit="18">
+            <room id="AMPHI-A" penalty="0"/>
+            <room id="AMPHI-B" penalty="1"/>
+            <!-- Lu-08:00 --><time start="1" length="1" days="10000" weeks="0000001111" penalty="1"/>
+            <!-- Lu-09:30 --><time start="2" length="1" days="10000" weeks="0000001111" penalty="0"/>
+            <!-- Lu-11:00 --><time start="3" length="1" days="10000" weeks="0000001111" penalty="1"/>
+            <!-- Lu-14:00 --><time start="4" length="1" days="10000" weeks="0000001111" penalty="2"/>
+            <!-- Lu-15:30 --><time start="5" length="1" days="10000" weeks="0000001111" penalty="3"/>
+            <!-- Ma-08:00 --><time start="1" length="1" days="01000" weeks="0000001111" penalty="11"/>
+            <!-- Ma-09:30 --><time start="2" length="1" days="01000" weeks="0000001111" penalty="10"/>
+            <!-- Ma-11:00 --><time start="3" length="1" days="01000" weeks="0000001111" penalty="11"/>
+            <!-- Ma-14:00 --><time start="4" length="1" days="01000" weeks="0000001111" penalty="12"/>
+            <!-- Ma-15:30 --><time start="5" length="1" days="01000" weeks="0000001111" penalty="13"/>
+            <!-- Me-08:00 --><time start="1" length="1" days="00100" weeks="0000001111" penalty="21"/>
+            <!-- Me-09:30 --><time start="2" length="1" days="00100" weeks="0000001111" penalty="20"/>
+            <!-- Me-11:00 --><time start="3" length="1" days="00100" weeks="0000001111" penalty="21"/>
+            <!-- Me-14:00 --><time start="4" length="1" days="00100" weeks="0000001111" penalty="22"/>
+            <!-- Me-15:30 --><time start="5" length="1" days="00100" weeks="0000001111" penalty="23"/>
+            <!-- Je-08:00 --><time start="1" length="1" days="00010" weeks="0000001111" penalty="31"/>
+            <!-- Je-09:30 --><time start="2" length="1" days="00010" weeks="0000001111" penalty="30"/>
+            <!-- Je-11:00 --><time start="3" length="1" days="00010" weeks="0000001111" penalty="31"/>
+            <!-- Je-14:00 --><time start="4" length="1" days="00010" weeks="0000001111" penalty="32"/>
+            <!-- Je-15:30 --><time start="5" length="1" days="00010" weeks="0000001111" penalty="33"/>
+            <!-- Ve-08:00 --><time start="1" length="1" days="00001" weeks="0000001111" penalty="41"/>
+            <!-- Ve-09:30 --><time start="2" length="1" days="00001" weeks="0000001111" penalty="40"/>
+            <!-- Ve-11:00 --><time start="3" length="1" days="00001" weeks="0000001111" penalty="41"/>
+            <!-- Ve-14:00 --><time start="4" length="1" days="00001" weeks="0000001111" penalty="42"/>
+            <!-- Ve-15:30 --><time start="5" length="1" days="00001" weeks="0000001111" penalty="43"/>
+          </class>
+        </subpart>
+        <!-- CM 2 : semaines 7-10 -->
+        <subpart id="501">
+          <class id="Programmation Logique_CM-2" limit="18">
+            <room id="AMPHI-A" penalty="0"/>
+            <room id="AMPHI-B" penalty="1"/>
+            <!-- Lu-08:00 --><time start="1" length="1" days="10000" weeks="0000001111" penalty="2"/>
+            <!-- Lu-09:30 --><time start="2" length="1" days="10000" weeks="0000001111" penalty="1"/>
+            <!-- Lu-11:00 --><time start="3" length="1" days="10000" weeks="0000001111" penalty="0"/>
+            <!-- Lu-14:00 --><time start="4" length="1" days="10000" weeks="0000001111" penalty="1"/>
+            <!-- Lu-15:30 --><time start="5" length="1" days="10000" weeks="0000001111" penalty="2"/>
+            <!-- Ma-08:00 --><time start="1" length="1" days="01000" weeks="0000001111" penalty="12"/>
+            <!-- Ma-09:30 --><time start="2" length="1" days="01000" weeks="0000001111" penalty="11"/>
+            <!-- Ma-11:00 --><time start="3" length="1" days="01000" weeks="0000001111" penalty="10"/>
+            <!-- Ma-14:00 --><time start="4" length="1" days="01000" weeks="0000001111" penalty="11"/>
+            <!-- Ma-15:30 --><time start="5" length="1" days="01000" weeks="0000001111" penalty="12"/>
+            <!-- Me-08:00 --><time start="1" length="1" days="00100" weeks="0000001111" penalty="22"/>
+            <!-- Me-09:30 --><time start="2" length="1" days="00100" weeks="0000001111" penalty="21"/>
+            <!-- Me-11:00 --><time start="3" length="1" days="00100" weeks="0000001111" penalty="20"/>
+            <!-- Me-14:00 --><time start="4" length="1" days="00100" weeks="0000001111" penalty="21"/>
+            <!-- Me-15:30 --><time start="5" length="1" days="00100" weeks="0000001111" penalty="22"/>
+            <!-- Je-08:00 --><time start="1" length="1" days="00010" weeks="0000001111" penalty="32"/>
+            <!-- Je-09:30 --><time start="2" length="1" days="00010" weeks="0000001111" penalty="31"/>
+            <!-- Je-11:00 --><time start="3" length="1" days="00010" weeks="0000001111" penalty="30"/>
+            <!-- Je-14:00 --><time start="4" length="1" days="00010" weeks="0000001111" penalty="31"/>
+            <!-- Je-15:30 --><time start="5" length="1" days="00010" weeks="0000001111" penalty="32"/>
+            <!-- Ve-08:00 --><time start="1" length="1" days="00001" weeks="0000001111" penalty="42"/>
+            <!-- Ve-09:30 --><time start="2" length="1" days="00001" weeks="0000001111" penalty="41"/>
+            <!-- Ve-11:00 --><time start="3" length="1" days="00001" weeks="0000001111" penalty="40"/>
+            <!-- Ve-14:00 --><time start="4" length="1" days="00001" weeks="0000001111" penalty="41"/>
+            <!-- Ve-15:30 --><time start="5" length="1" days="00001" weeks="0000001111" penalty="42"/>
+          </class>
+        </subpart>
+        <!-- TD : semaines 7-10 -->
+        <subpart id="502">
+          <class id="Programmation Logique_TD-A" limit="9">
+            <room id="AMPHI-A" penalty="0"/>
+            <room id="AMPHI-B" penalty="1"/>
+            <!-- Lu-08:00 --><time start="1" length="1" days="10000" weeks="0000001111" penalty="14"/>
+            <!-- Lu-09:30 --><time start="2" length="1" days="10000" weeks="0000001111" penalty="13"/>
+            <!-- Lu-11:00 --><time start="3" length="1" days="10000" weeks="0000001111" penalty="12"/>
+            <!-- Lu-14:00 --><time start="4" length="1" days="10000" weeks="0000001111" penalty="11"/>
+            <!-- Lu-15:30 --><time start="5" length="1" days="10000" weeks="0000001111" penalty="10"/>
+            <!-- Ma-08:00 --><time start="1" length="1" days="01000" weeks="0000001111" penalty="4"/>
+            <!-- Ma-09:30 --><time start="2" length="1" days="01000" weeks="0000001111" penalty="3"/>
+            <!-- Ma-11:00 --><time start="3" length="1" days="01000" weeks="0000001111" penalty="2"/>
+            <!-- Ma-14:00 --><time start="4" length="1" days="01000" weeks="0000001111" penalty="1"/>
+            <!-- Ma-15:30 --><time start="5" length="1" days="01000" weeks="0000001111" penalty="0"/>
+            <!-- Me-08:00 --><time start="1" length="1" days="00100" weeks="0000001111" penalty="14"/>
+            <!-- Me-09:30 --><time start="2" length="1" days="00100" weeks="0000001111" penalty="13"/>
+            <!-- Me-11:00 --><time start="3" length="1" days="00100" weeks="0000001111" penalty="12"/>
+            <!-- Me-14:00 --><time start="4" length="1" days="00100" weeks="0000001111" penalty="11"/>
+            <!-- Me-15:30 --><time start="5" length="1" days="00100" weeks="0000001111" penalty="10"/>
+            <!-- Je-08:00 --><time start="1" length="1" days="00010" weeks="0000001111" penalty="24"/>
+            <!-- Je-09:30 --><time start="2" length="1" days="00010" weeks="0000001111" penalty="23"/>
+            <!-- Je-11:00 --><time start="3" length="1" days="00010" weeks="0000001111" penalty="22"/>
+            <!-- Je-14:00 --><time start="4" length="1" days="00010" weeks="0000001111" penalty="21"/>
+            <!-- Je-15:30 --><time start="5" length="1" days="00010" weeks="0000001111" penalty="20"/>
+            <!-- Ve-08:00 --><time start="1" length="1" days="00001" weeks="0000001111" penalty="34"/>
+            <!-- Ve-09:30 --><time start="2" length="1" days="00001" weeks="0000001111" penalty="33"/>
+            <!-- Ve-11:00 --><time start="3" length="1" days="00001" weeks="0000001111" penalty="32"/>
+            <!-- Ve-14:00 --><time start="4" length="1" days="00001" weeks="0000001111" penalty="31"/>
+            <!-- Ve-15:30 --><time start="5" length="1" days="00001" weeks="0000001111" penalty="30"/>
+          </class>
+          <class id="Programmation Logique_TD-B" limit="9">
+            <room id="AMPHI-A" penalty="0"/>
+            <room id="AMPHI-B" penalty="1"/>
+            <!-- Lu-08:00 --><time start="1" length="1" days="10000" weeks="0000001111" penalty="13"/>
+            <!-- Lu-09:30 --><time start="2" length="1" days="10000" weeks="0000001111" penalty="12"/>
+            <!-- Lu-11:00 --><time start="3" length="1" days="10000" weeks="0000001111" penalty="11"/>
+            <!-- Lu-14:00 --><time start="4" length="1" days="10000" weeks="0000001111" penalty="10"/>
+            <!-- Lu-15:30 --><time start="5" length="1" days="10000" weeks="0000001111" penalty="11"/>
+            <!-- Ma-08:00 --><time start="1" length="1" days="01000" weeks="0000001111" penalty="3"/>
+            <!-- Ma-09:30 --><time start="2" length="1" days="01000" weeks="0000001111" penalty="2"/>
+            <!-- Ma-11:00 --><time start="3" length="1" days="01000" weeks="0000001111" penalty="1"/>
+            <!-- Ma-14:00 --><time start="4" length="1" days="01000" weeks="0000001111" penalty="0"/>
+            <!-- Ma-15:30 --><time start="5" length="1" days="01000" weeks="0000001111" penalty="1"/>
+            <!-- Me-08:00 --><time start="1" length="1" days="00100" weeks="0000001111" penalty="13"/>
+            <!-- Me-09:30 --><time start="2" length="1" days="00100" weeks="0000001111" penalty="12"/>
+            <!-- Me-11:00 --><time start="3" length="1" days="00100" weeks="0000001111" penalty="11"/>
+            <!-- Me-14:00 --><time start="4" length="1" days="00100" weeks="0000001111" penalty="10"/>
+            <!-- Me-15:30 --><time start="5" length="1" days="00100" weeks="0000001111" penalty="11"/>
+            <!-- Je-08:00 --><time start="1" length="1" days="00010" weeks="0000001111" penalty="23"/>
+            <!-- Je-09:30 --><time start="2" length="1" days="00010" weeks="0000001111" penalty="22"/>
+            <!-- Je-11:00 --><time start="3" length="1" days="00010" weeks="0000001111" penalty="21"/>
+            <!-- Je-14:00 --><time start="4" length="1" days="00010" weeks="0000001111" penalty="20"/>
+            <!-- Je-15:30 --><time start="5" length="1" days="00010" weeks="0000001111" penalty="21"/>
+            <!-- Ve-08:00 --><time start="1" length="1" days="00001" weeks="0000001111" penalty="33"/>
+            <!-- Ve-09:30 --><time start="2" length="1" days="00001" weeks="0000001111" penalty="32"/>
+            <!-- Ve-11:00 --><time start="3" length="1" days="00001" weeks="0000001111" penalty="31"/>
+            <!-- Ve-14:00 --><time start="4" length="1" days="00001" weeks="0000001111" penalty="30"/>
+            <!-- Ve-15:30 --><time start="5" length="1" days="00001" weeks="0000001111" penalty="31"/>
+          </class>
+        </subpart>
+        <!-- TP : semaines 7-10 -->
+        <subpart id="503">
+          <class id="Programmation Logique_TP-A" limit="6">
+            <room id="H001" penalty="2"/>
+            <room id="H002" penalty="0"/>
+            <room id="H003" penalty="1"/>
+            <!-- Lu-08:00 --><time start="1" length="1" days="10000" weeks="0000000111" penalty="31"/>
+            <!-- Lu-09:30 --><time start="2" length="1" days="10000" weeks="0000000111" penalty="30"/>
+            <!-- Lu-11:00 --><time start="3" length="1" days="10000" weeks="0000000111" penalty="31"/>
+            <!-- Lu-14:00 --><time start="4" length="1" days="10000" weeks="0000000111" penalty="32"/>
+            <!-- Lu-15:30 --><time start="5" length="1" days="10000" weeks="0000000111" penalty="33"/>
+            <!-- Ma-08:00 --><time start="1" length="1" days="01000" weeks="0000000111" penalty="21"/>
+            <!-- Ma-09:30 --><time start="2" length="1" days="01000" weeks="0000000111" penalty="20"/>
+            <!-- Ma-11:00 --><time start="3" length="1" days="01000" weeks="0000000111" penalty="21"/>
+            <!-- Ma-14:00 --><time start="4" length="1" days="01000" weeks="0000000111" penalty="22"/>
+            <!-- Ma-15:30 --><time start="5" length="1" days="01000" weeks="0000000111" penalty="23"/>
+            <!-- Me-08:00 --><time start="1" length="1" days="00100" weeks="0000000111" penalty="11"/>
+            <!-- Me-09:30 --><time start="2" length="1" days="00100" weeks="0000000111" penalty="10"/>
+            <!-- Me-11:00 --><time start="3" length="1" days="00100" weeks="0000000111" penalty="11"/>
+            <!-- Me-14:00 --><time start="4" length="1" days="00100" weeks="0000000111" penalty="12"/>
+            <!-- Me-15:30 --><time start="5" length="1" days="00100" weeks="0000000111" penalty="13"/>
+            <!-- Je-08:00 --><time start="1" length="1" days="00010" weeks="0000000111" penalty="1"/>
+            <!-- Je-09:30 --><time start="2" length="1" days="00010" weeks="0000000111" penalty="0"/>
+            <!-- Je-11:00 --><time start="3" length="1" days="00010" weeks="0000000111" penalty="1"/>
+            <!-- Je-14:00 --><time start="4" length="1" days="00010" weeks="0000000111" penalty="2"/>
+            <!-- Je-15:30 --><time start="5" length="1" days="00010" weeks="0000000111" penalty="3"/>
+            <!-- Ve-08:00 --><time start="1" length="1" days="00001" weeks="0000000111" penalty="11"/>
+            <!-- Ve-09:30 --><time start="2" length="1" days="00001" weeks="0000000111" penalty="10"/>
+            <!-- Ve-11:00 --><time start="3" length="1" days="00001" weeks="0000000111" penalty="11"/>
+            <!-- Ve-14:00 --><time start="4" length="1" days="00001" weeks="0000000111" penalty="12"/>
+            <!-- Ve-15:30 --><time start="5" length="1" days="00001" weeks="0000000111" penalty="13"/>
+          </class>
+          <class id="Programmation Logique_TP-B" limit="6">
+            <room id="H001" penalty="2"/>
+            <room id="H002" penalty="0"/>
+            <room id="H003" penalty="1"/>
+            <!-- Lu-08:00 --><time start="1" length="1" days="10000" weeks="0000000111" penalty="33"/>
+            <!-- Lu-09:30 --><time start="2" length="1" days="10000" weeks="0000000111" penalty="32"/>
+            <!-- Lu-11:00 --><time start="3" length="1" days="10000" weeks="0000000111" penalty="31"/>
+            <!-- Lu-14:00 --><time start="4" length="1" days="10000" weeks="0000000111" penalty="30"/>
+            <!-- Lu-15:30 --><time start="5" length="1" days="10000" weeks="0000000111" penalty="31"/>
+            <!-- Ma-08:00 --><time start="1" length="1" days="01000" weeks="0000000111" penalty="23"/>
+            <!-- Ma-09:30 --><time start="2" length="1" days="01000" weeks="0000000111" penalty="22"/>
+            <!-- Ma-11:00 --><time start="3" length="1" days="01000" weeks="0000000111" penalty="21"/>
+            <!-- Ma-14:00 --><time start="4" length="1" days="01000" weeks="0000000111" penalty="20"/>
+            <!-- Ma-15:30 --><time start="5" length="1" days="01000" weeks="0000000111" penalty="21"/>
+            <!-- Me-08:00 --><time start="1" length="1" days="00100" weeks="0000000111" penalty="13"/>
+            <!-- Me-09:30 --><time start="2" length="1" days="00100" weeks="0000000111" penalty="12"/>
+            <!-- Me-11:00 --><time start="3" length="1" days="00100" weeks="0000000111" penalty="11"/>
+            <!-- Me-14:00 --><time start="4" length="1" days="00100" weeks="0000000111" penalty="10"/>
+            <!-- Me-15:30 --><time start="5" length="1" days="00100" weeks="0000000111" penalty="11"/>
+            <!-- Je-08:00 --><time start="1" length="1" days="00010" weeks="0000000111" penalty="3"/>
+            <!-- Je-09:30 --><time start="2" length="1" days="00010" weeks="0000000111" penalty="2"/>
+            <!-- Je-11:00 --><time start="3" length="1" days="00010" weeks="0000000111" penalty="1"/>
+            <!-- Je-14:00 --><time start="4" length="1" days="00010" weeks="0000000111" penalty="0"/>
+            <!-- Je-15:30 --><time start="5" length="1" days="00010" weeks="0000000111" penalty="1"/>
+            <!-- Ve-08:00 --><time start="1" length="1" days="00001" weeks="0000000111" penalty="13"/>
+            <!-- Ve-09:30 --><time start="2" length="1" days="00001" weeks="0000000111" penalty="12"/>
+            <!-- Ve-11:00 --><time start="3" length="1" days="00001" weeks="0000000111" penalty="11"/>
+            <!-- Ve-14:00 --><time start="4" length="1" days="00001" weeks="0000000111" penalty="10"/>
+            <!-- Ve-15:30 --><time start="5" length="1" days="00001" weeks="0000000111" penalty="11"/>
+          </class>
+          <class id="Programmation Logique_TP-C" limit="6">
+            <room id="H001" penalty="2"/>
+            <room id="H002" penalty="0"/>
+            <room id="H003" penalty="1"/>
+            <!-- Lu-08:00 --><time start="1" length="1" days="10000" weeks="0000000111" penalty="23"/>
+            <!-- Lu-09:30 --><time start="2" length="1" days="10000" weeks="0000000111" penalty="22"/>
+            <!-- Lu-11:00 --><time start="3" length="1" days="10000" weeks="0000000111" penalty="21"/>
+            <!-- Lu-14:00 --><time start="4" length="1" days="10000" weeks="0000000111" penalty="20"/>
+            <!-- Lu-15:30 --><time start="5" length="1" days="10000" weeks="0000000111" penalty="21"/>
+            <!-- Ma-08:00 --><time start="1" length="1" days="01000" weeks="0000000111" penalty="13"/>
+            <!-- Ma-09:30 --><time start="2" length="1" days="01000" weeks="0000000111" penalty="12"/>
+            <!-- Ma-11:00 --><time start="3" length="1" days="01000" weeks="0000000111" penalty="11"/>
+            <!-- Ma-14:00 --><time start="4" length="1" days="01000" weeks="0000000111" penalty="10"/>
+            <!-- Ma-15:30 --><time start="5" length="1" days="01000" weeks="0000000111" penalty="11"/>
+            <!-- Me-08:00 --><time start="1" length="1" days="00100" weeks="0000000111" penalty="3"/>
+            <!-- Me-09:30 --><time start="2" length="1" days="00100" weeks="0000000111" penalty="2"/>
+            <!-- Me-11:00 --><time start="3" length="1" days="00100" weeks="0000000111" penalty="1"/>
+            <!-- Me-14:00 --><time start="4" length="1" days="00100" weeks="0000000111" penalty="0"/>
+            <!-- Me-15:30 --><time start="5" length="1" days="00100" weeks="0000000111" penalty="1"/>
+            <!-- Je-08:00 --><time start="1" length="1" days="00010" weeks="0000000111" penalty="13"/>
+            <!-- Je-09:30 --><time start="2" length="1" days="00010" weeks="0000000111" penalty="12"/>
+            <!-- Je-11:00 --><time start="3" length="1" days="00010" weeks="0000000111" penalty="11"/>
+            <!-- Je-14:00 --><time start="4" length="1" days="00010" weeks="0000000111" penalty="10"/>
+            <!-- Je-15:30 --><time start="5" length="1" days="00010" weeks="0000000111" penalty="11"/>
+            <!-- Ve-08:00 --><time start="1" length="1" days="00001" weeks="0000000111" penalty="23"/>
+            <!-- Ve-09:30 --><time start="2" length="1" days="00001" weeks="0000000111" penalty="22"/>
+            <!-- Ve-11:00 --><time start="3" length="1" days="00001" weeks="0000000111" penalty="21"/>
+            <!-- Ve-14:00 --><time start="4" length="1" days="00001" weeks="0000000111" penalty="20"/>
+            <!-- Ve-15:30 --><time start="5" length="1" days="00001" weeks="0000000111" penalty="21"/>
+          </class>
+        </subpart>
+      </config>
+    </course>
+    <course id="Qt Avancé">
+      <config id="80">
+        <!-- CM 1 : semaines 1-2 -->
+        <subpart id="800">
+          <class id="Qt Avancé_CM-1" limit="6">
+            <room id="H001" penalty="2"/>
+            <room id="H002" penalty="0"/>
+            <room id="H003" penalty="1"/>
+            <!-- Lu-08:00 --><time start="1" length="1" days="10000" weeks="1100000000" penalty="11"/>
+            <!-- Lu-09:30 --><time start="2" length="1" days="10000" weeks="1100000000" penalty="10"/>
+            <!-- Lu-11:00 --><time start="3" length="1" days="10000" weeks="1100000000" penalty="11"/>
+            <!-- Lu-14:00 --><time start="4" length="1" days="10000" weeks="1100000000" penalty="12"/>
+            <!-- Lu-15:30 --><time start="5" length="1" days="10000" weeks="1100000000" penalty="13"/>
+            <!-- Ma-08:00 --><time start="1" length="1" days="01000" weeks="1100000000" penalty="1"/>
+            <!-- Ma-09:30 --><time start="2" length="1" days="01000" weeks="1100000000" penalty="0"/>
+            <!-- Ma-11:00 --><time start="3" length="1" days="01000" weeks="1100000000" penalty="1"/>
+            <!-- Ma-14:00 --><time start="4" length="1" days="01000" weeks="1100000000" penalty="2"/>
+            <!-- Ma-15:30 --><time start="5" length="1" days="01000" weeks="1100000000" penalty="3"/>
+            <!-- Me-08:00 --><time start="1" length="1" days="00100" weeks="1100000000" penalty="11"/>
+            <!-- Me-09:30 --><time start="2" length="1" days="00100" weeks="1100000000" penalty="10"/>
+            <!-- Me-11:00 --><time start="3" length="1" days="00100" weeks="1100000000" penalty="11"/>
+            <!-- Me-14:00 --><time start="4" length="1" days="00100" weeks="1100000000" penalty="12"/>
+            <!-- Je-15:30 --><time start="5" length="1" days="00010" weeks="1100000000" penalty="13"/>
+            <!-- Je-08:00 --><time start="1" length="1" days="00010" weeks="1100000000" penalty="21"/>
+            <!-- Je-09:30 --><time start="2" length="1" days="00010" weeks="1100000000" penalty="20"/>
+            <!-- Je-11:00 --><time start="3" length="1" days="00010" weeks="1100000000" penalty="21"/>
+            <!-- Je-14:00 --><time start="4" length="1" days="00010" weeks="1100000000" penalty="22"/>
+            <!-- Je-15:30 --><time start="5" length="1" days="00010" weeks="1100000000" penalty="23"/>
+            <!-- Ve-08:00 --><time start="1" length="1" days="00001" weeks="1100000000" penalty="31"/>
+            <!-- Ve-09:30 --><time start="2" length="1" days="00001" weeks="1100000000" penalty="30"/>
+            <!-- Ve-11:00 --><time start="3" length="1" days="00001" weeks="1100000000" penalty="31"/>
+            <!-- Ve-14:00 --><time start="4" length="1" days="00001" weeks="1100000000" penalty="32"/>
+            <!-- Ve-15:30 --><time start="5" length="1" days="00001" weeks="1100000000" penalty="33"/>
+          </class>
+        </subpart>
+        <!-- CM 2 : semaines 1-2 -->
+        <subpart id="801">
+          <class id="Qt Avancé_CM-2" limit="6">
+            <room id="H001" penalty="2"/>
+            <room id="H002" penalty="0"/>
+            <room id="H003" penalty="1"/>
+            <!-- Lu-08:00 --><time start="1" length="1" days="10000" weeks="1100000000" penalty="12"/>
+            <!-- Lu-09:30 --><time start="2" length="1" days="10000" weeks="1100000000" penalty="11"/>
+            <!-- Lu-11:00 --><time start="3" length="1" days="10000" weeks="1100000000" penalty="10"/>
+            <!-- Lu-14:00 --><time start="4" length="1" days="10000" weeks="1100000000" penalty="11"/>
+            <!-- Lu-15:30 --><time start="5" length="1" days="10000" weeks="1100000000" penalty="12"/>
+            <!-- Ma-08:00 --><time start="1" length="1" days="01000" weeks="1100000000" penalty="2"/>
+            <!-- Ma-09:30 --><time start="2" length="1" days="01000" weeks="1100000000" penalty="1"/>
+            <!-- Ma-11:00 --><time start="3" length="1" days="01000" weeks="1100000000" penalty="0"/>
+            <!-- Ma-14:00 --><time start="4" length="1" days="01000" weeks="1100000000" penalty="1"/>
+            <!-- Ma-15:30 --><time start="5" length="1" days="01000" weeks="1100000000" penalty="2"/>
+            <!-- Me-08:00 --><time start="1" length="1" days="00100" weeks="1100000000" penalty="12"/>
+            <!-- Me-09:30 --><time start="2" length="1" days="00100" weeks="1100000000" penalty="11"/>
+            <!-- Me-11:00 --><time start="3" length="1" days="00100" weeks="1100000000" penalty="10"/>
+            <!-- Me-14:00 --><time start="4" length="1" days="00100" weeks="1100000000" penalty="11"/>
+            <!-- Me-15:30 --><time start="5" length="1" days="00100" weeks="1100000000" penalty="12"/>
+            <!-- Je-08:00 --><time start="1" length="1" days="00010" weeks="1100000000" penalty="22"/>
+            <!-- Je-09:30 --><time start="2" length="1" days="00010" weeks="1100000000" penalty="21"/>
+            <!-- Je-11:00 --><time start="3" length="1" days="00010" weeks="1100000000" penalty="20"/>
+            <!-- Je-14:00 --><time start="4" length="1" days="00010" weeks="1100000000" penalty="21"/>
+            <!-- Je-15:30 --><time start="5" length="1" days="00010" weeks="1100000000" penalty="22"/>
+            <!-- Ve-08:00 --><time start="1" length="1" days="00001" weeks="1100000000" penalty="32"/>
+            <!-- Ve-09:30 --><time start="2" length="1" days="00001" weeks="1100000000" penalty="31"/>
+            <!-- Ve-11:00 --><time start="3" length="1" days="00001" weeks="1100000000" penalty="30"/>
+            <!-- Ve-14:00 --><time start="4" length="1" days="00001" weeks="1100000000" penalty="31"/>
+            <!-- Ve-15:30 --><time start="5" length="1" days="00001" weeks="1100000000" penalty="32"/>
+          </class>
+        </subpart>
+        <!-- TP 1 : semaines 3-10 -->
+        <subpart id="802">
+          <class id="Qt Avancé_TP-1" limit="6">
+            <room id="H001" penalty="2"/>
+            <room id="H002" penalty="0"/>
+            <room id="H003" penalty="1"/>
+            <!-- Lu-08:00 --><time start="1" length="1" days="10000" weeks="0011111111" penalty="11"/>
+            <!-- Lu-09:30 --><time start="2" length="1" days="10000" weeks="0011111111" penalty="10"/>
+            <!-- Lu-11:00 --><time start="3" length="1" days="10000" weeks="0011111111" penalty="11"/>
+            <!-- Lu-14:00 --><time start="4" length="1" days="10000" weeks="0011111111" penalty="12"/>
+            <!-- Lu-15:30 --><time start="5" length="1" days="10000" weeks="0011111111" penalty="13"/>
+            <!-- Ma-08:00 --><time start="1" length="1" days="01000" weeks="0011111111" penalty="1"/>
+            <!-- Ma-09:30 --><time start="2" length="1" days="01000" weeks="0011111111" penalty="0"/>
+            <!-- Ma-11:00 --><time start="3" length="1" days="01000" weeks="0011111111" penalty="1"/>
+            <!-- Ma-14:00 --><time start="4" length="1" days="01000" weeks="0011111111" penalty="2"/>
+            <!-- Ma-15:30 --><time start="5" length="1" days="01000" weeks="0011111111" penalty="3"/>
+            <!-- Me-08:00 --><time start="1" length="1" days="00100" weeks="0011111111" penalty="11"/>
+            <!-- Me-09:30 --><time start="2" length="1" days="00100" weeks="0011111111" penalty="10"/>
+            <!-- Me-11:00 --><time start="3" length="1" days="00100" weeks="0011111111" penalty="11"/>
+            <!-- Me-14:00 --><time start="4" length="1" days="00100" weeks="0011111111" penalty="12"/>
+            <!-- Me-15:30 --><time start="5" length="1" days="00100" weeks="0011111111" penalty="13"/>
+            <!-- Je-08:00 --><time start="1" length="1" days="00010" weeks="0011111111" penalty="21"/>
+            <!-- Je-09:30 --><time start="2" length="1" days="00010" weeks="0011111111" penalty="20"/>
+            <!-- Je-11:00 --><time start="3" length="1" days="00010" weeks="0011111111" penalty="21"/>
+            <!-- Je-14:00 --><time start="4" length="1" days="00010" weeks="0011111111" penalty="22"/>
+            <!-- Je-15:30 --><time start="5" length="1" days="00010" weeks="0011111111" penalty="23"/>
+            <!-- Ve-08:00 --><time start="1" length="1" days="00001" weeks="0011111111" penalty="31"/>
+            <!-- Ve-09:30 --><time start="2" length="1" days="00001" weeks="0011111111" penalty="30"/>
+            <!-- Ve-11:00 --><time start="3" length="1" days="00001" weeks="0011111111" penalty="31"/>
+            <!-- Ve-14:00 --><time start="4" length="1" days="00001" weeks="0011111111" penalty="32"/>
+            <!-- Ve-15:30 --><time start="5" length="1" days="00001" weeks="0011111111" penalty="33"/>
+          </class>
+        </subpart>
+        <!-- TP 2 : semaines 3-10 -->
+        <subpart id="803">
+          <class id="Qt Avancé_TP-2" limit="6">
+            <room id="H001" penalty="2"/>
+            <room id="H002" penalty="0"/>
+            <room id="H003" penalty="1"/>
+            <!-- Lu-08:00 --><time start="1" length="1" days="10000" weeks="0011111111" penalty="12"/>
+            <!-- Lu-09:30 --><time start="2" length="1" days="10000" weeks="0011111111" penalty="11"/>
+            <!-- Lu-11:00 --><time start="3" length="1" days="10000" weeks="0011111111" penalty="10"/>
+            <!-- Lu-14:00 --><time start="4" length="1" days="10000" weeks="0011111111" penalty="11"/>
+            <!-- Lu-15:30 --><time start="5" length="1" days="10000" weeks="0011111111" penalty="12"/>
+            <!-- Ma-08:00 --><time start="1" length="1" days="01000" weeks="0011111111" penalty="2"/>
+            <!-- Ma-09:30 --><time start="2" length="1" days="01000" weeks="0011111111" penalty="1"/>
+            <!-- Ma-11:00 --><time start="3" length="1" days="01000" weeks="0011111111" penalty="0"/>
+            <!-- Ma-14:00 --><time start="4" length="1" days="01000" weeks="0011111111" penalty="1"/>
+            <!-- Ma-15:30 --><time start="5" length="1" days="01000" weeks="0011111111" penalty="2"/>
+            <!-- Me-08:00 --><time start="1" length="1" days="00100" weeks="0011111111" penalty="12"/>
+            <!-- Me-09:30 --><time start="2" length="1" days="00100" weeks="0011111111" penalty="11"/>
+            <!-- Me-11:00 --><time start="3" length="1" days="00100" weeks="0011111111" penalty="10"/>
+            <!-- Me-14:00 --><time start="4" length="1" days="00100" weeks="0011111111" penalty="11"/>
+            <!-- Me-15:30 --><time start="5" length="1" days="00100" weeks="0011111111" penalty="12"/>
+            <!-- Je-08:00 --><time start="1" length="1" days="00010" weeks="0011111111" penalty="22"/>
+            <!-- Je-09:30 --><time start="2" length="1" days="00010" weeks="0011111111" penalty="21"/>
+            <!-- Je-11:00 --><time start="3" length="1" days="00010" weeks="0011111111" penalty="20"/>
+            <!-- Je-14:00 --><time start="4" length="1" days="00010" weeks="0011111111" penalty="21"/>
+            <!-- Je-15:30 --><time start="5" length="1" days="00010" weeks="0011111111" penalty="22"/>
+            <!-- Ve-08:00 --><time start="1" length="1" days="00001" weeks="0011111111" penalty="32"/>
+            <!-- Ve-09:30 --><time start="2" length="1" days="00001" weeks="0011111111" penalty="31"/>
+            <!-- Ve-11:00 --><time start="3" length="1" days="00001" weeks="0011111111" penalty="30"/>
+            <!-- Ve-14:00 --><time start="4" length="1" days="00001" weeks="0011111111" penalty="31"/>
+            <!-- Ve-15:30 --><time start="5" length="1" days="00001" weeks="0011111111" penalty="32"/>
+          </class>
+        </subpart>
+      </config>
+    </course>
+    <course id="Systèmes Intelligents">
+      <config id="90">
+        <!-- CM 1 : semaines 1-2,6 -->
+        <subpart id="900">
+          <class id="Systèmes Intelligents_CM-1" limit="6">
+            <room id="H001" penalty="2"/>
+            <room id="H002" penalty="0"/>
+            <room id="H003" penalty="1"/>
+            <!-- Lu-08:00 --><time start="1" length="1" days="10000" weeks="1100010000" penalty="11"/>
+            <!-- Lu-09:30 --><time start="2" length="1" days="10000" weeks="1100010000" penalty="10"/>
+            <!-- Lu-11:00 --><time start="3" length="1" days="10000" weeks="1100010000" penalty="11"/>
+            <!-- Lu-14:00 --><time start="4" length="1" days="10000" weeks="1100010000" penalty="12"/>
+            <!-- Lu-15:30 --><time start="5" length="1" days="10000" weeks="1100010000" penalty="13"/>
+            <!-- Ma-08:00 --><time start="1" length="1" days="01000" weeks="1100010000" penalty="1"/>
+            <!-- Ma-09:30 --><time start="2" length="1" days="01000" weeks="1100010000" penalty="0"/>
+            <!-- Ma-11:00 --><time start="3" length="1" days="01000" weeks="1100010000" penalty="1"/>
+            <!-- Ma-14:00 --><time start="4" length="1" days="01000" weeks="1100010000" penalty="2"/>
+            <!-- Ma-15:30 --><time start="5" length="1" days="01000" weeks="1100010000" penalty="3"/>
+            <!-- Me-08:00 --><time start="1" length="1" days="00100" weeks="1100010000" penalty="11"/>
+            <!-- Me-09:30 --><time start="2" length="1" days="00100" weeks="1100010000" penalty="10"/>
+            <!-- Me-11:00 --><time start="3" length="1" days="00100" weeks="1100010000" penalty="11"/>
+            <!-- Me-14:00 --><time start="4" length="1" days="00100" weeks="1100010000" penalty="12"/>
+            <!-- Me-15:30 --><time start="5" length="1" days="00100" weeks="1100010000" penalty="13"/>
+            <!-- Je-08:00 --><time start="1" length="1" days="00010" weeks="1100010000" penalty="21"/>
+            <!-- Je-09:30 --><time start="2" length="1" days="00010" weeks="1100010000" penalty="20"/>
+            <!-- Je-11:00 --><time start="3" length="1" days="00010" weeks="1100010000" penalty="21"/>
+            <!-- Je-14:00 --><time start="4" length="1" days="00010" weeks="1100010000" penalty="22"/>
+            <!-- Je-15:30 --><time start="5" length="1" days="00010" weeks="1100010000" penalty="23"/>
+            <!-- Ve-08:00 --><time start="1" length="1" days="00001" weeks="1100010000" penalty="31"/>
+            <!-- Ve-09:30 --><time start="2" length="1" days="00001" weeks="1100010000" penalty="30"/>
+            <!-- Ve-11:00 --><time start="3" length="1" days="00001" weeks="1100010000" penalty="31"/>
+            <!-- Ve-14:00 --><time start="4" length="1" days="00001" weeks="1100010000" penalty="32"/>
+            <!-- Ve-15:30 --><time start="5" length="1" days="00001" weeks="1100010000" penalty="33"/>
+          </class>
+        </subpart>
+        <!-- CM 2 : semaines 1-2,6 -->
+        <subpart id="901">
+          <class id="Systèmes Intelligents_CM-2" limit="6">
+            <room id="H001" penalty="2"/>
+            <room id="H002" penalty="0"/>
+            <room id="H003" penalty="1"/>
+            <!-- Lu-08:00 --><time start="1" length="1" days="10000" weeks="1100010000" penalty="12"/>
+            <!-- Lu-09:30 --><time start="2" length="1" days="10000" weeks="1100010000" penalty="11"/>
+            <!-- Lu-11:00 --><time start="3" length="1" days="10000" weeks="1100010000" penalty="10"/>
+            <!-- Lu-14:00 --><time start="4" length="1" days="10000" weeks="1100010000" penalty="11"/>
+            <!-- Lu-15:30 --><time start="5" length="1" days="10000" weeks="1100010000" penalty="12"/>
+            <!-- Ma-08:00 --><time start="1" length="1" days="01000" weeks="1100010000" penalty="2"/>
+            <!-- Ma-09:30 --><time start="2" length="1" days="01000" weeks="1100010000" penalty="1"/>
+            <!-- Ma-11:00 --><time start="3" length="1" days="01000" weeks="1100010000" penalty="0"/>
+            <!-- Ma-14:00 --><time start="4" length="1" days="01000" weeks="1100010000" penalty="1"/>
+            <!-- Ma-15:30 --><time start="5" length="1" days="01000" weeks="1100010000" penalty="2"/>
+            <!-- Me-08:00 --><time start="1" length="1" days="00100" weeks="1100010000" penalty="12"/>
+            <!-- Me-09:30 --><time start="2" length="1" days="00100" weeks="1100010000" penalty="11"/>
+            <!-- Me-11:00 --><time start="3" length="1" days="00100" weeks="1100010000" penalty="10"/>
+            <!-- Me-14:00 --><time start="4" length="1" days="00100" weeks="1100010000" penalty="11"/>
+            <!-- Me-15:30 --><time start="5" length="1" days="00100" weeks="1100010000" penalty="12"/>
+            <!-- Je-08:00 --><time start="1" length="1" days="00010" weeks="1100010000" penalty="22"/>
+            <!-- Je-09:30 --><time start="2" length="1" days="00010" weeks="1100010000" penalty="21"/>
+            <!-- Je-11:00 --><time start="3" length="1" days="00010" weeks="1100010000" penalty="20"/>
+            <!-- Je-14:00 --><time start="4" length="1" days="00010" weeks="1100010000" penalty="21"/>
+            <!-- Je-15:30 --><time start="5" length="1" days="00010" weeks="1100010000" penalty="22"/>
+            <!-- Ve-08:00 --><time start="1" length="1" days="00001" weeks="1100010000" penalty="32"/>
+            <!-- Ve-09:30 --><time start="2" length="1" days="00001" weeks="1100010000" penalty="31"/>
+            <!-- Ve-11:00 --><time start="3" length="1" days="00001" weeks="1100010000" penalty="30"/>
+            <!-- Ve-14:00 --><time start="4" length="1" days="00001" weeks="1100010000" penalty="31"/>
+            <!-- Ve-15:30 --><time start="5" length="1" days="00001" weeks="1100010000" penalty="32"/>
+          </class>
+        </subpart>
+        <!-- TD 1 : semaines 3 -->
+        <subpart id="902">
+          <class id="Systèmes Intelligents_TD-1" limit="6">
+            <room id="H001" penalty="2"/>
+            <room id="H002" penalty="0"/>
+            <room id="H003" penalty="1"/>
+            <!-- Lu-08:00 --><time start="1" length="1" days="10000" weeks="0010000000" penalty="11"/>
+            <!-- Lu-09:30 --><time start="2" length="1" days="10000" weeks="0010000000" penalty="10"/>
+            <!-- Lu-11:00 --><time start="3" length="1" days="10000" weeks="0010000000" penalty="11"/>
+            <!-- Lu-14:00 --><time start="4" length="1" days="10000" weeks="0010000000" penalty="12"/>
+            <!-- Lu-15:30 --><time start="5" length="1" days="10000" weeks="0010000000" penalty="13"/>
+            <!-- Ma-08:00 --><time start="1" length="1" days="01000" weeks="0010000000" penalty="1"/>
+            <!-- Ma-09:30 --><time start="2" length="1" days="01000" weeks="0010000000" penalty="0"/>
+            <!-- Ma-11:00 --><time start="3" length="1" days="01000" weeks="0010000000" penalty="1"/>
+            <!-- Ma-14:00 --><time start="4" length="1" days="01000" weeks="0010000000" penalty="2"/>
+            <!-- Ma-15:30 --><time start="5" length="1" days="01000" weeks="0010000000" penalty="3"/>
+            <!-- Me-08:00 --><time start="1" length="1" days="00100" weeks="0010000000" penalty="11"/>
+            <!-- Me-09:30 --><time start="2" length="1" days="00100" weeks="0010000000" penalty="10"/>
+            <!-- Me-11:00 --><time start="3" length="1" days="00100" weeks="0010000000" penalty="11"/>
+            <!-- Me-14:00 --><time start="4" length="1" days="00100" weeks="0010000000" penalty="12"/>
+            <!-- Me-15:30 --><time start="5" length="1" days="00100" weeks="0010000000" penalty="13"/>
+            <!-- Je-08:00 --><time start="1" length="1" days="00010" weeks="0010000000" penalty="21"/>
+            <!-- Je-09:30 --><time start="2" length="1" days="00010" weeks="0010000000" penalty="20"/>
+            <!-- Je-11:00 --><time start="3" length="1" days="00010" weeks="0010000000" penalty="21"/>
+            <!-- Je-14:00 --><time start="4" length="1" days="00010" weeks="0010000000" penalty="22"/>
+            <!-- Je-15:30 --><time start="5" length="1" days="00010" weeks="0010000000" penalty="23"/>
+            <!-- Ve-08:00 --><time start="1" length="1" days="00001" weeks="0010000000" penalty="31"/>
+            <!-- Ve-09:30 --><time start="2" length="1" days="00001" weeks="0010000000" penalty="30"/>
+            <!-- Ve-11:00 --><time start="3" length="1" days="00001" weeks="0010000000" penalty="31"/>
+            <!-- Ve-14:00 --><time start="4" length="1" days="00001" weeks="0010000000" penalty="32"/>
+            <!-- Ve-15:30 --><time start="5" length="1" days="00001" weeks="0010000000" penalty="33"/>
+          </class>
+        </subpart>
+        <!-- TD 2 : semaines 3 -->
+        <subpart id="903">
+          <class id="Systèmes Intelligents_TD-2" limit="6">
+            <room id="H001" penalty="2"/>
+            <room id="H002" penalty="0"/>
+            <room id="H003" penalty="1"/>
+            <!-- Lu-08:00 --><time start="1" length="1" days="10000" weeks="0010000000" penalty="12"/>
+            <!-- Lu-09:30 --><time start="2" length="1" days="10000" weeks="0010000000" penalty="11"/>
+            <!-- Lu-11:00 --><time start="3" length="1" days="10000" weeks="0010000000" penalty="10"/>
+            <!-- Lu-14:00 --><time start="4" length="1" days="10000" weeks="0010000000" penalty="11"/>
+            <!-- Lu-15:30 --><time start="5" length="1" days="10000" weeks="0010000000" penalty="12"/>
+            <!-- Ma-08:00 --><time start="1" length="1" days="01000" weeks="0010000000" penalty="2"/>
+            <!-- Ma-09:30 --><time start="2" length="1" days="01000" weeks="0010000000" penalty="1"/>
+            <!-- Ma-11:00 --><time start="3" length="1" days="01000" weeks="0010000000" penalty="0"/>
+            <!-- Ma-14:00 --><time start="4" length="1" days="01000" weeks="0010000000" penalty="1"/>
+            <!-- Ma-15:30 --><time start="5" length="1" days="01000" weeks="0010000000" penalty="2"/>
+            <!-- Me-08:00 --><time start="1" length="1" days="00100" weeks="0010000000" penalty="12"/>
+            <!-- Me-09:30 --><time start="2" length="1" days="00100" weeks="0010000000" penalty="11"/>
+            <!-- Me-11:00 --><time start="3" length="1" days="00100" weeks="0010000000" penalty="10"/>
+            <!-- Me-14:00 --><time start="4" length="1" days="00100" weeks="0010000000" penalty="11"/>
+            <!-- Me-15:30 --><time start="5" length="1" days="00100" weeks="0010000000" penalty="12"/>
+            <!-- Je-08:00 --><time start="1" length="1" days="00010" weeks="0010000000" penalty="22"/>
+            <!-- Je-09:30 --><time start="2" length="1" days="00010" weeks="0010000000" penalty="21"/>
+            <!-- Je-11:00 --><time start="3" length="1" days="00010" weeks="0010000000" penalty="20"/>
+            <!-- Je-14:00 --><time start="4" length="1" days="00010" weeks="0010000000" penalty="21"/>
+            <!-- Je-15:30 --><time start="5" length="1" days="00010" weeks="0010000000" penalty="22"/>
+            <!-- Ve-08:00 --><time start="1" length="1" days="00001" weeks="0010000000" penalty="32"/>
+            <!-- Ve-09:30 --><time start="2" length="1" days="00001" weeks="0010000000" penalty="31"/>
+            <!-- Ve-11:00 --><time start="3" length="1" days="00001" weeks="0010000000" penalty="30"/>
+            <!-- Ve-14:00 --><time start="4" length="1" days="00001" weeks="0010000000" penalty="31"/>
+            <!-- Ve-15:30 --><time start="5" length="1" days="00001" weeks="0010000000" penalty="32"/>
+          </class>
+        </subpart>
+        <!-- TP 1 : semaines 4-5,7-10 -->
+        <subpart id="904">
+          <class id="Systèmes Intelligents_TP-1" limit="6">
+            <room id="H001" penalty="2"/>
+            <room id="H002" penalty="0"/>
+            <room id="H003" penalty="1"/>
+            <!-- Lu-08:00 --><time start="1" length="1" days="10000" weeks="0001101111" penalty="11"/>
+            <!-- Lu-09:30 --><time start="2" length="1" days="10000" weeks="0001101111" penalty="10"/>
+            <!-- Lu-11:00 --><time start="3" length="1" days="10000" weeks="0001101111" penalty="11"/>
+            <!-- Lu-14:00 --><time start="4" length="1" days="10000" weeks="0001101111" penalty="12"/>
+            <!-- Lu-15:30 --><time start="5" length="1" days="10000" weeks="0001101111" penalty="13"/>
+            <!-- Ma-08:00 --><time start="1" length="1" days="01000" weeks="0001101111" penalty="1"/>
+            <!-- Ma-09:30 --><time start="2" length="1" days="01000" weeks="0001101111" penalty="0"/>
+            <!-- Ma-11:00 --><time start="3" length="1" days="01000" weeks="0001101111" penalty="1"/>
+            <!-- Ma-14:00 --><time start="4" length="1" days="01000" weeks="0001101111" penalty="2"/>
+            <!-- Ma-15:30 --><time start="5" length="1" days="01000" weeks="0001101111" penalty="3"/>
+            <!-- Me-08:00 --><time start="1" length="1" days="00100" weeks="0001101111" penalty="11"/>
+            <!-- Me-09:30 --><time start="2" length="1" days="00100" weeks="0001101111" penalty="10"/>
+            <!-- Me-11:00 --><time start="3" length="1" days="00100" weeks="0001101111" penalty="11"/>
+            <!-- Me-14:00 --><time start="4" length="1" days="00100" weeks="0001101111" penalty="12"/>
+            <!-- Me-15:30 --><time start="5" length="1" days="00100" weeks="0001101111" penalty="13"/>
+            <!-- Je-08:00 --><time start="1" length="1" days="00010" weeks="0001101111" penalty="21"/>
+            <!-- Je-09:30 --><time start="2" length="1" days="00010" weeks="0001101111" penalty="20"/>
+            <!-- Je-11:00 --><time start="3" length="1" days="00010" weeks="0001101111" penalty="21"/>
+            <!-- Je-14:00 --><time start="4" length="1" days="00010" weeks="0001101111" penalty="22"/>
+            <!-- Je-15:30 --><time start="5" length="1" days="00010" weeks="0001101111" penalty="23"/>
+            <!-- Ve-08:00 --><time start="1" length="1" days="00001" weeks="0001101111" penalty="31"/>
+            <!-- Ve-09:30 --><time start="2" length="1" days="00001" weeks="0001101111" penalty="30"/>
+            <!-- Ve-11:00 --><time start="3" length="1" days="00001" weeks="0001101111" penalty="31"/>
+            <!-- Ve-14:00 --><time start="4" length="1" days="00001" weeks="0001101111" penalty="32"/>
+            <!-- Ve-15:30 --><time start="5" length="1" days="00001" weeks="0001101111" penalty="33"/>
+          </class>
+        </subpart>
+        <!-- TP 2 : semaines 4-5,7-10 -->
+        <subpart id="905">
+          <class id="Systèmes Intelligents_TP-2" limit="6">
+            <room id="H001" penalty="2"/>
+            <room id="H002" penalty="0"/>
+            <room id="H003" penalty="1"/>
+            <!-- Lu-08:00 --><time start="1" length="1" days="10000" weeks="0001101111" penalty="12"/>
+            <!-- Lu-09:30 --><time start="2" length="1" days="10000" weeks="0001101111" penalty="11"/>
+            <!-- Lu-11:00 --><time start="3" length="1" days="10000" weeks="0001101111" penalty="10"/>
+            <!-- Lu-14:00 --><time start="4" length="1" days="10000" weeks="0001101111" penalty="11"/>
+            <!-- Lu-15:30 --><time start="5" length="1" days="10000" weeks="0001101111" penalty="12"/>
+            <!-- Ma-08:00 --><time start="1" length="1" days="01000" weeks="0001101111" penalty="2"/>
+            <!-- Ma-09:30 --><time start="2" length="1" days="01000" weeks="0001101111" penalty="1"/>
+            <!-- Ma-11:00 --><time start="3" length="1" days="01000" weeks="0001101111" penalty="0"/>
+            <!-- Ma-14:00 --><time start="4" length="1" days="01000" weeks="0001101111" penalty="1"/>
+            <!-- Ma-15:30 --><time start="5" length="1" days="01000" weeks="0001101111" penalty="2"/>
+            <!-- Me-08:00 --><time start="1" length="1" days="00100" weeks="0001101111" penalty="12"/>
+            <!-- Me-09:30 --><time start="2" length="1" days="00100" weeks="0001101111" penalty="11"/>
+            <!-- Me-11:00 --><time start="3" length="1" days="00100" weeks="0001101111" penalty="10"/>
+            <!-- Me-14:00 --><time start="4" length="1" days="00100" weeks="0001101111" penalty="11"/>
+            <!-- Me-15:30 --><time start="5" length="1" days="00100" weeks="0001101111" penalty="12"/>
+            <!-- Je-08:00 --><time start="1" length="1" days="00010" weeks="0001101111" penalty="22"/>
+            <!-- Je-09:30 --><time start="2" length="1" days="00010" weeks="0001101111" penalty="21"/>
+            <!-- Je-11:00 --><time start="3" length="1" days="00010" weeks="0001101111" penalty="20"/>
+            <!-- Je-14:00 --><time start="4" length="1" days="00010" weeks="0001101111" penalty="21"/>
+            <!-- Je-15:30 --><time start="5" length="1" days="00010" weeks="0001101111" penalty="22"/>
+            <!-- Ve-08:00 --><time start="1" length="1" days="00001" weeks="0001101111" penalty="32"/>
+            <!-- Ve-09:30 --><time start="2" length="1" days="00001" weeks="0001101111" penalty="31"/>
+            <!-- Ve-11:00 --><time start="3" length="1" days="00001" weeks="0001101111" penalty="30"/>
+            <!-- Ve-14:00 --><time start="4" length="1" days="00001" weeks="0001101111" penalty="31"/>
+            <!-- Ve-15:30 --><time start="5" length="1" days="00001" weeks="0001101111" penalty="32"/>
+          </class>
+        </subpart>
+      </config>
+    </course>
+  </courses>
+  <distributions>
+    <!-- contrainte dure : même EC pour AN-TP-A/B/C -->
+    <distribution type="SameAttendees" required="true">
+      <class id="Anglais_TP-A"/>
+      <class id="Anglais_TP-B"/>
+      <class id="Anglais_TP-C"/>
+    </distribution>
+    <!-- contrainte souple : même jour pour AN-TP-A/B -->
+    <distribution type="SameDays" penalty="1">
+      <class id="Anglais_TP-A"/>
+      <class id="Anglais_TP-B"/>
+    </distribution>
+    <!-- contrainte souple : précédence pour AN-TP-C/A/B -->
+    <distribution type="Precedence" penalty="1">
+      <class id="Anglais_TP-C"/>
+      <class id="Anglais_TP-A"/>
+      <class id="Anglais_TP-B"/>
+    </distribution>
+    <!-- contrainte dure : même EC pour BD-CM-1/2*BD-TD-A/B*BD-TP-A/B/C -->
+    <distribution type="SameAttendees" required="true">
+      <class id="Bases de Données_CM-1"/>
+      <class id="Bases de Données_CM-2"/>
+      <class id="Bases de Données_TD-A"/>
+      <class id="Bases de Données_TD-B"/>
+      <class id="Bases de Données_TP-A"/>
+      <class id="Bases de Données_TP-B"/>
+      <class id="Bases de Données_TP-C"/>
+    </distribution>
+    <!-- contrainte dure : précédence pour BD-CM-1*BD-CM-2 -->
+    <distribution type="Precedence" required="true">
+      <class id="Bases de Données_CM-1"/>
+      <class id="Bases de Données_CM-2"/>
+    </distribution>
+    <!-- contrainte dure : précédence pour BD-CM-1*BD-TD-A -->
+    <distribution type="Precedence" required="true">
+      <class id="Bases de Données_CM-1"/>
+      <class id="Bases de Données_TD-A"/>
+    </distribution>
+    <!-- contrainte dure : précédence pour BD-CM-1*BD-TD-B -->
+    <distribution type="Precedence" required="true">
+      <class id="Bases de Données_CM-1"/>
+      <class id="Bases de Données_TD-B"/>
+    </distribution>
+    <!-- contrainte dure : précédence pour BD-CM-2*BD-TD-A -->
+    <distribution type="Precedence" required="true">
+      <class id="Bases de Données_CM-2"/>
+      <class id="Bases de Données_TD-A"/>
+    </distribution>
+    <!-- contrainte dure : précédence pour BD-CM-2*BD-TD-B -->
+    <distribution type="Precedence" required="true">
+      <class id="Bases de Données_CM-2"/>
+      <class id="Bases de Données_TD-B"/>
+    </distribution>
+    <!-- contrainte dure : précédence pour BD-TD-A*BD-TP-A -->
+    <distribution type="Precedence" required="true">
+      <class id="Bases de Données_TD-A"/>
+      <class id="Bases de Données_TP-A"/>
+    </distribution>
+    <!-- contrainte dure : précédence pour BD-TD-A*BD-TP-B -->
+    <distribution type="Precedence" required="true">
+      <class id="Bases de Données_TD-A"/>
+      <class id="Bases de Données_TP-B"/>
+    </distribution>
+    <!-- contrainte dure : précédence pour BD-TD-A*BD-TP-C -->
+    <distribution type="Precedence" required="true">
+      <class id="Bases de Données_TD-A"/>
+      <class id="Bases de Données_TP-C"/>
+    </distribution>
+    <!-- contrainte dure : précédence pour BD-TD-B*BD-TP-A -->
+    <distribution type="Precedence" required="true">
+      <class id="Bases de Données_TD-B"/>
+      <class id="Bases de Données_TP-A"/>
+    </distribution>
+    <!-- contrainte dure : précédence pour BD-TD-B*BD-TP-B -->
+    <distribution type="Precedence" required="true">
+      <class id="Bases de Données_TD-B"/>
+      <class id="Bases de Données_TP-B"/>
+    </distribution>
+    <!-- contrainte dure : précédence pour BD-TD-B*BD-TP-C -->
+    <distribution type="Precedence" required="true">
+      <class id="Bases de Données_TD-B"/>
+      <class id="Bases de Données_TP-C"/>
+    </distribution>
+    <!-- contrainte dure : même salle pour BD-CM-1/2 -->
+    <distribution type="SameRoom" required="true">
+      <class id="Bases de Données_CM-1"/>
+      <class id="Bases de Données_CM-2"/>
+    </distribution>
+    <!-- contrainte souple : même jour pour BD-CM-1/2 -->
+    <distribution type="SameDays" penalty="1">
+      <class id="Bases de Données_CM-1"/>
+      <class id="Bases de Données_CM-2"/>
+    </distribution>
+    <!-- contrainte souple : même jour pour BD-TD-A/B -->
+    <distribution type="SameDays" penalty="1">
+      <class id="Bases de Données_TD-A"/>
+      <class id="Bases de Données_TD-B"/>
+    </distribution>
+    <!-- contrainte souple : même jour pour BD-TP-B/C -->
+    <distribution type="SameDays" penalty="1">
+      <class id="Bases de Données_TP-B"/>
+      <class id="Bases de Données_TP-C"/>
+    </distribution>
+    <!-- contrainte souple : précédence pour BD-TP-B/C -->
+    <distribution type="Precedence" penalty="1">
+      <class id="Bases de Données_TP-B"/>
+      <class id="Bases de Données_TP-C"/>
+    </distribution>
+    <!-- contrainte dure : même EC pour DW-CM-1/2*DW-TP-1/2-A/B -->
+    <distribution type="SameAttendees" required="true">
+      <class id="Développement Web_CM-1"/>
+      <class id="Développement Web_CM-2"/>
+      <class id="Développement Web_TP-1-A"/>
+      <class id="Développement Web_TP-1-B"/>
+      <class id="Développement Web_TP-2-A"/>
+      <class id="Développement Web_TP-2-B"/>
+    </distribution>
+    <!-- contrainte dure : même EC pour DW-TP-1/2-C -->
+    <distribution type="SameAttendees" required="true">
+      <class id="Développement Web_TP-1-C"/>
+      <class id="Développement Web_TP-2-C"/>
+    </distribution>
+    <!-- contrainte dure : précédence pour DW-CM-1/2 -->
+    <distribution type="Precedence" required="true">
+      <class id="Développement Web_CM-1"/>
+      <class id="Développement Web_CM-2"/>
+    </distribution>
+    <!-- contrainte dure : précédence pour DW-CM-2*DW-TP-1-A*DW-TP-2-A -->
+    <distribution type="Precedence" required="true">
+      <class id="Développement Web_CM-2"/>
+      <class id="Développement Web_TP-1-A"/>
+      <class id="Développement Web_TP-2-A"/>
+    </distribution>
+    <!-- contrainte dure : précédence pour DW-CM-2*DW-TP-1-B*DW-TP-2-B -->
+    <distribution type="Precedence" required="true">
+      <class id="Développement Web_CM-2"/>
+      <class id="Développement Web_TP-1-B"/>
+      <class id="Développement Web_TP-2-B"/>
+    </distribution>
+    <!-- contrainte dure : précédence pour DW-CM-2*DW-TP-1-C*DW-TP-2-C -->
+    <distribution type="Precedence" required="true">
+      <class id="Développement Web_CM-2"/>
+      <class id="Développement Web_TP-1-C"/>
+      <class id="Développement Web_TP-2-C"/>
+    </distribution>
+    <!-- contrainte dure : même jour pour DW-TP-1/2-A -->
+    <distribution type="SameDays" required="true">
+      <class id="Développement Web_TP-1-A"/>
+      <class id="Développement Web_TP-2-A"/>
+    </distribution>
+    <!-- contrainte dure : même jour pour DW-TP-1/2-B -->
+    <distribution type="SameDays" required="true">
+      <class id="Développement Web_TP-1-B"/>
+      <class id="Développement Web_TP-2-B"/>
+    </distribution>
+    <!-- contrainte dure : même jour pour DW-TP-1/2-C -->
+    <distribution type="SameDays" required="true">
+      <class id="Développement Web_TP-1-C"/>
+      <class id="Développement Web_TP-2-C"/>
+    </distribution>
+    <!-- contrainte dure : même salle pour DW-TP-1/2-A -->
+    <distribution type="SameRoom" required="true">
+      <class id="Développement Web_TP-1-A"/>
+      <class id="Développement Web_TP-2-A"/>
+    </distribution>
+    <!-- contrainte dure : même salle pour DW-TP-1/2-B -->
+    <distribution type="SameRoom" required="true">
+      <class id="Développement Web_TP-1-B"/>
+      <class id="Développement Web_TP-2-B"/>
+    </distribution>
+    <!-- contrainte dure : même salle pour DW-TP-1/2-C -->
+    <distribution type="SameRoom" required="true">
+      <class id="Développement Web_TP-1-C"/>
+      <class id="Développement Web_TP-2-C"/>
+    </distribution>
+    <!-- contrainte souple : même créneau pour DW-TP-1-B/DW-TP-1-C -->
+    <distribution type="SameStart" penalty="1">
+      <class id="Développement Web_TP-1-B"/>
+      <class id="Développement Web_TP-1-C"/>
+    </distribution>
+    <!-- contrainte souple : même créneau pour DW-TP-2-B/DW-TP-2-C -->
+    <distribution type="SameStart" penalty="1">
+      <class id="Développement Web_TP-2-B"/>
+      <class id="Développement Web_TP-2-C"/>
+    </distribution>
+    <!-- contrainte dure : même EC pour IS-CM-1/2*IS-TP-1/2 -->
+    <distribution type="SameAttendees" required="true">
+      <class id="Images de Synthèse_CM-1"/>
+      <class id="Images de Synthèse_CM-2"/>
+      <class id="Images de Synthèse_TP-1"/>
+      <class id="Images de Synthèse_TP-2"/>
+    </distribution>
+    <!-- contrainte dure : précédence pour IS-CM-1/2 -->
+    <distribution type="Precedence" required="true">
+      <class id="Images de Synthèse_CM-1"/>
+      <class id="Images de Synthèse_CM-2"/>
+    </distribution>
+    <!-- contrainte dure : précédence pour IS-TP-1/2 -->
+    <distribution type="Precedence" required="true">
+      <class id="Images de Synthèse_TP-1"/>
+      <class id="Images de Synthèse_TP-2"/>
+    </distribution>
+    <!-- contrainte dure : même jour pour IS-CM-1/2*IS-TP-1/2 -->
+    <distribution type="SameDays" required="true">
+      <class id="Images de Synthèse_CM-1"/>
+      <class id="Images de Synthèse_CM-2"/>
+      <class id="Images de Synthèse_TP-1"/>
+      <class id="Images de Synthèse_TP-2"/>
+    </distribution>
+    <!-- contrainte dure : même salle pour IS-CM-1/2 -->
+    <distribution type="SameRoom" required="true">
+      <class id="Images de Synthèse_CM-1"/>
+      <class id="Images de Synthèse_CM-2"/>
+    </distribution>
+    <!-- contrainte dure : même salle pour IS-TP-1/2 -->
+    <distribution type="SameRoom" required="true">
+      <class id="Images de Synthèse_TP-1"/>
+      <class id="Images de Synthèse_TP-2"/>
+    </distribution>
+    <!-- contrainte dure : même EC pour PA-CM-1/2*PA-TD-1/2*PA-TP-1/2 -->
+    <distribution type="SameAttendees" required="true">
+      <class id="Production Automatisée de Documents_CM-1"/>
+      <class id="Production Automatisée de Documents_CM-2"/>
+      <class id="Production Automatisée de Documents_TD-1"/>
+      <class id="Production Automatisée de Documents_TD-2"/>
+      <class id="Production Automatisée de Documents_TP-1"/>
+      <class id="Production Automatisée de Documents_TP-2"/>
+    </distribution>
+    <!-- contrainte dure : précédence pour PA-CM-1/2 -->
+    <distribution type="Precedence" required="true">
+      <class id="Production Automatisée de Documents_CM-1"/>
+      <class id="Production Automatisée de Documents_CM-2"/>
+    </distribution>
+    <!-- contrainte dure : même jour pour PA-CM-1/2 -->
+    <distribution type="SameDays" required="true">
+      <class id="Production Automatisée de Documents_CM-1"/>
+      <class id="Production Automatisée de Documents_CM-2"/>
+    </distribution>
+    <!-- contrainte dure : précédence pour PA-TD-1/2 -->
+    <distribution type="Precedence" required="true">
+      <class id="Production Automatisée de Documents_TD-1"/>
+      <class id="Production Automatisée de Documents_TD-2"/>
+    </distribution>
+    <!-- contrainte dure : même jour pour PA-TD-1/2 -->
+    <distribution type="SameDays" required="true">
+      <class id="Production Automatisée de Documents_TD-1"/>
+      <class id="Production Automatisée de Documents_TD-2"/>
+    </distribution>
+    <!-- contrainte dure : précédence pour PA-TP-1/2 -->
+    <distribution type="Precedence" required="true">
+      <class id="Production Automatisée de Documents_TP-1"/>
+      <class id="Production Automatisée de Documents_TP-2"/>
+    </distribution>
+    <!-- contrainte dure : même jour pour PA-TP-1/2 -->
+    <distribution type="SameDays" required="true">
+      <class id="Production Automatisée de Documents_TP-1"/>
+      <class id="Production Automatisée de Documents_TP-2"/>
+    </distribution>
+    <!-- contrainte dure : même salle pour PA-CM-1/2 -->
+    <distribution type="SameRoom" required="true">
+      <class id="Production Automatisée de Documents_CM-1"/>
+      <class id="Production Automatisée de Documents_CM-2"/>
+    </distribution>
+    <!-- contrainte dure : même salle pour PA-TD-1/2 -->
+    <distribution type="SameRoom" required="true">
+      <class id="Production Automatisée de Documents_TD-1"/>
+      <class id="Production Automatisée de Documents_TD-2"/>
+    </distribution>
+    <!-- contrainte dure : même salle pour PA-TP-1/2 -->
+    <distribution type="SameRoom" required="true">
+      <class id="Production Automatisée de Documents_TP-1"/>
+      <class id="Production Automatisée de Documents_TP-2"/>
+    </distribution>
+    <!-- contrainte dure : même EC pour PF-CM-1/2*PF-TD-A/B*PF-TP-A/B/C -->
+    <distribution type="SameAttendees" required="true">
+      <class id="Programmation Fonctionnelle_CM-1"/>
+      <class id="Programmation Fonctionnelle_CM-2"/>
+      <class id="Programmation Fonctionnelle_TD-A"/>
+      <class id="Programmation Fonctionnelle_TD-B"/>
+      <class id="Programmation Fonctionnelle_TP-A"/>
+      <class id="Programmation Fonctionnelle_TP-B"/>
+      <class id="Programmation Fonctionnelle_TP-C"/>
+    </distribution>
+    <!-- contrainte dure : précédence pour PF-CM-1/2 -->
+    <distribution type="Precedence" required="true">
+      <class id="Programmation Fonctionnelle_CM-1"/>
+      <class id="Programmation Fonctionnelle_CM-2"/>
+    </distribution>
+    <!-- contrainte dure : précédence pour PF-CM-1*PF-TD-A -->
+    <distribution type="Precedence" required="true">
+      <class id="Programmation Fonctionnelle_CM-1"/>
+      <class id="Programmation Fonctionnelle_TD-A"/>
+    </distribution>
+    <!-- contrainte dure : précédence pour PF-CM-1*PF-TD-B -->
+    <distribution type="Precedence" required="true">
+      <class id="Programmation Fonctionnelle_CM-1"/>
+      <class id="Programmation Fonctionnelle_TD-B"/>
+    </distribution>
+    <!-- contrainte dure : précédence pour PF-TD-A*PF-TP-A -->
+    <distribution type="Precedence" required="true">
+      <class id="Programmation Fonctionnelle_TD-A"/>
+      <class id="Programmation Fonctionnelle_TP-A"/>
+    </distribution>
+    <!-- contrainte dure : précédence pour PF-TD-A*PF-TP-B -->
+    <distribution type="Precedence" required="true">
+      <class id="Programmation Fonctionnelle_TD-A"/>
+      <class id="Programmation Fonctionnelle_TP-B"/>
+    </distribution>
+    <!-- contrainte dure : précédence pour PF-TD-A*PF-TP-C -->
+    <distribution type="Precedence" required="true">
+      <class id="Programmation Fonctionnelle_TD-A"/>
+      <class id="Programmation Fonctionnelle_TP-C"/>
+    </distribution>
+    <!-- contrainte dure : précédence pour PF-TD-B*PF-TP-A -->
+    <distribution type="Precedence" required="true">
+      <class id="Programmation Fonctionnelle_TD-B"/>
+      <class id="Programmation Fonctionnelle_TP-A"/>
+    </distribution>
+    <!-- contrainte dure : précédence pour PF-TD-B*PF-TP-B -->
+    <distribution type="Precedence" required="true">
+      <class id="Programmation Fonctionnelle_TD-B"/>
+      <class id="Programmation Fonctionnelle_TP-B"/>
+    </distribution>
+    <!-- contrainte dure : précédence pour PF-TD-B*PF-TP-C -->
+    <distribution type="Precedence" required="true">
+      <class id="Programmation Fonctionnelle_TD-B"/>
+      <class id="Programmation Fonctionnelle_TP-C"/>
+    </distribution>
+    <!-- contrainte dure : précédence pour PF-CM-2*PF-TP-A -->
+    <distribution type="Precedence" required="true">
+      <class id="Programmation Fonctionnelle_CM-2"/>
+      <class id="Programmation Fonctionnelle_TP-A"/>
+    </distribution>
+    <!-- contrainte dure : précédence pour PF-CM-2*PF-TP-B -->
+    <distribution type="Precedence" required="true">
+      <class id="Programmation Fonctionnelle_CM-2"/>
+      <class id="Programmation Fonctionnelle_TP-B"/>
+    </distribution>
+    <!-- contrainte dure : précédence pour PF-CM-2*PF-TP-C -->
+    <distribution type="Precedence" required="true">
+      <class id="Programmation Fonctionnelle_CM-2"/>
+      <class id="Programmation Fonctionnelle_TP-C"/>
+    </distribution>
+    <!-- contrainte dure : même salle pour PF-CM-1/2 -->
+    <distribution type="SameRoom" required="true">
+      <class id="Programmation Fonctionnelle_CM-1"/>
+      <class id="Programmation Fonctionnelle_CM-2"/>
+    </distribution>
+    <!-- contrainte souple : même jour pour PF-TD-A-B -->
+    <distribution type="SameDays" penalty="1">
+      <class id="Programmation Fonctionnelle_TD-A"/>
+      <class id="Programmation Fonctionnelle_TD-B"/>
+    </distribution>
+    <!-- contrainte souple : même jour pour PF-TP-A-B -->
+    <distribution type="SameDays" penalty="1">
+      <class id="Programmation Fonctionnelle_TP-A"/>
+      <class id="Programmation Fonctionnelle_TP-B"/>
+    </distribution>
+    <!-- contrainte dure : même EC pour PL-CM-1/2*PL-TD-A/B*PL-TP-A/B/C -->
+    <distribution type="SameAttendees" required="true">
+      <class id="Programmation Logique_CM-1"/>
+      <class id="Programmation Logique_CM-2"/>
+      <class id="Programmation Logique_TD-A"/>
+      <class id="Programmation Logique_TD-B"/>
+      <class id="Programmation Logique_TP-A"/>
+      <class id="Programmation Logique_TP-B"/>
+      <class id="Programmation Logique_TP-C"/>
+    </distribution>
+    <!-- contrainte dure : précédence pour PL-CM-1/2 -->
+    <distribution type="Precedence" required="true">
+      <class id="Programmation Logique_CM-1"/>
+      <class id="Programmation Logique_CM-2"/>
+    </distribution>
+    <!-- contrainte dure : précédence pour PL-CM-2/PL-TD-A -->
+    <distribution type="Precedence" required="true">
+      <class id="Programmation Logique_CM-2"/>
+      <class id="Programmation Logique_TD-A"/>
+    </distribution>
+    <!-- contrainte dure : précédence pour PL-CM-2/PL-TD-B -->
+    <distribution type="Precedence" required="true">
+      <class id="Programmation Logique_CM-2"/>
+      <class id="Programmation Logique_TD-B"/>
+    </distribution>
+    <!-- contrainte dure : précédence pour PL-TD-A/PL-TP-A -->
+    <distribution type="Precedence" required="true">
+      <class id="Programmation Logique_TD-A"/>
+      <class id="Programmation Logique_TP-A"/>
+    </distribution>
+    <!-- contrainte dure : précédence pour PL-TD-A/PL-TP-B -->
+    <distribution type="Precedence" required="true">
+      <class id="Programmation Logique_TD-A"/>
+      <class id="Programmation Logique_TP-B"/>
+    </distribution>
+    <!-- contrainte dure : précédence pour PL-TD-A/PL-TP-C -->
+    <distribution type="Precedence" required="true">
+      <class id="Programmation Logique_TD-A"/>
+      <class id="Programmation Logique_TP-C"/>
+    </distribution>
+    <!-- contrainte dure : précédence pour PL-TD-B/PL-TP-A -->
+    <distribution type="Precedence" required="true">
+      <class id="Programmation Logique_TD-B"/>
+      <class id="Programmation Logique_TP-A"/>
+    </distribution>
+    <!-- contrainte dure : précédence pour PL-TD-B/PL-TP-B -->
+    <distribution type="Precedence" required="true">
+      <class id="Programmation Logique_TD-B"/>
+      <class id="Programmation Logique_TP-B"/>
+    </distribution>
+    <!-- contrainte dure : précédence pour PL-TD-B/PL-TP-C -->
+    <distribution type="Precedence" required="true">
+      <class id="Programmation Logique_TD-B"/>
+      <class id="Programmation Logique_TP-C"/>
+    </distribution>
+    <!-- contrainte dure : même salle pour PL-CM-1/2 -->
+    <distribution type="SameRoom" required="true">
+      <class id="Programmation Logique_CM-1"/>
+      <class id="Programmation Logique_CM-2"/>
+    </distribution>
+    <!-- contrainte dure : même jour pour PL-CM-1/2 -->
+    <distribution type="SameDays" required="true">
+      <class id="Programmation Logique_CM-1"/>
+      <class id="Programmation Logique_CM-2"/>
+    </distribution>
+    <!-- contrainte souple : même jour pour PL-TD-A-B -->
+    <distribution type="SameDays" penalty="1">
+      <class id="Programmation Logique_TD-A"/>
+      <class id="Programmation Logique_TD-B"/>
+    </distribution>
+    <!-- contrainte souple : même jour pour PL-TP-A-B -->
+    <distribution type="SameDays" penalty="1">
+      <class id="Programmation Logique_TP-A"/>
+      <class id="Programmation Logique_TP-B"/>
+    </distribution>
+    <!-- contrainte dure : même EC pour QT-CM-1/2*QT-TP-1/2 -->
+    <distribution type="SameAttendees" required="true">
+      <class id="Qt Avancé_CM-1"/>
+      <class id="Qt Avancé_CM-2"/>
+      <class id="Qt Avancé_TP-1"/>
+      <class id="Qt Avancé_TP-2"/>
+    </distribution>
+    <!-- contrainte dure : précédence pour QT-CM-1/2 -->
+    <distribution type="Precedence" required="true">
+      <class id="Qt Avancé_CM-1"/>
+      <class id="Qt Avancé_CM-2"/>
+    </distribution>
+    <!-- contrainte dure : précédence pour QT-TP-1/2 -->
+    <distribution type="Precedence" required="true">
+      <class id="Qt Avancé_TP-1"/>
+      <class id="Qt Avancé_TP-2"/>
+    </distribution>
+    <!-- contrainte dure : même jour pour QT-CM-1/2 -->
+    <distribution type="SameDays" required="true">
+      <class id="Qt Avancé_CM-1"/>
+      <class id="Qt Avancé_CM-2"/>
+    </distribution>
+    <!-- contrainte dure : même jour pour QT-TP-1/2 -->
+    <distribution type="SameDays" required="true">
+      <class id="Qt Avancé_TP-1"/>
+      <class id="Qt Avancé_TP-2"/>
+    </distribution>
+    <!-- contrainte dure : même salle pour QT-CM-1/2 -->
+    <distribution type="SameRoom" required="true">
+      <class id="Qt Avancé_CM-1"/>
+      <class id="Qt Avancé_CM-2"/>
+    </distribution>
+    <!-- contrainte dure : même salle pour QT-TP-1/2 -->
+    <distribution type="SameRoom" required="true">
+      <class id="Qt Avancé_TP-1"/>
+      <class id="Qt Avancé_TP-2"/>
+    </distribution>
+    <!-- contrainte dure : même EC pour SI-CM-1/2*SI-TD-1/2*SI-TP-1/2 -->
+    <distribution type="SameAttendees" required="true">
+      <class id="Systèmes Intelligents_CM-1"/>
+      <class id="Systèmes Intelligents_CM-2"/>
+      <class id="Systèmes Intelligents_TD-1"/>
+      <class id="Systèmes Intelligents_TD-2"/>
+      <class id="Systèmes Intelligents_TP-1"/>
+      <class id="Systèmes Intelligents_TP-2"/>
+    </distribution>
+    <!-- contrainte dure : précédence pour SI-CM-1/2 -->
+    <distribution type="Precedence" required="true">
+      <class id="Systèmes Intelligents_CM-1"/>
+      <class id="Systèmes Intelligents_CM-2"/>
+    </distribution>
+    <!-- contrainte dure : précédence pour SI-TD-1/2 -->
+    <distribution type="Precedence" required="true">
+      <class id="Systèmes Intelligents_TD-1"/>
+      <class id="Systèmes Intelligents_TD-2"/>
+    </distribution>
+    <!-- contrainte dure : précédence pour SI-TP-1/2 -->
+    <distribution type="Precedence" required="true">
+      <class id="Systèmes Intelligents_TP-1"/>
+      <class id="Systèmes Intelligents_TP-2"/>
+    </distribution>
+    <!-- contrainte dure : même jour pour SI-CM-1/2 -->
+    <distribution type="SameDays" required="true">
+      <class id="Systèmes Intelligents_CM-1"/>
+      <class id="Systèmes Intelligents_CM-2"/>
+    </distribution>
+    <!-- contrainte dure : même jour pour SI-TD-1/2 -->
+    <distribution type="SameDays" required="true">
+      <class id="Systèmes Intelligents_TD-1"/>
+      <class id="Systèmes Intelligents_TD-2"/>
+    </distribution>
+    <!-- contrainte dure : même jour pour SI-TP-1/2 -->
+    <distribution type="SameDays" required="true">
+      <class id="Systèmes Intelligents_TP-1"/>
+      <class id="Systèmes Intelligents_TP-2"/>
+    </distribution>
+    <!-- contrainte dure : même salle pour SI-CM-1/2 -->
+    <distribution type="SameRoom" required="true">
+      <class id="Systèmes Intelligents_CM-1"/>
+      <class id="Systèmes Intelligents_CM-2"/>
+    </distribution>
+    <!-- contrainte dure : même salle pour SI-TD-1/2 -->
+    <distribution type="SameRoom" required="true">
+      <class id="Systèmes Intelligents_TD-1"/>
+      <class id="Systèmes Intelligents_TD-2"/>
+    </distribution>
+    <!-- contrainte dure : même salle pour SI-TP-1/2 -->
+    <distribution type="SameRoom" required="true">
+      <class id="Systèmes Intelligents_TP-1"/>
+      <class id="Systèmes Intelligents_TP-2"/>
+    </distribution>
+  </distributions>
+  <students>
+    <student id="1-tdA-tpA-pa">
+      <course id="Anglais"/>
+      <course id="Bases de Données"/>
+      <course id="Développement Web"/>
+      <course id="Programmation Fonctionnelle"/>
+      <course id="Programmation Logique"/>
+      <course id="Images de Synthèse"/>
+      <course id="Production Automatisée de Documents"/>
+    </student>
+    <student id="2-tdA-tpA-qt">
+      <course id="Anglais"/>
+      <course id="Bases de Données"/>
+      <course id="Développement Web"/>
+      <course id="Programmation Fonctionnelle"/>
+      <course id="Programmation Logique"/>
+      <course id="Images de Synthèse"/>
+      <course id="Qt Avancé"/>
+    </student>
+    <student id="3-tdA-tpA-si">
+      <course id="Anglais"/>
+      <course id="Bases de Données"/>
+      <course id="Développement Web"/>
+      <course id="Programmation Fonctionnelle"/>
+      <course id="Programmation Logique"/>
+      <course id="Images de Synthèse"/>
+      <course id="Systèmes Intelligents"/>
+    </student>
+    <student id="4-tdA-tpA-pa">
+      <course id="Anglais"/>
+      <course id="Bases de Données"/>
+      <course id="Développement Web"/>
+      <course id="Programmation Fonctionnelle"/>
+      <course id="Programmation Logique"/>
+      <course id="Images de Synthèse"/>
+      <course id="Production Automatisée de Documents"/>
+    </student>
+    <student id="5-tdA-tpA-qt">
+      <course id="Anglais"/>
+      <course id="Bases de Données"/>
+      <course id="Développement Web"/>
+      <course id="Programmation Fonctionnelle"/>
+      <course id="Programmation Logique"/>
+      <course id="Images de Synthèse"/>
+      <course id="Qt Avancé"/>
+    </student>
+    <student id="6-tdA-tpA-si">
+      <course id="Anglais"/>
+      <course id="Bases de Données"/>
+      <course id="Développement Web"/>
+      <course id="Programmation Fonctionnelle"/>
+      <course id="Programmation Logique"/>
+      <course id="Images de Synthèse"/>
+      <course id="Systèmes Intelligents"/>
+    </student>
+    <student id="7-tdA-tpB-pa">
+      <course id="Anglais"/>
+      <course id="Bases de Données"/>
+      <course id="Développement Web"/>
+      <course id="Programmation Fonctionnelle"/>
+      <course id="Programmation Logique"/>
+      <course id="Images de Synthèse"/>
+      <course id="Production Automatisée de Documents"/>
+    </student>
+    <student id="8-tdA-tpB-qt">
+      <course id="Anglais"/>
+      <course id="Bases de Données"/>
+      <course id="Développement Web"/>
+      <course id="Programmation Fonctionnelle"/>
+      <course id="Programmation Logique"/>
+      <course id="Images de Synthèse"/>
+      <course id="Qt Avancé"/>
+    </student>
+    <student id="9-tdA-tpB-si">
+      <course id="Anglais"/>
+      <course id="Bases de Données"/>
+      <course id="Développement Web"/>
+      <course id="Programmation Fonctionnelle"/>
+      <course id="Programmation Logique"/>
+      <course id="Images de Synthèse"/>
+      <course id="Systèmes Intelligents"/>
+    </student>
+    <student id="10-tdB-tpB-pa">
+      <course id="Anglais"/>
+      <course id="Bases de Données"/>
+      <course id="Développement Web"/>
+      <course id="Programmation Fonctionnelle"/>
+      <course id="Programmation Logique"/>
+      <course id="Images de Synthèse"/>
+      <course id="Production Automatisée de Documents"/>
+    </student>
+    <student id="11-tdB-tpB-qt">
+      <course id="Anglais"/>
+      <course id="Bases de Données"/>
+      <course id="Développement Web"/>
+      <course id="Programmation Fonctionnelle"/>
+      <course id="Programmation Logique"/>
+      <course id="Images de Synthèse"/>
+      <course id="Qt Avancé"/>
+    </student>
+    <student id="12-tdB-tpB-si">
+      <course id="Anglais"/>
+      <course id="Bases de Données"/>
+      <course id="Développement Web"/>
+      <course id="Programmation Fonctionnelle"/>
+      <course id="Programmation Logique"/>
+      <course id="Images de Synthèse"/>
+      <course id="Systèmes Intelligents"/>
+    </student>
+    <student id="13-tdB-tpC-pa">
+      <course id="Anglais"/>
+      <course id="Bases de Données"/>
+      <course id="Développement Web"/>
+      <course id="Programmation Fonctionnelle"/>
+      <course id="Programmation Logique"/>
+      <course id="Images de Synthèse"/>
+      <course id="Production Automatisée de Documents"/>
+    </student>
+    <student id="14-tdB-tpC-qt">
+      <course id="Anglais"/>
+      <course id="Bases de Données"/>
+      <course id="Développement Web"/>
+      <course id="Programmation Fonctionnelle"/>
+      <course id="Programmation Logique"/>
+      <course id="Images de Synthèse"/>
+      <course id="Qt Avancé"/>
+    </student>
+    <student id="15-tdB-tpC-si">
+      <course id="Anglais"/>
+      <course id="Bases de Données"/>
+      <course id="Développement Web"/>
+      <course id="Programmation Fonctionnelle"/>
+      <course id="Programmation Logique"/>
+      <course id="Images de Synthèse"/>
+      <course id="Systèmes Intelligents"/>
+    </student>
+    <student id="16-tdB-tpC-pa">
+      <course id="Anglais"/>
+      <course id="Bases de Données"/>
+      <course id="Développement Web"/>
+      <course id="Programmation Fonctionnelle"/>
+      <course id="Programmation Logique"/>
+      <course id="Images de Synthèse"/>
+      <course id="Production Automatisée de Documents"/>
+    </student>
+    <student id="17-tdB-tpC-qt">
+      <course id="Anglais"/>
+      <course id="Bases de Données"/>
+      <course id="Développement Web"/>
+      <course id="Programmation Fonctionnelle"/>
+      <course id="Programmation Logique"/>
+      <course id="Images de Synthèse"/>
+      <course id="Qt Avancé"/>
+    </student>
+    <student id="18-tdB-tpC-si">
+      <course id="Anglais"/>
+      <course id="Bases de Données"/>
+      <course id="Développement Web"/>
+      <course id="Programmation Fonctionnelle"/>
+      <course id="Programmation Logique"/>
+      <course id="Images de Synthèse"/>
+      <course id="Systèmes Intelligents"/>
+    </student>
+  </students>
+</problem>
