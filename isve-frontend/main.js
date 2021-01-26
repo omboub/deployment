@@ -1175,7 +1175,7 @@ class TableUploadComponent {
         this.spinnerSolveur = true,
             console.log(this.filliere);
         this.api.launchScan(this.filliere).subscribe((res) => {
-            this.api.launchSolveur(this.filliere).subscribe((res) => {
+            this.api.launchSolveur("L3_Informatique").subscribe((res) => {
                 this.spinnerSolveur = false;
                 const dialogRef = this.dialog.open(_dialog_component__WEBPACK_IMPORTED_MODULE_7__["DialogRedirect"], {
                     data: { isReussi: res, codeEtape: this.filliere }
