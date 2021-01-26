@@ -2174,11 +2174,13 @@ class TimeTableComponent {
         this.api
             .getCours(etapeCode)
             .subscribe((res) => {
+            console.log(res);
             res.body.forEach((valeur, index) => {
                 /*if (valeur.classe.groupes ==null)
                   res.body[index].classe.groupes = {numeroGroupe=0,libelleGroupe : "",numeroGroupeParent : 0};*/
             });
             this.cours = res.body;
+            console.log("liste des cours");
             console.log(res.body);
             this.renderCalendar();
         });
