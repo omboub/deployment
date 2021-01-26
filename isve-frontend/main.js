@@ -213,10 +213,10 @@ __webpack_require__.r(__webpack_exports__);
 // The list of file replacements can be found in `angular.json`.
 const environment = {
     production: false,
-    apiUrl: 'http://localhost:10000/',
-    apiURLSolveur: 'http://localhost:10001/',
-    // apiUrl: 'https://isve.leria-etud.univ-angers.fr:10000/', //Url pour la partie back-end
-    // apiURLSolveur : 'https://isve.leria-etud.univ-angers.fr:10001/', //Url pour la partie solveur
+    // apiUrl: 'http://localhost:10000/', //Url pour la partie back-end
+    // apiURLSolveur : 'http://localhost:10001/', //Url pour la partie solveur
+    apiUrl: 'https://isve.leria-etud.univ-angers.fr:10000/',
+    apiURLSolveur: 'https://isve.leria-etud.univ-angers.fr:10001/',
     //Couleur affecté sur l'emploi du temps en fonction du type de Séance
     colors: {
         CM: '#FFFF33',
