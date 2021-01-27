@@ -2258,6 +2258,11 @@ class TimeTableComponent {
             slotLabelInterval: '01:00:00',
         };
         this.calendar = new _fullcalendar_core__WEBPACK_IMPORTED_MODULE_4__["Calendar"](document.querySelector('full-calendar'), this.options);
+        const mydate = new Date();
+        mydate.setFullYear(2020);
+        mydate.setMonth(9);
+        mydate.setDate(1);
+        this.calendar.gotoDate(mydate);
         this.calendar.render();
     }
 }
