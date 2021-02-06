@@ -213,10 +213,10 @@ __webpack_require__.r(__webpack_exports__);
 // The list of file replacements can be found in `angular.json`.
 const environment = {
     production: false,
-    // apiUrl: 'http://localhost:10000/', //Url pour la partie back-end
-    // apiURLSolveur : 'http://localhost:10001/', //Url pour la partie solveur
-    apiUrl: 'https://isve.leria-etud.univ-angers.fr:10000/',
-    apiURLSolveur: 'https://isve.leria-etud.univ-angers.fr:10001/',
+    apiUrl: 'http://localhost:10000/',
+    apiURLSolveur: 'http://localhost:10001/',
+    // apiUrl: 'https://isve.leria-etud.univ-angers.fr:10000/', //Url pour la partie back-end
+    // apiURLSolveur : 'https://isve.leria-etud.univ-angers.fr:10001/', //Url pour la partie solveur
     //Couleur affecté sur l'emploi du temps en fonction du type de Séance
     colors: {
         CM: '#FFFF33',
@@ -421,7 +421,7 @@ function toEventInput(seance) {
     var professeurs = '';
     seance.enseignants.forEach((prof) => {
         professeurs +=
-            prof.nomEnseignant.toUpperCase() + prof.prenomEnseignant.toUpperCase() + ', ';
+            prof.nomEnseignant.toUpperCase() + ' ' + prof.prenomEnseignant.toUpperCase() + ', ';
     });
     return {
         title: seance.typeCours.libelleTypeSeance +
@@ -511,7 +511,7 @@ SidebarComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineC
     } if (rf & 2) {
         var _t;
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵloadQuery"]()) && (ctx.tableChild = _t.first);
-    } }, decls: 8, vars: 3, consts: [[1, "ensemble"], [1, "side"], [1, "calendar", 3, "selected", "selectedChange"], [1, "cards"], ["title", "Liste des facult\u00E9s", "subtitle", "", "color", "#1b8d81"], ["title", "Les emploies du temps", "color", "#007bff", 3, "subtitle", "link"], [1, "container"]], template: function SidebarComponent_Template(rf, ctx) { if (rf & 1) {
+    } }, decls: 8, vars: 3, consts: [[1, "ensemble"], [1, "side"], [1, "calendar", 3, "selected", "selectedChange"], [1, "cards"], ["title", "Liste des facult\u00E9s", "subtitle", "", "color", "#1b8d81"], ["title", "Les emplois du temps", "color", "#007bff", 3, "subtitle", "link"], [1, "container"]], template: function SidebarComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "div", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "mat-calendar", 2);
@@ -729,7 +729,7 @@ function TableUploadComponent_ng_container_52_div_25_button_8_Template(rf, ctx) 
     const _r18 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵgetCurrentView"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](0, "button", 52);
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵlistener"]("click", function TableUploadComponent_ng_container_52_div_25_button_8_Template_button_click_0_listener() { _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵrestoreView"](_r18); const ctx_r17 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵnextContext"](3); return ctx_r17.incrementeNumber(); });
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](1, "Ajouter salle");
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](1, "Ajouter une salle");
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
 } if (rf & 2) {
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵnextContext"]();
@@ -819,7 +819,7 @@ function TableUploadComponent_ng_container_52_div_29_Template(rf, ctx) { if (rf 
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](9, "select", 59, 60);
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵlistener"]("change", function TableUploadComponent_ng_container_52_div_29_Template_select_change_9_listener() { _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵrestoreView"](_r35); const nb2_r21 = ctx.$implicit; const _r22 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵreference"](4); const _r24 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵreference"](10); const ctx_r36 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵnextContext"](2); return ctx_r36.changeCorrespondance(nb2_r21, _r22.value, _r24.value); });
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](11, "option", 45);
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](12, "Selectionner un cour");
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](12, "Selectionner un cours");
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplate"](13, TableUploadComponent_ng_container_52_div_29_option_13_Template, 2, 2, "option", 57);
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
@@ -853,7 +853,7 @@ function TableUploadComponent_ng_container_52_div_34_Template(rf, ctx) { if (rf 
     const _r38 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵgetCurrentView"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](0, "div", 35);
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](1, "p", 64);
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](2, " Le fichier DZN \u00E0 \u00E9t\u00E9 g\u00E9n\u00E9rer");
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](2, " Le fichier DZN a \u00E9t\u00E9 g\u00E9n\u00E9r\u00E9");
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](3, "button", 65);
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵlistener"]("click", function TableUploadComponent_ng_container_52_div_34_Template_button_click_3_listener() { _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵrestoreView"](_r38); const ctx_r37 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵnextContext"](2); return ctx_r37.donwloadFile(); });
@@ -888,7 +888,7 @@ function TableUploadComponent_ng_container_52_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](1, "mat-card", 0);
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](2, "mat-card-header");
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](3, "h1");
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](4, "Sp\u00E9cification des pr\u00E9f\u00E9rence de l'emploi du temps");
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](4, "Sp\u00E9cification des pr\u00E9f\u00E9rences de l'emploi du temps");
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](5, "mat-card-content");
@@ -902,7 +902,7 @@ function TableUploadComponent_ng_container_52_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](11, "div", 25);
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](12, "label", 29);
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](13, "Nombre de semaine");
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](13, "Nombre de semaines");
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](14, "div", 27);
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelement"](15, "input", 30);
@@ -918,7 +918,7 @@ function TableUploadComponent_ng_container_52_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](21, "div", 25);
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](22, "label", 31);
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](23, "Salles pr\u00E9f\u00E9r\u00E9s");
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](23, "Salles pr\u00E9f\u00E9r\u00E9es");
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](24, "div", 27);
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplate"](25, TableUploadComponent_ng_container_52_div_25_Template, 9, 4, "div", 33);
@@ -1007,7 +1007,7 @@ class TableUploadComponent {
             this.nbCoresspondance.push(0);
             // this.filliere= this.route.snapshot.paramMap
             //   .get('filliere')
-            this.filliere = "3";
+            this.filliere = "1";
             this.api.getEtapeByCode(this.filliere).subscribe((res) => {
                 this.etape = res.body;
                 console.log(this.etape);
@@ -1175,7 +1175,7 @@ class TableUploadComponent {
         this.spinnerSolveur = true,
             console.log(this.filliere);
         this.api.launchScan(this.filliere).subscribe((res) => {
-            this.api.launchSolveur("L3_Informatique").subscribe((res) => {
+            this.api.launchSolveur("L1_MPCIE").subscribe((res) => {
                 this.spinnerSolveur = false;
                 const dialogRef = this.dialog.open(_dialog_component__WEBPACK_IMPORTED_MODULE_7__["DialogRedirect"], {
                     data: { isReussi: res, codeEtape: this.filliere }
@@ -1228,7 +1228,7 @@ TableUploadComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdef
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](0, "mat-card", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](1, "mat-card-header");
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](2, "h1");
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](3, "Feuille de service des enseignant");
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](3, "Feuille de service des enseignants");
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](4, "mat-card-content");
