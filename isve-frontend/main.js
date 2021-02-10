@@ -107,7 +107,7 @@ class Faculte {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /home/user/M2/Management_de_projet/interfaces-de-saisies-et-de-visualisation-emploi-du-temps/isve-frontend/src/main/web/src/main.ts */"zUnb");
+module.exports = __webpack_require__(/*! /home/user/M2/management_de_projet/interfaces-de-saisies-et-de-visualisation-emploi-du-temps/isve-frontend/src/main/web/src/main.ts */"zUnb");
 
 
 /***/ }),
@@ -213,10 +213,10 @@ __webpack_require__.r(__webpack_exports__);
 // The list of file replacements can be found in `angular.json`.
 const environment = {
     production: false,
-    // apiUrl: 'http://localhost:10000/', //Url pour la partie back-end
-    // apiURLSolveur : 'http://localhost:10001/', //Url pour la partie solveur
-    apiUrl: 'https://isve.leria-etud.univ-angers.fr:10000/',
-    apiURLSolveur: 'https://isve.leria-etud.univ-angers.fr:10001/',
+    apiUrl: 'http://localhost:10000/',
+    apiURLSolveur: 'http://localhost:10001/',
+    // apiUrl: 'https://isve.leria-etud.univ-angers.fr:10000/', //Url pour la partie back-end
+    // apiURLSolveur : 'https://isve.leria-etud.univ-angers.fr:10001/', //Url pour la partie solveur
     //Couleur affecté sur l'emploi du temps en fonction du type de Séance
     colors: {
         CM: '#FFFF33',
@@ -2454,12 +2454,12 @@ const routes = [
 class AppRoutingModule {
 }
 AppRoutingModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineNgModule"]({ type: AppRoutingModule });
-AppRoutingModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjector"]({ factory: function AppRoutingModule_Factory(t) { return new (t || AppRoutingModule)(); }, imports: [[_angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"].forRoot(routes)], _angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"]] });
+AppRoutingModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjector"]({ factory: function AppRoutingModule_Factory(t) { return new (t || AppRoutingModule)(); }, imports: [[_angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"].forRoot(routes, { useHash: true })], _angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"]] });
 (function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵsetNgModuleScope"](AppRoutingModule, { imports: [_angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"]], exports: [_angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"]] }); })();
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](AppRoutingModule, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["NgModule"],
         args: [{
-                imports: [_angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"].forRoot(routes)],
+                imports: [_angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"].forRoot(routes, { useHash: true })],
                 exports: [_angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"]],
             }]
     }], null, null); })();
